@@ -501,18 +501,18 @@ window.SOULD_DEFAULTS = {
     },
     {
       quote: 'Soul-D. redesigned our website from simple to visually rich and professional, while keeping the experience easy to use.',
-      name: 'Naveen Kumar Gedha',
-      role: 'Co-Founder, Elionyx'
+      name: 'Naveen Kumar Geddha',
+      role: 'Co-Founder Elionyxtech'
     },
     {
       quote: 'Soul-D. understood our vision quickly and turned it into a digital presence that finally feels like us.',
-      name: 'Karthik Reddy',
-      role: 'Director, Perfect Air Conditioners'
+      name: 'Blue Diamond Auto Services',
+      role: 'Automotive services'
     },
     {
       quote: 'Soul-D. helped us refine website and market us effectively.',
-      name: 'Sneha Iyer',
-      role: 'Marketing Head, Blue Diamond Auto'
+      name: 'Perfect Air Conditioners',
+      role: 'HVAC services'
     }
   ],
 
