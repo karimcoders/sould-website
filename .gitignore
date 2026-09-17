@@ -1,0 +1,8 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# the CMS itself is safe to commit; the token never is
+.env
+node_modules/
