@@ -1,0 +1,11 @@
+# Render.com blueprint — "Deploy from Blueprint" se ek click me live
+services:
+  - type: web
+    name: sould-cms
+    runtime: node
+    plan: free
+    buildCommand: ""
+    startCommand: node server/server.js
+    envVars:
+      - key: CMS_PASSWORD
+        sync: false          # deploy ke waqt apna password daal dena
