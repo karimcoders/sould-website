@@ -44,6 +44,9 @@
   --muted-3: #94a3b8;
   --radius: 16px;
   --shell: 1280px;
+  --shell-wide: 1650px;
+  /* margin har screen size par apne aap adjust hota hai: 20px (phone) -> 64px (badi screen) */
+  --gutter: clamp(20px, 4vw, 64px);
   --header-h: 92px;
   --shadow-sm: 0 1px 2px rgba(15, 23, 42, .06);
   --shadow-md: 0 6px 18px rgba(15, 23, 42, .07);
@@ -74,20 +77,13 @@ input, select, textarea { font: inherit; color: inherit; }
 ul { list-style: none; }
 svg { flex-shrink: 0; }
 
-/* ---------- layout helpers ---------- */
-/* container scale matches the original site:
-   content = max-w-7xl (1280) + px-8 (32)   |   carousels = max-w-[1650px] + px-6 (24)
-   header  = full width + px-8 (32) */
-.shell { width: 100%; max-width: var(--shell); margin: 0 auto; padding: 0 32px; }
-.shell-wide { width: 100%; max-width: 1650px; margin: 0 auto; padding: 0 24px; }
-.shell-full { width: 100%; margin: 0 auto; padding: 0 32px; }
-/* match the original's px-4 / sm:px-6 / lg:px-8 steps */
-@media (max-width: 1023.98px) {
-  .shell, .shell-wide, .shell-full { padding: 0 24px; }
-}
-@media (max-width: 639.98px) {
-  .shell, .shell-wide, .shell-full { padding: 0 16px; }
-}
+/* ---------- layout helpers ----------
+   Har cheez (header, sections, carousel, footer) ek hi tarah ka margin leti hai.
+   Margin screen size ke hisaab se badhta hai: --gutter (20px -> 64px).
+   Content 1280px par ruk jata hai, screen badi ho to margin aur bada ho jata hai. */
+.shell { width: 100%; max-width: var(--shell); margin: 0 auto; padding: 0 var(--gutter); }
+.shell-wide { width: 100%; max-width: var(--shell-wide); margin: 0 auto; padding: 0 var(--gutter); }
+.shell-full { width: 100%; max-width: var(--shell); margin: 0 auto; padding: 0 var(--gutter); }
 .app { min-height: 100vh; display: flex; flex-direction: column; }
 .app > main { flex: 1 1 auto; }
 .center { text-align: center; }
@@ -698,9 +694,11 @@ h2.title .blue { color: var(--blue); }
   .work-grid { grid-template-columns: repeat(2, 1fr); }
   .value-grid, .process { grid-template-columns: repeat(2, 1fr); }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
   .nav, .header-actions .btn-primary { display: none; }
   .burger { display: grid; place-items: center; }
+}
+@media (max-width: 1024px) {
   .split, .strategy-grid, .proposal, .contact-grid { grid-template-columns: minmax(0, 1fr); gap: 44px; }
   .footer-grid { grid-template-columns: 1fr; }
   .footer .brand-col { justify-items: start; }
