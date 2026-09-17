@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Soul-D. — The Best Digital Marketing Agency in Hyderabad. Website development, mobile apps, video production, Meta &amp; Google Ads at reasonable rates." />
+    <title>Soul-D. | Digital Marketing Solutions</title>
+    <link rel="icon" href="assets/sould-logo-1-BkM_pOXT.png" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="app" id="app"></div>
+
+    <!-- block the auto-boot so the loader below can inject the saved content first -->
+    <script>window.SOULD_DEFER = true;</script>
+    <script src="src/content-defaults.js"></script>
+    <script src="src/app.js"></script>
+
+    <script>
+      /* ----------------------------------------------------------------------
+         Content loader — three layers, lowest to highest priority:
+           1. built-in defaults      (src/content-defaults.js)
+           2. content.json           (what the client published)
+           3. localStorage draft     (this browser's unpublished edits)
+         Visitors get 1+2; the client previewing in their own browser gets 1+2+3.
+         ---------------------------------------------------------------------- */
+      (async function () {
+        function merge(base, over) {
+          if (over === null || over === undefined) return base;
+          if (Array.isArray(base) || Array.isArray(over)) return Array.isArray(over) ? over : base;
+          if (typeof base !== 'object' || typeof over !== 'object') return over;
+          const out = Object.assign({}, base);
+          for (const k of Object.keys(over)) out[k] = merge(base[k], over[k]);
+          return out;
+        }
+
+        let content = window.SOULD_DEFAULTS || {};
+
+        try {
+          const res = await fetch('content.json', { cache: 'no-store' });
+          if (res.ok) content = merge(content, await res.json());
+        } catch (e) {
+          /* file:// or offline — just use the defaults */
+        }
+
+        try {
+          const draft = localStorage.getItem('sould_content_draft');
+          if (draft) content = merge(content, JSON.parse(draft));
+        } catch (e) {}
+
+        window.SOULD_BOOT(content);
+      })();
+    </script>
+  </body>
+</html>
