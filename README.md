@@ -16,49 +16,43 @@ list on the site — without touching code.
 
 ---
 
-## 🚀 Publishing — three options
+## 🚀 Publishing — client ke liye sirf "Save"
 
-### Option 1 · Auto-publish (what most people want) ⭐
+### Option 1 · Content server — **bina GitHub** ⭐ (recommended)
 
-1. Open **Publish & Settings**.
-2. Repository / Branch / Content file are **already filled in** — leave them.
-3. Paste a GitHub access token once, press **Save settings**.
-4. Tick **"Publish automatically after every save"**.
-5. Done. From now on the client just edits and presses **Save Draft** — it goes
-   live by itself, ~1 minute later.
+Website aur admin dono ek chhote Node server se chalte hain. Client sirf password
+jaanta hai; **Save** dabaate hi website update ho jaati hai — WordPress jaisa.
 
-> **Getting the token:** GitHub → Settings → Developer settings → Personal access
-> tokens → **Tokens (classic)** → Generate new token → tick **`repo`** → copy.
-> It is stored **only in the client's browser**, never in the website files, and
-> never visible to visitors.
+```bash
+node server/server.js        # http://localhost:8000   (admin: /admin.html)
+```
 
-### Option 2 · No token for the client at all (most secure)
+Live karne ke liye: [render.com](https://render.com) → **New → Blueprint** → ye repo
+chuno (`render.yaml` already andar hai) → `CMS_PASSWORD` daalo → Deploy. Bas.
+Details: **`server/README.md`** (Railway / Fly / VPS / Docker bhi).
 
-Deploy the tiny **publish server** in `proxy/` once. The GitHub token then lives on
-the server and the client only ever types the CMS password.
+- Content server ke paas rehta hai (`server/data/content.json`), har save ka backup banta hai.
+- Na token, na repo, na GitHub account — client ke liye sirf ek password.
+- Local chala kar dekhna ho: `python3 -m http.server` ki jagah `node server/server.js` use karo.
 
-**Cloudflare Worker** (free, ~2 minutes) — paste `proxy/cloudflare-worker.js` into a
-new Worker, then add these variables under *Settings → Variables*:
+### Option 2 · GitHub token se auto-publish
 
-| Variable | Value |
-|---|---|
-| `GH_TOKEN` | your GitHub token (`repo` scope) |
-| `GH_REPO` | `karimcoders/sould-website` |
-| `GH_BRANCH` | `main` |
-| `GH_FILE` | `content.json` |
-| `CMS_PASSWORD` | the CMS password |
-| `ALLOW_ORIGIN` | `https://karimcoders.github.io` (optional lock-down) |
+Admin → **Publish & Settings** me repository / branch / file **pehle se bhari hui** hai.
+Sirf ek baar GitHub token paste karo, **"Publish automatically after every save"** tick karo —
+uske baad client jo bhi edit karke **Save Draft** dabayega, woh khud live chala jayega.
 
-Copy the worker URL (`https://xxxx.workers.dev`) into the CMS →
-**Publish & Settings → "Publish server (optional)"**. The token box can then be
-left empty — the client never sees GitHub at all.
+> **Token kaise banaen:** GitHub → Settings → Developer settings → Personal access tokens →
+> **Tokens (classic)** → Generate new token → **`repo`** tick karo → copy.
+> Token sirf client ke browser me rehta hai, website files me kabhi nahi.
 
-`proxy/vercel-api/publish.js` does the same job on Vercel (`api/publish.js`) or
-Netlify (`netlify/functions/publish.js`) with the same environment variables.
+### Option 3 · Publish server (GitHub Pages ke saath, client ko token nahi)
 
-### Option 3 · Manual backup
+`proxy/cloudflare-worker.js` (ya `proxy/vercel-api/publish.js`) deploy karo — token
+server pe rahega. Worker ka URL admin ke **"Publish server"** box me daal do.
 
-**Dashboard → Export content.json**, edit it by hand if you must, and commit it.
+### Option 4 · Manual backup
+
+**Dashboard → Export content.json**, aur chaaho to commit kar do.
 
 ---
 
@@ -96,7 +90,8 @@ src/admin.js        the CMS      (form builders for every content type)
 src/styles.css      website styles
 src/admin.css       admin styles
 assets/             photos, logos, fonts
-proxy/              optional serverless publisher (no client token)
+server/             content server — website + admin, GitHub ki zarurat nahi
+proxy/              optional serverless publisher (GitHub Pages ke liye)
 ```
 
 **Three content layers**, lowest priority first:
