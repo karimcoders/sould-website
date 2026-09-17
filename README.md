@@ -8,11 +8,13 @@ list on the site — without touching code.
 
 ## 🔗 Links
 
+### 🌍 Live right now
+
 | | |
 |---|---|
-| **Website** | `/index.html` (or just the domain root) |
-| **Admin panel** | `/admin.html` |
-| **Default password** | `sould2026` — change it in **Publish & Settings** |
+| **Website** | https://karimcoders.github.io/sould-website/ |
+| **Admin panel** | https://karimcoders.github.io/sould-website/admin.html |
+| **Password** | `sould2026` — change it in **Publish & Settings** the first time |
 
 ---
 
@@ -92,7 +94,8 @@ leave build command empty, publish directory `.`  → Deploy.
 **Vercel:** New Project → import the repo → Framework preset **Other** → Deploy.
 `vercel.json` is included.
 
-**GitHub Pages:** Settings → Pages → Source: `main` / root. Done.
+**GitHub Pages:** already enabled on this repo —
+https://karimcoders.github.io/sould-website/ (Settings → Pages → `main` / root).
 
 **Own hosting / cPanel:** upload everything in this folder to `public_html`.
 
