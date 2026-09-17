@@ -127,7 +127,7 @@ function Header(route) {
 
   return `
   <header class="site-header" id="siteHeader">
-    <div class="shell-full">
+    <div class="shell">
       <div class="bar">
         <div class="brand-col-wrap">
           <a class="brand" href="#/" aria-label="Soul-D. home">
