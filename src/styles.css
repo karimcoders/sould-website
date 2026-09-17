@@ -75,8 +75,19 @@ ul { list-style: none; }
 svg { flex-shrink: 0; }
 
 /* ---------- layout helpers ---------- */
-.shell { width: 100%; max-width: var(--shell); margin: 0 auto; padding: 0 24px; }
-.shell-wide { width: 100%; max-width: 1650px; margin: 0 auto; padding: 0 16px; }
+/* container scale matches the original site:
+   content = max-w-7xl (1280) + px-8 (32)   |   carousels = max-w-[1650px] + px-6 (24)
+   header  = full width + px-8 (32) */
+.shell { width: 100%; max-width: var(--shell); margin: 0 auto; padding: 0 32px; }
+.shell-wide { width: 100%; max-width: 1650px; margin: 0 auto; padding: 0 24px; }
+.shell-full { width: 100%; margin: 0 auto; padding: 0 32px; }
+/* match the original's px-4 / sm:px-6 / lg:px-8 steps */
+@media (max-width: 1023.98px) {
+  .shell, .shell-wide, .shell-full { padding: 0 24px; }
+}
+@media (max-width: 639.98px) {
+  .shell, .shell-wide, .shell-full { padding: 0 16px; }
+}
 .app { min-height: 100vh; display: flex; flex-direction: column; }
 .app > main { flex: 1 1 auto; }
 .center { text-align: center; }
@@ -465,7 +476,7 @@ h2.title .blue { color: var(--blue); }
 }
 .form-card h3 { font-size: 20px; font-weight: 800; }
 .form-card .hint { color: var(--muted-2); font-size: 13.5px; margin-top: 6px; }
-.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 22px; }
+.form-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; margin-top: 22px; }
 .field { display: flex; flex-direction: column; gap: 7px; }
 .field.full { grid-column: 1 / -1; }
 .field label {
@@ -509,7 +520,7 @@ h2.title .blue { color: var(--blue); }
 .footer .brand-col { display: grid; justify-items: center; gap: 16px; max-width: 26rem; }
 .footer .brand-col img { height: 62px; width: auto; border-radius: 12px; }
 .footer .tagline { color: #94a3b8; font-size: 28px; line-height: 1.3; max-width: 26rem; text-align: left; }
-.socials { display: flex; gap: 12px; padding-top: 8px; }
+.socials { display: flex; flex-wrap: wrap; gap: 12px; padding-top: 8px; max-width: 100%; }
 .socials a {
   width: 62px; height: 62px; border-radius: 14px; background: #0f172a; border: 1px solid rgba(30, 41, 59, .9);
   display: grid; place-items: center; transition: all .2s;
@@ -649,12 +660,14 @@ h2.title .blue { color: var(--blue); }
 .motto .txt { color: #fff; font-weight: 700; font-size: 19px; margin-top: 6px; }
 
 /* ---------- contact ---------- */
-.contact-grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: 56px; align-items: start; }
+.contact-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 56px; align-items: start; }
 .contact-cards { display: grid; gap: 16px; margin-top: 26px; }
 .contact-card {
   background: #fff; border: 1px solid rgba(226, 232, 240, .9); border-radius: 16px;
   padding: 20px; display: flex; gap: 16px; align-items: flex-start; box-shadow: var(--shadow-sm);
 }
+.contact-card > div { min-width: 0; }
+.contact-card .val { overflow-wrap: anywhere; }
 .contact-card .ic { width: 46px; height: 46px; border-radius: 12px; background: #eef2ff; color: var(--indigo); display: grid; place-items: center; flex: 0 0 auto; }
 .contact-card .lbl { font-size: 11px; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; color: var(--muted-2); }
 .contact-card .val { font-size: 17px; font-weight: 700; margin-top: 5px; }
@@ -688,7 +701,7 @@ h2.title .blue { color: var(--blue); }
 @media (max-width: 1024px) {
   .nav, .header-actions .btn-primary { display: none; }
   .burger { display: grid; place-items: center; }
-  .split, .strategy-grid, .proposal, .contact-grid { grid-template-columns: 1fr; gap: 44px; }
+  .split, .strategy-grid, .proposal, .contact-grid { grid-template-columns: minmax(0, 1fr); gap: 44px; }
   .footer-grid { grid-template-columns: 1fr; }
   .footer .brand-col { justify-items: start; }
   .footer .tagline { font-size: 24px; }
@@ -718,7 +731,7 @@ h2.title .blue { color: var(--blue); }
   .hero-inner-page { padding: 132px 0 76px; }
   .hero-inner-page h1 { font-size: 36px; }
   .hero-inner-page p { font-size: 17px; }
-  .form-grid { grid-template-columns: 1fr; }
+  .form-grid { grid-template-columns: minmax(0, 1fr); }
   .hero { padding: 96px 0 62px; }
   .hero h1.a { font-size: 38px; }
   .hero h1.b { font-size: 42px; }
@@ -740,4 +753,19 @@ h2.title .blue { color: var(--blue); }
   .cta-row .btn-solid { width: 100%; }
   .logo-tile { width: 200px; height: 88px; }
   .footer .brand-col img { height: 48px; }
+}
+
+/* ---------- overflow safety (long emails / URLs must never widen the page) ---------- */
+.shell, .shell-wide, .shell-full { min-width: 0; }
+.split > *, .strategy-grid > *, .proposal > *, .contact-grid > *,
+.stats-grid > *, .cols-3 > *, .cols-4 > *, .svc-grid > *, .work-grid > *,
+.value-grid > *, .process > *, .footer-grid > * { min-width: 0; }
+.contact-card, .form-card { max-width: 100%; }
+.contact-card .val, .footer a, .footer p { overflow-wrap: anywhere; }
+
+/* small phones: footer social tiles must not push the page wider */
+@media (max-width: 430px) {
+  .socials { gap: 10px; }
+  .socials a { width: 48px; height: 48px; border-radius: 12px; }
+  .floaters { right: 12px; }
 }
