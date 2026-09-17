@@ -35,12 +35,28 @@
         }
 
         let content = window.SOULD_DEFAULTS || {};
+        let fromServer = false;
 
+        /* 1) content server (live editing — save karte hi update) */
         try {
-          const res = await fetch('content.json', { cache: 'no-store' });
-          if (res.ok) content = merge(content, await res.json());
-        } catch (e) {
-          /* file:// or offline — just use the defaults */
+          const res = await fetch('api/content', { cache: 'no-store' });
+          if (res.ok) {
+            const d = await res.json();
+            if (d && typeof d === 'object' && Object.keys(d).length) {
+              content = merge(content, d);
+              fromServer = true;
+            }
+          }
+        } catch (e) {}
+
+        /* 2) published content.json (GitHub Pages / static hosting) */
+        if (!fromServer) {
+          try {
+            const res = await fetch('content.json', { cache: 'no-store' });
+            if (res.ok) content = merge(content, await res.json());
+          } catch (e) {
+            /* file:// or offline — just use the defaults */
+          }
         }
 
         try {
