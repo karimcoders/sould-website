@@ -6,3 +6,6 @@ Thumbs.db
 # the CMS itself is safe to commit; the token never is
 .env
 node_modules/
+
+# content server runtime data (content, uploads, backups live on the server)
+server/data/
