@@ -38,10 +38,12 @@ const ic = (n, s = 16) =>
 /* ---------------------------------------------------------------- state */
 const DEFAULT_SETTINGS = {
   password: 'sould2026',
-  token: '',
-  repo: '',
+  repo: 'karimcoders/sould-website',   // pre-filled — the client never has to type this
   branch: 'main',
-  filePath: 'content.json'
+  filePath: 'content.json',
+  token: '',                            // only needed for direct publishing
+  endpoint: '',                         // optional: serverless publisher (client needs no token)
+  autoPublish: false                    // publish automatically every time you save
 };
 const LS_DRAFT = 'sould_content_draft';
 const LS_SET = 'sould_cms_settings';
@@ -135,6 +137,23 @@ function fText(path, label, opts = {}) {
   return `<div class="f ${opts.full ? 'full' : ''}">
     <label>${esc(label)}${tip}</label>
     <input data-path="${path}" type="${opts.type || 'text'}" value="${esc(v)}" placeholder="${esc(opts.ph || '')}">
+  </div>`;
+}
+
+/** Field bound to the SETTINGS object (S), not to the site content (C). */
+function fSetting(key, label, opts = {}) {
+  const v = S[key];
+  const tip = opts.tip ? ` <span class="tip">${esc(opts.tip)}</span>` : '';
+  if (opts.type === 'checkbox') {
+    return `<label style="display:flex;align-items:flex-start;gap:11px;padding:14px;border:1px solid var(--line);border-radius:11px;background:#f8fafc;cursor:pointer">
+      <input type="checkbox" data-set="${key}" ${v ? 'checked' : ''} style="width:18px;height:18px;margin-top:2px">
+      <span><b style="display:block;font-size:13.5px">${esc(label)}</b>
+      ${opts.hint ? `<span style="color:var(--muted);font-size:12.5px">${opts.hint}</span>` : ''}</span>
+    </label>`;
+  }
+  return `<div class="f ${opts.full ? 'full' : ''}">
+    <label>${esc(label)}${tip}</label>
+    <input data-set="${key}" type="${opts.type || 'text'}" value="${esc(v == null ? '' : v)}" placeholder="${esc(opts.ph || '')}">
   </div>`;
 }
 
@@ -340,6 +359,19 @@ function viewDashboard() {
     <div class="tile"><div class="v">${(get('works') || []).length}</div><div class="l">Case Studies</div></div>
     <div class="tile"><div class="v">${(get('testimonials') || []).length}</div><div class="l">Testimonials</div></div>
     <div class="tile"><div class="v">${img}</div><div class="l">Hero Images</div></div>
+  </div>
+
+  <div class="card">
+    <h2>${canPublish() ? '✅ Publishing is connected' : '⚠️ Publishing is not connected yet'}</h2>
+    <p class="hint">
+      ${canPublish()
+        ? 'Everything is set up. Edit anything, then press <b>Save Draft</b>.'
+        : 'Open <b>Publish &amp; Settings</b> and paste your GitHub access token once.'}
+    </p>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:6px">
+      <button class="btn ${canPublish() ? 'btn-ghost' : 'btn-primary'}" data-nav="settings">${ic('settings', 15)} ${canPublish() ? 'Publish settings' : 'Set up publishing'}</button>
+      ${canPublish() ? `<button class="btn btn-ok" data-act="publish">${ic('github', 15)} Publish now</button>` : ''}
+    </div>
   </div>
 
   <div class="card">
@@ -800,44 +832,60 @@ function viewExtras() {
 
 function viewSettings() {
   const size = new Blob([JSON.stringify(C)]).size;
+  const connected = canPublish();
   return `
   <div class="card">
-    <h2>Publish to GitHub</h2>
-    <p class="hint">Fill this in once. After that, the <b>Publish</b> button saves your content straight to your website.</p>
-    <div class="banner warn">
-      Your access token is stored <b>only in this browser</b> — it is never saved into the website files
-      or shared with visitors. Treat it like a password. Create one at
-      <b>GitHub → Settings → Developer settings → Personal access tokens</b> with <code>repo</code> access.
-    </div>
+    <h2>${connected ? '✅ Ready to publish' : '⚠️ One-time setup'}</h2>
+    <p class="hint">
+      ${connected
+        ? 'Your website is connected. <b>Save Draft</b> stores your changes and <b>Publish</b> puts them live.'
+        : 'Paste a GitHub access token below <b>once</b> — it is remembered in this browser and you never type it again.'}
+    </p>
+
+    ${connected
+      ? `<div class="banner ok"><b>Connected.</b> Repo <code>${esc(S.repo)}</code> ·
+           branch <code>${esc(S.branch)}</code> · file <code>${esc(S.filePath)}</code>
+           ${S.endpoint ? ' · using a publish server (no token needed here)' : ''}</div>`
+      : `<div class="banner warn">
+           <b>Step 1.</b> GitHub → Settings → Developer settings → Personal access tokens →
+           <b>Tokens (classic)</b> → <b>Generate new token</b>.<br>
+           <b>Step 2.</b> Tick <code>repo</code>, generate it, copy the value.<br>
+           <b>Step 3.</b> Paste it below and press <b>Save settings</b>. One time only.
+         </div>`}
+
     <div class="grid">
-      ${fText('__settings.repo', 'Repository', { tip: 'owner/name, e.g. karimcoders/sould-website' })}
-      ${fText('__settings.branch', 'Branch', { tip: 'usually main' })}
-      ${fText('__settings.filePath', 'Content file path', { tip: 'keep as content.json' })}
-      ${fText('__settings.token', 'GitHub access token', { type: 'password' })}
+      ${fSetting('repo', 'Repository', { tip: 'already filled in for you' })}
+      ${fSetting('branch', 'Branch')}
+      ${fSetting('filePath', 'Content file path')}
+      ${fSetting('token', 'GitHub access token', { type: 'password', tip: 'stored in this browser only' })}
+      ${fSetting('endpoint', 'Publish server (optional)', { tip: 'set this and no token is needed at all' })}
     </div>
+
     <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
       <button class="btn btn-primary" data-act="saveSettings">${ic('save', 15)} Save settings</button>
+      <button class="btn btn-ghost" data-act="test">${ic('check', 15)} Test connection</button>
       <button class="btn btn-ok" data-act="publish">${ic('github', 15)} Publish now</button>
-      <a class="btn btn-ghost" href="${S.repo ? 'https://github.com/' + S.repo : '#'}" target="_blank" rel="noopener">${ic('github', 15)} Open repository</a>
+      <a class="btn btn-ghost" href="https://github.com/${esc(S.repo || '')}" target="_blank" rel="noopener">${ic('github', 15)} Open repository</a>
     </div>
+
+    <div style="margin-top:20px">${fSetting('autoPublish', 'Publish automatically after every save', { type: 'checkbox', hint: 'When this is on, <b>Save Draft</b> also pushes straight to the live website — no second click.' })}</div>
+
     <p style="margin-top:14px;font-size:12.5px;color:var(--muted)">
       Current content size: <b>${(size / 1024).toFixed(1)} KB</b>
-      ${size > 900000 ? ' — this is large. Consider using smaller images or linking to image URLs instead of uploading files.' : ''}
+      ${size > 900000 ? ' — large. Prefer image URLs over uploaded files.' : ''}
     </p>
   </div>
 
   <div class="card">
     <h2>Admin password</h2>
-    <p class="hint">Change the password used to open this panel.</p>
-    <div class="grid">
-      ${fText('__settings.password', 'Panel password')}
-    </div>
+    <p class="hint">The password used to open this panel.</p>
+    <div class="grid">${fSetting('password', 'Panel password')}</div>
     <div style="margin-top:16px"><button class="btn btn-primary" data-act="saveSettings">${ic('save', 15)} Save settings</button></div>
   </div>
 
   <div class="card">
     <h2>Danger zone</h2>
-    <p class="hint">Reset everything back to the original website content.</p>
+    <p class="hint">Reset everything back to the original website content. Nothing changes live until you publish.</p>
     <button class="btn btn-danger" data-act="resetAll">${ic('refresh', 15)} Reset to original content</button>
   </div>`;
 }
@@ -902,14 +950,17 @@ function bind() {
 
   document.addEventListener('input', (e) => {
     const el = e.target;
-    const p = el.dataset ? el.dataset.path : null;
-    if (!p) return;
 
-    if (p.startsWith('__settings.')) {
-      S[p.replace('__settings.', '')] = el.value;
+    // ---- settings fields (live-saved, no content touched) ----
+    const sk = el.dataset ? el.dataset.set : null;
+    if (sk) {
+      S[sk] = el.type === 'checkbox' ? el.checked : el.value;
       saveSettings();
       return;
     }
+
+    const p = el.dataset ? el.dataset.path : null;
+    if (!p) return;
     set(p, el.type === 'number' ? Number(el.value) : el.value);
 
     // keep the collapsed item header label in sync while typing
@@ -945,6 +996,16 @@ function bind() {
     const act = el.dataset.act;
     const path = el.dataset.path;
     const i = el.dataset.i != null ? Number(el.dataset.i) : null;
+
+    // checkbox toggles that write straight into the settings object
+    if (el.dataset.set) {
+      S[el.dataset.set] = el.type === 'checkbox' ? el.checked : el.value;
+      saveSettings();
+      if (el.dataset.set === 'autoPublish') {
+        toast(el.checked ? 'Auto-publish is ON — Save will also go live' : 'Auto-publish is OFF', 'ok');
+      }
+      return;
+    }
 
     switch (act) {
       case 'toggle': {
@@ -993,7 +1054,16 @@ function bind() {
       case 'export': exportJson(); break;
       case 'import': importJson(); break;
       case 'publish': publish(); break;
-      case 'saveSettings': saveSettings(); toast('Settings saved', 'ok'); break;
+      case 'saveSettings': {
+        document.querySelectorAll('[data-set]').forEach((el) => {
+          S[el.dataset.set] = el.type === 'checkbox' ? el.checked : el.value;
+        });
+        saveSettings();
+        toast(S.token || S.endpoint ? 'Settings saved — you are ready to publish ✅' : 'Settings saved', 'ok');
+        render();
+        break;
+      }
+      case 'test': testConnection(); break;
       case 'viewSite': window.open('index.html', '_blank'); break;
       case 'logout': localStorage.removeItem(LS_AUTH); location.reload(); break;
       case 'resetAll': {
@@ -1015,7 +1085,13 @@ function saveDraft() {
     localStorage.setItem(LS_DRAFT, JSON.stringify(C));
     dirty = false;
     document.getElementById('dirty')?.classList.remove('on');
-    toast('Draft saved — click Preview to see it on the website', 'ok');
+    if (S.autoPublish && canPublish()) {
+      publish();
+    } else if (S.autoPublish) {
+      toast('Draft saved. Auto-publish is ON but no GitHub token is set yet.', 'err');
+    } else {
+      toast('Draft saved — click Preview to see it on the website', 'ok');
+    }
   } catch (e) {
     toast('Could not save — your browser storage is full. Try using image URLs instead of uploads.', 'err');
   }
@@ -1060,46 +1136,113 @@ function importJson() {
   inp.click();
 }
 
+/** Are we able to publish at all? (either a proxy endpoint or a token) */
+function canPublish() {
+  if (S.endpoint) return true;
+  return Boolean(S.token && S.repo);
+}
+
+/** Publish the current content.
+ *  - If a publish endpoint is configured we POST to it: the GitHub token lives on
+ *    the server, so the client needs no credentials at all.
+ *  - Otherwise we talk to GitHub directly with the saved token. */
 async function publish() {
-  if (!S.token || !S.repo) {
-    toast('Add your GitHub details in Publish & Settings first', 'err');
+  if (!canPublish()) {
+    toast('Add your GitHub access token first (one time only)', 'err');
     active = 'settings';
     render();
     return;
   }
+  try {
+    if (S.endpoint) {
+      toast('Publishing…');
+      const r = await fetch(S.endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ password: S.password, content: C })
+      });
+      const res = await r.json().catch(() => ({}));
+      if (!r.ok || res.ok === false) throw new Error(res.error || res.message || 'Publish failed (' + r.status + ')');
+    } else {
+      await publishDirect();
+    }
+
+    localStorage.setItem(LS_DRAFT, JSON.stringify(C));
+    dirty = false;
+    document.getElementById('dirty')?.classList.remove('on');
+    toast('Published! Your live website updates in about a minute.', 'ok');
+  } catch (e) {
+    toast('Publish failed: ' + e.message, 'err');
+  }
+}
+
+/** Direct commit to GitHub via the REST API (used when no proxy is set). */
+async function publishDirect() {
   const branch = S.branch || 'main';
   const filePath = S.filePath || 'content.json';
   const api = `https://api.github.com/repos/${S.repo}/contents/${filePath}`;
   const headers = { Authorization: `token ${S.token}`, Accept: 'application/vnd.github+json' };
 
+  toast('Publishing…');
+  let sha;
+  const g = await fetch(`${api}?ref=${branch}`, { headers, cache: 'no-store' });
+  if (g.ok) sha = (await g.json()).sha;
+  else if (g.status === 401) throw new Error('your access token is wrong or expired');
+  else if (g.status === 404) throw new Error('repository "' + S.repo + '" or branch "' + branch + '" not found');
+  else {
+    const err = await g.json().catch(() => ({}));
+    throw new Error(err.message || 'Could not read the repository (' + g.status + ')');
+  }
+
+  const body = {
+    message: 'Content update — ' + new Date().toISOString().slice(0, 16).replace('T', ' '),
+    content: b64utf8(JSON.stringify(C, null, 2)),
+    branch
+  };
+  if (sha) body.sha = sha;
+
+  const r = await fetch(api, {
+    method: 'PUT',
+    headers: Object.assign({}, headers, { 'Content-Type': 'application/json' }),
+    body: JSON.stringify(body)
+  });
+  if (!r.ok) {
+    const err = await r.json().catch(() => ({}));
+    if (r.status === 401) throw new Error('your access token is wrong or expired');
+    if (r.status === 403) throw new Error('the token has no write access to this repository');
+    throw new Error(err.message || 'Publish failed (' + r.status + ')');
+  }
+}
+
+/** Health-check used by the "Test connection" button. */
+async function testConnection() {
+  if (S.endpoint) {
+    try {
+      const r = await fetch(S.endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ password: S.password, test: true })
+      });
+      const d = await r.json().catch(() => ({}));
+      if (r.ok && d.ok !== false) toast('Publish server reachable ✅ ' + (d.repo ? '→ ' + d.repo : ''), 'ok');
+      else toast('Publish server said: ' + (d.error || r.status), 'err');
+    } catch (e) {
+      toast('Could not reach the publish server: ' + e.message, 'err');
+    }
+    return;
+  }
+  if (!S.token || !S.repo) { toast('Add a token first', 'err'); return; }
   try {
-    toast('Publishing…');
-    let sha;
-    const g = await fetch(`${api}?ref=${branch}`, { headers, cache: 'no-store' });
-    if (g.ok) sha = (await g.json()).sha;
-    else if (g.status !== 404) {
-      const err = await g.json().catch(() => ({}));
-      throw new Error(err.message || 'Could not read the repository (' + g.status + ')');
-    }
-
-    const body = {
-      message: `CMS: update site content — ${new Date().toISOString().slice(0, 16).replace('T', ' ')}`,
-      content: b64utf8(JSON.stringify(C, null, 2)),
-      branch
-    };
-    if (sha) body.sha = sha;
-
-    const r = await fetch(api, { method: 'PUT', headers: { ...headers, 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
-    if (!r.ok) {
-      const err = await r.json().catch(() => ({}));
-      throw new Error(err.message || 'Publish failed (' + r.status + ')');
-    }
-    localStorage.setItem(LS_DRAFT, JSON.stringify(C));
-    dirty = false;
-    document.getElementById('dirty')?.classList.remove('on');
-    toast('Published! Your live website will update in about a minute.', 'ok');
+    const r = await fetch('https://api.github.com/repos/' + S.repo, {
+      headers: { Authorization: 'token ' + S.token, Accept: 'application/vnd.github+json' }
+    });
+    if (r.ok) {
+      const d = await r.json();
+      toast('Connected ✅ ' + d.full_name + (d.permissions ? ' (can push: ' + d.permissions.push + ')' : ''), 'ok');
+    } else if (r.status === 401) toast('Token is wrong or expired', 'err');
+    else toast('Repository not found — check the name', 'err');
   } catch (e) {
-    toast('Publish failed: ' + e.message, 'err');
+    toast('Connection failed: ' + e.message, 'err');
   }
 }
 
