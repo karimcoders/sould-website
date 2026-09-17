@@ -1,0 +1,16 @@
+# Netlify config — the site is fully static, no build step needed.
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# content.json must never be cached, or the client's publish would not show up
+[[headers]]
+  for = "/content.json"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
