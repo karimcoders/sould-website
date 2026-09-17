@@ -109,7 +109,7 @@
       "title": "Website Development",
       "icon": "globe",
       "img": "assets/1547658719.jpg",
-      "category": "web-mobile",
+      "category": "dev",
       "group": "Web & Mobile",
       "desc": "Custom, fast, and fully responsive websites tailored to your business goals. Designed for seamless user experience, high conversion rates, and search engine visibility.",
       "bullets": [
@@ -166,7 +166,7 @@
       "title": "Mobile App Development",
       "icon": "smartphone",
       "img": "assets/1512941937669.jpg",
-      "category": "web-mobile",
+      "category": "dev",
       "group": "Web & Mobile",
       "desc": "Native and cross-platform mobile applications for iOS and Android. Built with modern architectures, intuitive features, and smooth user interfaces.",
       "bullets": [
@@ -223,7 +223,7 @@
       "title": "Content Creation",
       "icon": "pen-tool",
       "img": "assets/1455390582262.jpg",
-      "category": "content-video",
+      "category": "creative",
       "group": "Content & Video",
       "desc": "Engaging written and visual content that communicates your brand message, boosts organic reach, and connects with your target audience.",
       "bullets": [
@@ -280,7 +280,7 @@
       "title": "Video Production & Editing",
       "icon": "video",
       "img": "assets/1492619375914.jpg",
-      "category": "content-video",
+      "category": "creative",
       "group": "Content & Video",
       "desc": "High-impact video editing and production for Instagram Reels, YouTube Shorts, promotional ads, product videos, and corporate brand showcases.",
       "bullets": [
@@ -336,7 +336,7 @@
       "title": "Social Media Management",
       "icon": "instagram",
       "img": "assets/1611162617213.jpg",
-      "category": "ads-smm",
+      "category": "ads",
       "group": "Paid Ads & SMM",
       "desc": "End-to-end social media growth and management across Instagram, Facebook, and LinkedIn to build a vibrant, loyal community around your brand.",
       "bullets": [
@@ -393,7 +393,7 @@
       "title": "Google Ads & Meta Ads",
       "icon": "target",
       "img": "assets/1460925895917.jpg",
-      "category": "ads-smm",
+      "category": "ads",
       "group": "Paid Ads & SMM",
       "desc": "Targeted paid advertising campaigns on Google Search/Shopping and Meta (Facebook & Instagram) engineered for maximum ROI and quality lead acquisition.",
       "bullets": [
@@ -649,18 +649,18 @@
     },
     {
       "quote": "Soul-D. redesigned our website from simple to visually rich and professional, while keeping the experience easy to use.",
-      "name": "Naveen Kumar Gedha",
-      "role": "Co-Founder, Elionyx"
+      "name": "Naveen Kumar Geddha",
+      "role": "Co-Founder Elionyxtech"
     },
     {
       "quote": "Soul-D. understood our vision quickly and turned it into a digital presence that finally feels like us.",
-      "name": "Karthik Reddy",
-      "role": "Director, Perfect Air Conditioners"
+      "name": "Blue Diamond Auto Services",
+      "role": "Automotive services"
     },
     {
       "quote": "Soul-D. helped us refine website and market us effectively.",
-      "name": "Sneha Iyer",
-      "role": "Marketing Head, Blue Diamond Auto"
+      "name": "Perfect Air Conditioners",
+      "role": "HVAC services"
     }
   ],
   "faqs": [
@@ -683,7 +683,7 @@
   ],
   "works": [
     {
-      "cat": "web-mobile",
+      "cat": "web-apps",
       "chip": "Web & E-Commerce",
       "metric": "+240% Sales Conversion",
       "client": "NexTech Retail Global",
@@ -704,7 +704,7 @@
       "catLabel": "Mobile App"
     },
     {
-      "cat": "web-mobile",
+      "cat": "web-apps",
       "chip": "Mobile App",
       "metric": "150k+ App Installs",
       "client": "FitnessPro Studios",
@@ -723,7 +723,7 @@
       ]
     },
     {
-      "cat": "ads-smm",
+      "cat": "ads",
       "chip": "Performance Marketing",
       "metric": "5.2x Verified ROAS",
       "client": "Aura Lifestyle Apparel",
@@ -743,7 +743,7 @@
       ]
     },
     {
-      "cat": "content-video",
+      "cat": "video",
       "chip": "Video & Content",
       "metric": "4.5M Organic Reel Views",
       "client": "Veloce Smart Tech",
@@ -781,7 +781,7 @@
       ]
     },
     {
-      "cat": "ads-smm",
+      "cat": "ads",
       "chip": "SMM & Organic Growth",
       "metric": "300% Monthly Reservation Spike",
       "client": "Bistro Fine Dining Chain",
@@ -870,15 +870,15 @@
       "label": "All Services"
     },
     {
-      "id": "web-mobile",
+      "id": "dev",
       "label": "Web & Mobile"
     },
     {
-      "id": "ads-smm",
+      "id": "ads",
       "label": "Paid Ads & SMM"
     },
     {
-      "id": "content-video",
+      "id": "creative",
       "label": "Content & Video"
     },
     {
@@ -892,15 +892,15 @@
       "label": "All Projects"
     },
     {
-      "id": "web-mobile",
+      "id": "web-apps",
       "label": "Web & Mobile Apps"
     },
     {
-      "id": "ads-smm",
+      "id": "ads",
       "label": "Ads & Growth"
     },
     {
-      "id": "content-video",
+      "id": "video",
       "label": "Video & Content"
     },
     {
