@@ -224,10 +224,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function bootCms() {
   let content = clone(window.SOULD_DEFAULTS || {});
+  /* 1) content server (agar chal raha ho) — usme hamesha sabse naya content hota hai */
+  let gotServer = false;
   try {
-    const res = await fetch('content.json', { cache: 'no-store' });
-    if (res.ok) content = deepMerge(content, await res.json());
+    const res = await fetch('api/content', { cache: 'no-store' });
+    if (res.ok) {
+      const d = await res.json();
+      if (d && typeof d === 'object' && Object.keys(d).length) { content = deepMerge(content, d); gotServer = true; }
+    }
   } catch (e) {}
+  /* 2) warna published content.json (static / GitHub Pages hosting) */
+  if (!gotServer) {
+    try {
+      const res = await fetch('content.json', { cache: 'no-store' });
+      if (res.ok) content = deepMerge(content, await res.json());
+    } catch (e) {}
+  }
+  checkServer().then((srv) => { if (srv.ok) render(); });
   try {
     const d = localStorage.getItem(LS_DRAFT);
     if (d) content = deepMerge(content, JSON.parse(d));
@@ -314,7 +327,7 @@ function render() {
         <span class="dirty ${dirty ? 'on' : ''}" id="dirty">Unsaved draft</span>
         <button class="btn btn-ghost" data-act="viewSite">${ic('eye', 15)} Preview</button>
         <button class="btn btn-ghost" data-act="discard">${ic('refresh', 15)} Discard</button>
-        <button class="btn btn-primary" data-act="save">${ic('save', 15)} Save Draft</button>
+        <button class="btn btn-primary" data-act="save">${ic('save', 15)} ${SERVER.ok ? 'Save' : 'Save Draft'}</button>
         <button class="btn btn-ok" data-act="publish">${ic('github', 15)} Publish</button>
       </div>
       <div class="content" id="panel">${panel()}</div>
@@ -362,15 +375,17 @@ function viewDashboard() {
   </div>
 
   <div class="card">
-    <h2>${canPublish() ? '✅ Publishing is connected' : '⚠️ Publishing is not connected yet'}</h2>
+    <h2>${SERVER.ok ? '🟢 Live mode — Save dabao, site turant update' : (canPublish() ? '✅ Publishing is connected' : '⚠️ Publishing is not connected yet')}</h2>
     <p class="hint">
-      ${canPublish()
-        ? 'Everything is set up. Edit anything, then press <b>Save Draft</b>.'
-        : 'Open <b>Publish &amp; Settings</b> and paste your GitHub access token once.'}
+      ${SERVER.ok
+        ? 'Aapka apna content server chal raha hai. Koi GitHub nahi chahiye — jo bhi edit karke <b>Save</b> dabayenge, website usi waqt update ho jayegi.'
+        : (canPublish()
+          ? 'Everything is set up. Edit anything, then press <b>Save Draft</b>.'
+          : 'Open <b>Publish &amp; Settings</b> and paste your GitHub access token once — or run the content server for GitHub-free editing.')}
     </p>
     <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:6px">
       <button class="btn ${canPublish() ? 'btn-ghost' : 'btn-primary'}" data-nav="settings">${ic('settings', 15)} ${canPublish() ? 'Publish settings' : 'Set up publishing'}</button>
-      ${canPublish() ? `<button class="btn btn-ok" data-act="publish">${ic('github', 15)} Publish now</button>` : ''}
+      ${SERVER.ok ? `<button class="btn btn-ok" data-act="publish">${ic('save', 15)} Save &amp; go live</button>` : (canPublish() ? `<button class="btn btn-ok" data-act="publish">${ic('github', 15)} Publish now</button>` : '')}
     </div>
   </div>
 
@@ -380,7 +395,7 @@ function viewDashboard() {
     <div class="steps">
       <div class="step"><span class="n">1</span><div><b>Edit &amp; Save Draft</b><span>Change anything on the left. Click <b>Save Draft</b> — only you see this until you publish.</span></div></div>
       <div class="step"><span class="n">2</span><div><b>Preview</b><span>Click <b>Preview</b> to open the website with your draft applied.</span></div></div>
-      <div class="step"><span class="n">3</span><div><b>Publish</b><span>Click <b>Publish</b> to push the new content live. First time, add your GitHub details under <b>Publish &amp; Settings</b>.</span></div></div>
+      <div class="step"><span class="n">3</span><div><b>${SERVER.ok ? 'Save = Live' : 'Publish'}</b><span>${SERVER.ok ? 'Server mode me <b>Save</b> dabaate hi website update ho jaati hai.' : 'Click <b>Publish</b> to push the new content live. First time, add your GitHub details under <b>Publish &amp; Settings</b>.'}</span></div></div>
     </div>
   </div>
 
@@ -833,13 +848,49 @@ function viewExtras() {
 function viewSettings() {
   const size = new Blob([JSON.stringify(C)]).size;
   const connected = canPublish();
+
+  /* ---------------------- server mode: real CMS, no GitHub ---------------------- */
+  if (SERVER.ok) {
+    return `
+  <div class="card">
+    <h2>🟢 Live mode — bina GitHub</h2>
+    <p class="hint">Ye website ek <b>content server</b> se chal rahi hai. Aap sirf password jaante ho —
+      <b>Save</b> dabaate hi content server pe save hota hai aur website turant update ho jaati hai.
+      Na token, na repo, na GitHub.</p>
+    <div class="banner ok">
+      <b>Connected.</b> Content server chal raha hai · auto-backup ON · panel password <code>${esc(S.password)}</code>
+    </div>
+    <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
+      <button class="btn btn-primary" data-act="publish">${ic('save', 15)} Save &amp; go live</button>
+      <button class="btn btn-ghost" data-act="test">${ic('check', 15)} Check server</button>
+    </div>
+    <p style="margin-top:14px;font-size:12.5px;color:var(--muted)">
+      Current content size: <b>${(size / 1024).toFixed(1)} KB</b> · har save ka backup server pe rakha jata hai.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Admin password</h2>
+    <p class="hint">Isi password se panel khulta hai aur server pe save hota hai. Server pe badalne ke liye
+      <code>server/data/config.json</code> edit karo (ya <code>CMS_PASSWORD</code> env var set karo).</p>
+    <div class="grid">${fSetting('password', 'Panel password')}</div>
+    <div style="margin-top:16px"><button class="btn btn-primary" data-act="saveSettings">${ic('save', 15)} Save settings</button></div>
+  </div>
+
+  <div class="card">
+    <h2>Danger zone</h2>
+    <p class="hint">Reset everything back to the original website content.</p>
+    <button class="btn btn-danger" data-act="resetAll">${ic('refresh', 15)} Reset to original content</button>
+  </div>`;
+  }
+
   return `
   <div class="card">
     <h2>${connected ? '✅ Ready to publish' : '⚠️ One-time setup'}</h2>
     <p class="hint">
       ${connected
         ? 'Your website is connected. <b>Save Draft</b> stores your changes and <b>Publish</b> puts them live.'
-        : 'Paste a GitHub access token below <b>once</b> — it is remembered in this browser and you never type it again.'}
+        : 'Do options hain: (1) <b>content server</b> chalao (<code>node server/server.js</code>) — phir koi GitHub hi nahi chahiye; ya (2) token paste karo below <b>once</b>.'}
     </p>
 
     ${connected
@@ -1080,7 +1131,85 @@ function bind() {
 }
 
 /* ---------------------------------------------------------------- actions */
+
+/* ======================================================================
+   CONTENT SERVER MODE  ("CMS bina GitHub")
+   ----------------------------------------------------------------------
+   Jab ye site kisi content-server se serve ho rahi ho (server/server.js),
+   to save karne par content seedha server pe chala jata hai — koi token,
+   koi repo, koi GitHub. Save = turant live (WordPress jaisa).
+   ====================================================================== */
+let SERVER = { checked: false, ok: false, url: '', error: '' };
+
+function serverBase() {
+  if (S.endpoint) return String(S.endpoint).replace(/\/publish\/?$/, '');
+  return '';
+}
+
+async function checkServer(force) {
+  if (SERVER.checked && !force) return SERVER;
+  SERVER = { checked: true, ok: false, url: serverBase(), error: '' };
+  try {
+    const r = await fetch('api/content', { cache: 'no-store' });
+    if (r.ok) {
+      const d = await r.json().catch(() => null);
+      if (d && typeof d === 'object' && Object.keys(d).length) {
+        SERVER.ok = true;
+        SERVER.sameOrigin = true;
+      }
+    }
+  } catch (e) { SERVER.error = e.message; }
+  if (!SERVER.ok && S.endpoint) {
+    try {
+      const r = await fetch(serverBase() + '/api/health', { cache: 'no-store' });
+      if (r.ok) SERVER.ok = true;
+    } catch (e) {}
+  }
+  return SERVER;
+}
+
+async function serverSave() {
+  const base = SERVER.sameOrigin ? '' : serverBase();
+  const r = await fetch(base + '/api/save', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ password: S.password, content: C })
+  });
+  const d = await r.json().catch(() => ({}));
+  if (!r.ok || d.ok === false) throw new Error(d.error || 'Save failed (' + r.status + ')');
+  return d;
+}
+
+async function serverUpload(name, dataUrl) {
+  const base = SERVER.sameOrigin ? '' : serverBase();
+  const r = await fetch(base + '/api/upload', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ password: S.password, name, dataUrl })
+  });
+  const d = await r.json().catch(() => ({}));
+  if (!r.ok || !d.ok) throw new Error(d.error || 'Upload failed');
+  return d.url;
+}
+
+/** Save → live (server mode) */
+async function saveLive() {
+  if (!SERVER.ok) { const s = await checkServer(true); if (!s.ok) throw new Error('Content server not reachable'); }
+  const d = await serverSave();
+  localStorage.setItem(LS_DRAFT, JSON.stringify(C));
+  dirty = false;
+  document.getElementById('dirty')?.classList.remove('on');
+  toast('Saved to your server — the website is live now ✅', 'ok');
+  render();
+  return d;
+}
+
 function saveDraft() {
+  /* Content-server mode → Save IS the update (koi GitHub nahi chahiye) */
+  if (SERVER.ok) {
+    saveLive().catch((e) => toast('Save failed: ' + e.message + ' — password theek hai?', 'err'));
+    return;
+  }
   try {
     localStorage.setItem(LS_DRAFT, JSON.stringify(C));
     dirty = false;
@@ -1138,6 +1267,7 @@ function importJson() {
 
 /** Are we able to publish at all? (either a proxy endpoint or a token) */
 function canPublish() {
+  if (SERVER.ok) return true;
   if (S.endpoint) return true;
   return Boolean(S.token && S.repo);
 }
@@ -1147,6 +1277,10 @@ function canPublish() {
  *    the server, so the client needs no credentials at all.
  *  - Otherwise we talk to GitHub directly with the saved token. */
 async function publish() {
+  if (SERVER.ok) {
+    try { await saveLive(); } catch (e) { toast('Save failed: ' + e.message, 'err'); }
+    return;
+  }
   if (!canPublish()) {
     toast('Add your GitHub access token first (one time only)', 'err');
     active = 'settings';
@@ -1216,6 +1350,16 @@ async function publishDirect() {
 
 /** Health-check used by the "Test connection" button. */
 async function testConnection() {
+  const srv = await checkServer(true);
+  if (srv.ok) {
+    try {
+      await serverSave();
+      toast('Content server connected ✅  Save dabao aur site turant live ho jayegi.', 'ok');
+    } catch (e) {
+      toast('Server mila, lekin password galat lag raha hai: ' + e.message, 'err');
+    }
+    return;
+  }
   if (S.endpoint) {
     try {
       const r = await fetch(S.endpoint, {
