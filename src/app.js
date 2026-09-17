@@ -127,7 +127,7 @@ function Header(route) {
 
   return `
   <header class="site-header" id="siteHeader">
-    <div class="shell-wide">
+    <div class="shell-full">
       <div class="bar">
         <div class="brand-col-wrap">
           <a class="brand" href="#/" aria-label="Soul-D. home">
@@ -187,7 +187,7 @@ function Footer() {
 
   return `
   <footer class="footer">
-    <div class="shell-wide">
+    <div class="shell">
       <div class="footer-grid">
         <div class="brand-col">
           <a href="#/" class="brand" aria-label="Soul-D. home">
@@ -359,7 +359,7 @@ function Home() {
   </section>
 
   <section class="sec sec-light" id="about">
-    <div class="shell-wide">
+    <div class="shell">
       <div class="stats">
         <div class="stats-grid">
           ${CONTENT.stats.map(
@@ -400,7 +400,7 @@ function Home() {
   </section>
 
   <section class="sec sec-dark" id="what-we-do">
-    <div class="shell-wide">
+    <div class="shell">
       <div class="strategy-head">
         <h2 class="title reveal">${rich(CONTENT.copy.homeStrategyTitle)}</h2>
         <p class="kicker reveal">${esc(CONTENT.copy.homeStrategyText)}</p>
@@ -420,7 +420,7 @@ function Home() {
   </section>
 
   <section class="sec sec-gray" id="our-work" style="padding:60px 0 96px">
-    <div class="shell-wide">
+    <div class="shell">
       <div class="center reveal" style="margin-bottom:64px">
         <h2 class="title" style="margin-bottom:16px">${rich(CONTENT.copy.homeRecognitionTitle)}</h2>
         <p style="color:var(--muted-2);font-size:30px;line-height:1.5;max-width:1000px;margin:0 auto">${esc(CONTENT.copy.homeRecognitionText)}</p>
@@ -466,7 +466,7 @@ function Home() {
   <section class="sec sec-black" id="custom-proposal">
     <div class="glow-1"></div>
     <div class="glow-2"></div>
-    <div class="shell-wide">
+    <div class="shell">
       <div class="proposal">
         <div class="reveal">
           <h2 class="title" style="margin-bottom:20px">${rich(CONTENT.copy.homeProposalTitle)}</h2>
