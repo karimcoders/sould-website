@@ -6,9 +6,7 @@ list on the site — without touching code.
 
 ---
 
-## 🔗 Links
-
-### 🌍 Live right now
+## 🌍 Live URLs
 
 | | |
 |---|---|
@@ -18,62 +16,87 @@ list on the site — without touching code.
 
 ---
 
+## 🚀 Publishing — three options
+
+### Option 1 · Auto-publish (what most people want) ⭐
+
+1. Open **Publish & Settings**.
+2. Repository / Branch / Content file are **already filled in** — leave them.
+3. Paste a GitHub access token once, press **Save settings**.
+4. Tick **"Publish automatically after every save"**.
+5. Done. From now on the client just edits and presses **Save Draft** — it goes
+   live by itself, ~1 minute later.
+
+> **Getting the token:** GitHub → Settings → Developer settings → Personal access
+> tokens → **Tokens (classic)** → Generate new token → tick **`repo`** → copy.
+> It is stored **only in the client's browser**, never in the website files, and
+> never visible to visitors.
+
+### Option 2 · No token for the client at all (most secure)
+
+Deploy the tiny **publish server** in `proxy/` once. The GitHub token then lives on
+the server and the client only ever types the CMS password.
+
+**Cloudflare Worker** (free, ~2 minutes) — paste `proxy/cloudflare-worker.js` into a
+new Worker, then add these variables under *Settings → Variables*:
+
+| Variable | Value |
+|---|---|
+| `GH_TOKEN` | your GitHub token (`repo` scope) |
+| `GH_REPO` | `karimcoders/sould-website` |
+| `GH_BRANCH` | `main` |
+| `GH_FILE` | `content.json` |
+| `CMS_PASSWORD` | the CMS password |
+| `ALLOW_ORIGIN` | `https://karimcoders.github.io` (optional lock-down) |
+
+Copy the worker URL (`https://xxxx.workers.dev`) into the CMS →
+**Publish & Settings → "Publish server (optional)"**. The token box can then be
+left empty — the client never sees GitHub at all.
+
+`proxy/vercel-api/publish.js` does the same job on Vercel (`api/publish.js`) or
+Netlify (`netlify/functions/publish.js`) with the same environment variables.
+
+### Option 3 · Manual backup
+
+**Dashboard → Export content.json**, edit it by hand if you must, and commit it.
+
+---
+
 ## ✨ What the client can edit (100% of the site)
 
 | CMS section | Controls |
 |---|---|
-| **Dashboard** | Overview, publish steps, backup / restore |
+| **Dashboard** | Publishing status, step-by-step help, backup / restore |
 | **Page Text** | Every heading, paragraph and button label on all pages |
 | **Brand & Contact** | Business name, tagline, email, phone, WhatsApp, address, hours, social links, logos |
 | **Hero Slideshow** | Home page background images (add / remove / reorder) |
 | **Page Headings** | Banner titles for Services, Work, About, Contact + all CTA blocks |
-| **Services** | 8 services — name, slug, icon, category, description, feature bullets, image, and the project cards inside each one |
-| **Case Studies** | Our Work page projects — client, title, result badge, description, highlights, tags, image |
-| **Testimonials** | Client reviews (shown 3 at a time) |
+| **Services** | 8 services — name, slug, icon, category, description, bullets, image, and the project cards inside each one |
+| **Case Studies** | Our Work projects — client, title, result badge, description, highlights, tags, image |
+| **Testimonials** | Client reviews (3 shown at a time) |
 | **FAQ** | Questions + answers |
-| **About & Team** | Company values, team cards, the two collage photos, "what we do" list |
-| **Stats / Process / Logos** | The 4 counters, delivery process steps, client logo strip, filter labels |
-| **Publish & Settings** | GitHub connection, password, exports, reset |
+| **About & Team** | Company values, team cards, collage photos, "what we do" list |
+| **Stats / Process / Logos** | The 4 counters, delivery steps, client logo strip, filter labels |
+| **Publish & Settings** | GitHub connection, auto-publish, publish server, password, reset |
 
-**Formatted text:** type `[b]blue text[/b]` to colour words Soul-D blue — used for
-headlines like `The Best [b]Digital Marketing[/b]`.
-
----
-
-## 🚀 How the client publishes (3 clicks)
-
-1. **Edit** anything, click **Save Draft** → saved privately in their browser.
-2. Click **Preview** → see the change on the real website instantly.
-3. Click **Publish** → content is committed to `content.json` on GitHub and the
-   live site updates in about a minute.
-
-Before the first publish, open **Publish & Settings** and fill in:
-
-| Field | Example |
-|---|---|
-| Repository | `karimcoders/sould-website` |
-| Branch | `main` |
-| Content file path | `content.json` |
-| GitHub access token | a fine-grained token with **Contents: Read & write** |
-
-> The token is stored **only in the client's browser** (localStorage). It is never
-> written into the website files and never visible to visitors. Treat it like a password.
-> Create one at **GitHub → Settings → Developer settings → Personal access tokens**.
+**Formatted text:** type `[b]blue text[/b]` to colour words Soul-D blue — e.g.
+`The Best [b]Digital Marketing[/b]`.
 
 ---
 
 ## 🧱 How it works
 
 ```
-index.html          loads defaults → content.json        → localStorage draft   → renders
-admin.html          edits the same structure, writes the draft, publishes content.json
-content.json        the single source of truth for all site content
-src/content-defaults.js   the built-in fallback (the original site content)
+index.html          defaults → content.json → localStorage draft → renders
+admin.html          edits the same structure, saves the draft, publishes
+content.json        single source of truth for all site content
+src/content-defaults.js   built-in fallback (the original site content)
 src/app.js          the website  (router + components, renders from CONTENT)
 src/admin.js        the CMS      (form builders for every content type)
 src/styles.css      website styles
 src/admin.css       admin styles
 assets/             photos, logos, fonts
+proxy/              optional serverless publisher (no client token)
 ```
 
 **Three content layers**, lowest priority first:
@@ -83,23 +106,19 @@ assets/             photos, logos, fonts
 
 ---
 
-## 🌐 Deploying it live
+## 🌐 Deploying to your own domain
 
-The repo is a plain static site — no build step.
+Plain static site — no build step.
 
-**Netlify (recommended):** New site → Import from GitHub → pick `sould-website` →
-leave build command empty, publish directory `.`  → Deploy.
+**Netlify:** New site → Import from GitHub → publish directory `.` → Deploy.
 `netlify.toml` already disables caching for `content.json`.
 
-**Vercel:** New Project → import the repo → Framework preset **Other** → Deploy.
+**Vercel:** New Project → import repo → Framework preset **Other** → Deploy.
 `vercel.json` is included.
 
-**GitHub Pages:** already enabled on this repo —
-https://karimcoders.github.io/sould-website/ (Settings → Pages → `main` / root).
+**GitHub Pages:** already enabled (Settings → Pages → `main` / root).
 
-**Own hosting / cPanel:** upload everything in this folder to `public_html`.
-
-Point the domain at it and you're finished.
+**cPanel / own hosting:** upload everything in this folder to `public_html`.
 
 ---
 
@@ -120,7 +139,8 @@ server config.
 ## 🔒 Notes
 
 - Change the admin password on first login.
+- Revoke any token that has been shared in a chat and generate a fresh one.
 - The contact form validates and confirms but does not send email yet — wire it to
   Formspree / EmailJS / a backend when you're ready.
-- If an uploaded image makes content bigger than ~1 MB, the CMS warns you; prefer
-  uploading compressed photos.
+- If an uploaded image pushes the content over ~1 MB the CMS warns you; prefer
+  compressed photos or image URLs.
