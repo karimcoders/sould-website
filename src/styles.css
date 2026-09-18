@@ -163,7 +163,12 @@ svg { flex-shrink: 0; }
   min-width: 268px; background: #0f1424; border: 1px solid #1e293b; border-radius: 14px;
   padding: 10px; box-shadow: 0 24px 50px rgba(0, 0, 0, .5);
   opacity: 0; visibility: hidden; transition: all .2s ease;
+  max-height: calc(100vh - 130px); overflow-y: auto; overscroll-behavior: contain;
 }
+/* jab bahut saare services ho (10+) to dropdown do column me */
+.nav-menu.many { width: min(620px, calc(100vw - 48px)); display: grid; grid-template-columns: 1fr 1fr; gap: 2px 8px; }
+.nav-menu.many a { font-size: 13.5px; padding: 8px 10px; }
+@media (max-width: 1200px) { .nav-menu.many { width: min(520px, calc(100vw - 40px)); } }
 .nav-drop:hover .nav-menu { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
 .nav-menu a {
   display: block; padding: 9px 12px; border-radius: 9px; font-size: 14px;
