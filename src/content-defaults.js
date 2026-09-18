@@ -151,7 +151,6 @@ window.SOULD_DEFAULTS = {
       "detailLead": "High-converting digital experiences for ambitious brands.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "+186% Online Orders",
           "client": "Atlas Retail Group",
           "title": "Atlas Commerce Platform",
@@ -167,10 +166,10 @@ window.SOULD_DEFAULTS = {
             "E-commerce",
             "SEO",
             "Performance"
-          ]
+          ],
+          "chip": "Featured Build"
         },
         {
-          "badge": "Project Card",
           "metric": "4x More Qualified Leads",
           "client": "Foundry Creative Co.",
           "title": "Foundry Studio Website Redesign",
@@ -186,7 +185,8 @@ window.SOULD_DEFAULTS = {
             "CMS",
             "UI Motion",
             "Lead Gen"
-          ]
+          ],
+          "chip": "Growth Case"
         }
       ]
     },
@@ -208,7 +208,6 @@ window.SOULD_DEFAULTS = {
       "detailLead": "Mobile products built to engage users and scale fast.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "160k+ Installs",
           "client": "PulseFit Studios",
           "title": "PulseFit Mobile Companion",
@@ -224,10 +223,10 @@ window.SOULD_DEFAULTS = {
             "Firebase",
             "Subscriptions",
             "Push Alerts"
-          ]
+          ],
+          "chip": "Mobile Product"
         },
         {
-          "badge": "Project Card",
           "metric": "30% Faster Dispatch",
           "client": "Northline Logistics",
           "title": "FleetOps Driver Portal",
@@ -243,7 +242,8 @@ window.SOULD_DEFAULTS = {
             "Android",
             "Operations",
             "Realtime"
-          ]
+          ],
+          "chip": "Platform Build"
         }
       ]
     },
@@ -265,7 +265,6 @@ window.SOULD_DEFAULTS = {
       "detailLead": "Content systems that turn attention into action.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "7.4M Organic Views",
           "client": "Nova Skin Care",
           "title": "Launch Week Content Engine",
@@ -281,10 +280,10 @@ window.SOULD_DEFAULTS = {
             "Creative Direction",
             "Social",
             "SEO"
-          ]
+          ],
+          "chip": "Content System"
         },
         {
-          "badge": "Project Card",
           "metric": "61% More Inbound Demos",
           "client": "Vector Analytics",
           "title": "B2B Thought Leadership Suite",
@@ -300,7 +299,8 @@ window.SOULD_DEFAULTS = {
             "Blog",
             "Lead Gen",
             "Brand Voice"
-          ]
+          ],
+          "chip": "Product Copy"
         }
       ]
     },
@@ -322,7 +322,6 @@ window.SOULD_DEFAULTS = {
       "detailLead": "Campaign visuals designed to stop the scroll.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "4.1M Reel Views",
           "client": "Vertex Audio",
           "title": "Launch Film for Vertex Audio",
@@ -338,10 +337,10 @@ window.SOULD_DEFAULTS = {
             "Motion Graphics",
             "Color Grade",
             "Sound Design"
-          ]
+          ],
+          "chip": "Video Campaign"
         },
         {
-          "badge": "Project Card",
           "metric": "11x CTR Lift",
           "client": "Arc AI Tools",
           "title": "Product Demo Motion Suite",
@@ -356,7 +355,8 @@ window.SOULD_DEFAULTS = {
             "Promo Video",
             "A/B Testing",
             "Direct Response"
-          ]
+          ],
+          "chip": "Reels & Ads"
         }
       ]
     },
@@ -378,7 +378,6 @@ window.SOULD_DEFAULTS = {
       "detailLead": "Social growth plans that build durable audiences.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "320% Reservation Growth",
           "client": "Cedar House Hotels",
           "title": "Hospitality Growth Calendar",
@@ -394,10 +393,10 @@ window.SOULD_DEFAULTS = {
             "Facebook",
             "Content Calendar",
             "Community"
-          ]
+          ],
+          "chip": "Community Growth"
         },
         {
-          "badge": "Project Card",
           "metric": "2.8M Impressions",
           "client": "Mira Capital",
           "title": "Founder Brand Social Playbook",
@@ -413,7 +412,8 @@ window.SOULD_DEFAULTS = {
             "Instagram",
             "Strategy",
             "Reporting"
-          ]
+          ],
+          "chip": "Paid Social"
         }
       ]
     },
@@ -435,7 +435,6 @@ window.SOULD_DEFAULTS = {
       "detailLead": "Performance marketing with measurable growth.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "5.2x ROAS",
           "client": "Aura Lifestyle Apparel",
           "title": "Omnichannel Growth Campaign",
@@ -451,10 +450,10 @@ window.SOULD_DEFAULTS = {
             "Google Ads",
             "Retargeting",
             "Analytics"
-          ]
+          ],
+          "chip": "Paid Acquisition"
         },
         {
-          "badge": "Project Card",
           "metric": "3.6x Qualified Leads",
           "client": "Nimbus Workflow",
           "title": "Lead Gen Funnel for B2B SaaS",
@@ -469,7 +468,8 @@ window.SOULD_DEFAULTS = {
             "Search",
             "Retargeting",
             "Landing Pages"
-          ]
+          ],
+          "chip": "Performance"
         }
       ]
     },
@@ -492,7 +492,6 @@ window.SOULD_DEFAULTS = {
       "detailLead": "Executive presence built for trust and authority.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "Forbes Feature Ready",
           "client": "Dr. A. Sharma",
           "title": "Executive Portfolio for a FinTech Founder",
@@ -508,10 +507,10 @@ window.SOULD_DEFAULTS = {
             "Portfolio",
             "LinkedIn",
             "PR"
-          ]
+          ],
+          "chip": "Case Study"
         },
         {
-          "badge": "Project Card",
           "metric": "12 Speaking Inquiries",
           "client": "Ava Mensah, Design Strategist",
           "title": "Creator Authority Website",
@@ -526,7 +525,8 @@ window.SOULD_DEFAULTS = {
             "Executive Site",
             "Media Kit",
             "Authority"
-          ]
+          ],
+          "chip": "Project"
         }
       ]
     },
@@ -548,7 +548,6 @@ window.SOULD_DEFAULTS = {
       "detailLead": "Brand systems that make new offers memorable.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "Retail Launch Ready",
           "client": "Luma Home Goods",
           "title": "Signature Product Identity System",
@@ -564,10 +563,10 @@ window.SOULD_DEFAULTS = {
             "Identity",
             "Guidelines",
             "Positioning"
-          ]
+          ],
+          "chip": "Case Study"
         },
         {
-          "badge": "Project Card",
           "metric": "2x Brand Recall",
           "client": "Urban Nest Interiors",
           "title": "Service Brand Refresh for Growth Stage",
@@ -582,7 +581,8 @@ window.SOULD_DEFAULTS = {
             "Brand Strategy",
             "Visual Identity",
             "Launch"
-          ]
+          ],
+          "chip": "Project"
         }
       ]
     },
@@ -604,7 +604,6 @@ window.SOULD_DEFAULTS = {
       "detailLead": "Websites your team can run — no developer needed for everyday updates.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "-80% Update Time",
           "client": "Manalot",
           "title": "Manalot CMS Rebuild",
@@ -619,10 +618,10 @@ window.SOULD_DEFAULTS = {
             "WordPress",
             "Elementor Pro",
             "ACF"
-          ]
+          ],
+          "chip": "CMS Build"
         },
         {
-          "badge": "Project Card",
           "metric": "12 Sites, 1 Stack",
           "client": "Edubuk",
           "title": "Edubuk Multi-Site Setup",
@@ -637,7 +636,8 @@ window.SOULD_DEFAULTS = {
             "CMS",
             "Multi-site",
             "Templates"
-          ]
+          ],
+          "chip": "Multi-Site"
         }
       ]
     },
@@ -659,7 +659,6 @@ window.SOULD_DEFAULTS = {
       "detailLead": "From first sketch to production — one codebase, one team.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "3 Weeks to Launch",
           "client": "FitnessPro Studios",
           "title": "FitnessPro Member Platform",
@@ -674,10 +673,10 @@ window.SOULD_DEFAULTS = {
             "Next.js",
             "Node.js",
             "PostgreSQL"
-          ]
+          ],
+          "chip": "Product Build"
         },
         {
-          "badge": "Project Card",
           "metric": "99.9% Uptime",
           "client": "Elionyx",
           "title": "Elionyx Operations Portal",
@@ -692,7 +691,8 @@ window.SOULD_DEFAULTS = {
             "React",
             "REST API",
             "Cloud"
-          ]
+          ],
+          "chip": "Internal Tool"
         }
       ]
     },
@@ -714,7 +714,6 @@ window.SOULD_DEFAULTS = {
       "detailLead": "Software that runs your operation — not just your website.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "+63% Closing Rate",
           "client": "Aura Lifestyle Apparel",
           "title": "Aura Sales CRM",
@@ -729,10 +728,10 @@ window.SOULD_DEFAULTS = {
             "CRM",
             "Automation",
             "Dashboards"
-          ]
+          ],
+          "chip": "CRM Build"
         },
         {
-          "badge": "Project Card",
           "metric": "40 Hrs Saved / Month",
           "client": "Sai Estates",
           "title": "Sai Estates Property System",
@@ -747,7 +746,8 @@ window.SOULD_DEFAULTS = {
             "PMS",
             "System Design",
             "Reports"
-          ]
+          ],
+          "chip": "PMS Build"
         }
       ]
     },
@@ -769,7 +769,6 @@ window.SOULD_DEFAULTS = {
       "detailLead": "Let automation handle the repetitive work — your team handles growth.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "68% Faster Replies",
           "client": "Edubuk",
           "title": "Edubuk AI Support Assistant",
@@ -784,10 +783,10 @@ window.SOULD_DEFAULTS = {
             "AI Assistant",
             "RAG",
             "API"
-          ]
+          ],
+          "chip": "AI Feature"
         },
         {
-          "badge": "Project Card",
           "metric": "9 Hrs Saved / Week",
           "client": "Blue Diamond Auto Services",
           "title": "Automated Enquiry Engine",
@@ -802,7 +801,8 @@ window.SOULD_DEFAULTS = {
             "Automation",
             "WhatsApp API",
             "CRM"
-          ]
+          ],
+          "chip": "Automation"
         }
       ]
     },
@@ -824,7 +824,6 @@ window.SOULD_DEFAULTS = {
       "detailLead": "Stores engineered for orders, not just for looks.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "2.4x Revenue",
           "client": "SipLab",
           "title": "SipLab D2C Store",
@@ -839,10 +838,10 @@ window.SOULD_DEFAULTS = {
             "Shopify",
             "CRO",
             "Payments"
-          ]
+          ],
+          "chip": "Shopify Build"
         },
         {
-          "badge": "Project Card",
           "metric": "-35% Cart Abandonment",
           "client": "NexTech Retail Global",
           "title": "WooCommerce Optimisation",
@@ -857,7 +856,8 @@ window.SOULD_DEFAULTS = {
             "WooCommerce",
             "UX",
             "Analytics"
-          ]
+          ],
+          "chip": "WooCommerce"
         }
       ]
     },
@@ -879,7 +879,6 @@ window.SOULD_DEFAULTS = {
       "detailLead": "Where everything connects — reliable, secure and documented.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "12 APIs, 1 Platform",
           "client": "Elionyx",
           "title": "Elionyx Integration Layer",
@@ -894,10 +893,10 @@ window.SOULD_DEFAULTS = {
             "REST API",
             "Node.js",
             "Security"
-          ]
+          ],
+          "chip": "API Platform"
         },
         {
-          "badge": "Project Card",
           "metric": "Zero Downtime",
           "client": "Perfect Air Conditioners",
           "title": "Booking & Payments API",
@@ -912,7 +911,8 @@ window.SOULD_DEFAULTS = {
             "API",
             "Migration",
             "Monitoring"
-          ]
+          ],
+          "chip": "Live Migration"
         }
       ]
     },
@@ -934,7 +934,6 @@ window.SOULD_DEFAULTS = {
       "detailLead": "Design decisions first — guesswork never.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "-42% Task Time",
           "client": "Manalot",
           "title": "Manalot Dashboard UX",
@@ -949,10 +948,10 @@ window.SOULD_DEFAULTS = {
             "Figma",
             "UX Research",
             "Design System"
-          ]
+          ],
+          "chip": "UX Overhaul"
         },
         {
-          "badge": "Project Card",
           "metric": "2x Signups",
           "client": "Edubuk",
           "title": "Edubuk Onboarding Flow",
@@ -967,7 +966,8 @@ window.SOULD_DEFAULTS = {
             "Prototyping",
             "CRO",
             "Mobile UX"
-          ]
+          ],
+          "chip": "Onboarding"
         }
       ]
     },
@@ -989,7 +989,6 @@ window.SOULD_DEFAULTS = {
       "detailLead": "Rankings that hold — from audit to reporting.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "+180% Organic Traffic",
           "client": "Edubuk",
           "title": "Edubuk Organic Growth",
@@ -1004,10 +1003,10 @@ window.SOULD_DEFAULTS = {
             "Technical SEO",
             "Content",
             "Schema"
-          ]
+          ],
+          "chip": "Organic Growth"
         },
         {
-          "badge": "Project Card",
           "metric": "1.1s LCP",
           "client": "Perfect Air Conditioners",
           "title": "Core Web Vitals Rescue",
@@ -1022,7 +1021,8 @@ window.SOULD_DEFAULTS = {
             "Performance",
             "Caching",
             "Images"
-          ]
+          ],
+          "chip": "Performance"
         }
       ]
     }
