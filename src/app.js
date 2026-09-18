@@ -142,7 +142,7 @@ function Header(route) {
             <a class="nav-link ${isActive('/services') ? 'active' : ''}" href="#/services">
               Services ${icon('chevron-down', 14)}
             </a>
-            <div class="nav-menu${CONTENT.services.length > 10 ? ' many' : ''}">${svcLinks}</div>
+            <div class="nav-menu">${svcLinks}</div>
           </div>
           <a href="#/work" class="${route.path === '/work' ? 'active' : ''}">${esc(CONTENT.copy.navWork)}</a>
           <a href="#/about" class="${route.path === '/about' ? 'active' : ''}">${esc(CONTENT.copy.navAbout)}</a>
@@ -647,7 +647,7 @@ function workCard(w) {
   <article class="work-card" data-cat="${w.cat}">
     <div class="work-media">
       <img src="${w.img}" alt="${esc(w.title)}" loading="lazy">
-      <span class="chip">${esc(w.chip)}</span>
+      <span class="chip">${esc(w.chip || w.badge || 'Project Card')}</span>
       <span class="chip-metric">${esc(w.metric)}</span>
     </div>
     <div class="work-body">
