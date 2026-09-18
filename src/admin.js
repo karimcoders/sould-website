@@ -587,11 +587,12 @@ function viewServices() {
   const arr = get('services') || [];
   const ICONS = ['globe', 'smartphone', 'pen-tool', 'video', 'instagram', 'target', 'user-round', 'package', 'message', 'send', 'bar-chart', 'shield-check', 'users', 'heart', 'zap', 'clock'];
   const CATS = [
-    ['web-mobile', 'Web & Mobile'],
-    ['ads-smm', 'Paid Ads & SMM'],
-    ['content-video', 'Content & Video'],
-    ['branding', 'Branding & Portfolios']
-  ];
+  ['dev', 'Web & Mobile — websites, apps, CMS & e-commerce'],
+  ['systems', 'AI & Systems — CRM/PMS, AI features, backend & APIs'],
+  ['ads', 'Ads, SEO & Growth'],
+  ['creative', 'Content & Video'],
+  ['branding', 'Branding & Portfolios']
+];
   return `
   <div class="banner">
     Each service automatically appears on the home carousel, the Services page and the footer.
@@ -652,9 +653,9 @@ function viewServices() {
 function viewWork() {
   const arr = get('works') || [];
   const CATS = [
-    ['web-mobile', 'Web & Mobile Apps'],
-    ['ads-smm', 'Ads & Growth'],
-    ['content-video', 'Video & Content'],
+    ['web-apps', 'Web & Mobile Apps'],
+    ['ads', 'Ads & Growth'],
+    ['video', 'Video & Content'],
     ['branding', 'Branding']
   ];
   return `
