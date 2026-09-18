@@ -134,315 +134,895 @@ window.SOULD_DEFAULTS = {
 
   services:   [
     {
-      id: 'web-dev',
-      num: 1,
-      title: 'Website Development',
-      icon: 'globe',
-      img: 'assets/1547658719.jpg',
-      category: 'web-mobile',
-      group: 'Web & Mobile',
-      desc: 'Custom, fast, and fully responsive websites tailored to your business goals. Designed for seamless user experience, high conversion rates, and search engine visibility.',
-      bullets: [
-        'Custom Responsive Layouts & UI/UX',
-        'High-Speed Performance & Security',
-        'SEO & Mobile Optimization',
-        'E-commerce & CMS Integration'
+      "id": "web-dev",
+      "num": 1,
+      "title": "Website Development",
+      "icon": "globe",
+      "img": "assets/1547658719.jpg",
+      "category": "dev",
+      "group": "Web & Mobile",
+      "desc": "Custom, fast, and fully responsive websites tailored to your business goals. Designed for seamless user experience, high conversion rates, and search engine visibility.",
+      "bullets": [
+        "Custom Responsive Layouts & UI/UX",
+        "High-Speed Performance & Security",
+        "SEO & Mobile Optimization",
+        "E-commerce & CMS Integration"
       ],
-      detailLead: 'High-converting digital experiences for ambitious brands.',
-      projects: [
+      "detailLead": "High-converting digital experiences for ambitious brands.",
+      "projects": [
         {
-          badge: 'Project Card',
-          metric: '+186% Online Orders',
-          client: 'Atlas Retail Group',
-          title: 'Atlas Commerce Platform',
-          desc: 'A conversion-focused storefront with custom product discovery, CMS workflows, and streamlined checkout for growing retail teams.',
-          img: 'assets/1557821552.jpg',
-          highlights: ['1.8s average load time', '+186% order growth', '38% lower bounce rate'],
-          tags: ['Next.js', 'E-commerce', 'SEO', 'Performance']
+          "badge": "Project Card",
+          "metric": "+186% Online Orders",
+          "client": "Atlas Retail Group",
+          "title": "Atlas Commerce Platform",
+          "desc": "A conversion-focused storefront with custom product discovery, CMS workflows, and streamlined checkout for growing retail teams.",
+          "img": "assets/1557821552.jpg",
+          "highlights": [
+            "1.8s average load time",
+            "+186% order growth",
+            "38% lower bounce rate"
+          ],
+          "tags": [
+            "Next.js",
+            "E-commerce",
+            "SEO",
+            "Performance"
+          ]
         },
         {
-          badge: 'Project Card',
-          metric: '4x More Qualified Leads',
-          client: 'Foundry Creative Co.',
-          title: 'Foundry Studio Website Redesign',
-          desc: 'A premium marketing website with interactive case-study sections, lead funnels, and a bold brand system built for trust.',
-          img: 'assets/1522542550221.jpg',
-          highlights: ['4x lead increase', '92% mobile score', 'Custom CMS content'],
-          tags: ['Brand Site', 'CMS', 'UI Motion', 'Lead Gen']
+          "badge": "Project Card",
+          "metric": "4x More Qualified Leads",
+          "client": "Foundry Creative Co.",
+          "title": "Foundry Studio Website Redesign",
+          "desc": "A premium marketing website with interactive case-study sections, lead funnels, and a bold brand system built for trust.",
+          "img": "assets/1522542550221.jpg",
+          "highlights": [
+            "4x lead increase",
+            "92% mobile score",
+            "Custom CMS content"
+          ],
+          "tags": [
+            "Brand Site",
+            "CMS",
+            "UI Motion",
+            "Lead Gen"
+          ]
         }
       ]
     },
     {
-      id: 'app-dev',
-      num: 2,
-      title: 'Mobile App Development',
-      icon: 'smartphone',
-      img: 'assets/1512941937669.jpg',
-      category: 'web-mobile',
-      group: 'Web & Mobile',
-      desc: 'Native and cross-platform mobile applications for iOS and Android. Built with modern architectures, intuitive features, and smooth user interfaces.',
-      bullets: [
-        'iOS & Android Cross-Platform Apps',
-        'Intuitive UI/UX Interface Design',
-        'API Integration & Cloud Backend',
-        'App Store & Play Store Publishing'
+      "id": "app-dev",
+      "num": 2,
+      "title": "Mobile App Development",
+      "icon": "smartphone",
+      "img": "assets/1512941937669.jpg",
+      "category": "dev",
+      "group": "Web & Mobile",
+      "desc": "Native and cross-platform mobile applications for iOS and Android. Built with modern architectures, intuitive features, and smooth user interfaces.",
+      "bullets": [
+        "iOS & Android Cross-Platform Apps",
+        "Intuitive UI/UX Interface Design",
+        "API Integration & Cloud Backend",
+        "App Store & Play Store Publishing"
       ],
-      detailLead: 'Mobile products built to engage users and scale fast.',
-      projects: [
+      "detailLead": "Mobile products built to engage users and scale fast.",
+      "projects": [
         {
-          badge: 'Project Card',
-          metric: '160k+ Installs',
-          client: 'PulseFit Studios',
-          title: 'PulseFit Mobile Companion',
-          desc: 'A cross-platform fitness app with class booking, subscription flows, and habit tracking tailored for premium wellness brands.',
-          img: 'assets/1516321318423.jpg',
-          highlights: ['160k installs', '4.9 rating', '82% retention'],
-          tags: ['React Native', 'Firebase', 'Subscriptions', 'Push Alerts']
+          "badge": "Project Card",
+          "metric": "160k+ Installs",
+          "client": "PulseFit Studios",
+          "title": "PulseFit Mobile Companion",
+          "desc": "A cross-platform fitness app with class booking, subscription flows, and habit tracking tailored for premium wellness brands.",
+          "img": "assets/1516321318423.jpg",
+          "highlights": [
+            "160k installs",
+            "4.9 rating",
+            "82% retention"
+          ],
+          "tags": [
+            "React Native",
+            "Firebase",
+            "Subscriptions",
+            "Push Alerts"
+          ]
         },
         {
-          badge: 'Project Card',
-          metric: '30% Faster Dispatch',
-          client: 'Northline Logistics',
-          title: 'FleetOps Driver Portal',
-          desc: 'An internal mobile operations app for route updates, proof-of-delivery, and live driver coordination across teams.',
-          img: 'assets/1523961131990.jpg',
-          highlights: ['30% faster dispatch', 'Realtime status updates', 'Offline mode support'],
-          tags: ['iOS', 'Android', 'Operations', 'Realtime']
+          "badge": "Project Card",
+          "metric": "30% Faster Dispatch",
+          "client": "Northline Logistics",
+          "title": "FleetOps Driver Portal",
+          "desc": "An internal mobile operations app for route updates, proof-of-delivery, and live driver coordination across teams.",
+          "img": "assets/1523961131990.jpg",
+          "highlights": [
+            "30% faster dispatch",
+            "Realtime status updates",
+            "Offline mode support"
+          ],
+          "tags": [
+            "iOS",
+            "Android",
+            "Operations",
+            "Realtime"
+          ]
         }
       ]
     },
     {
-      id: 'content-creation',
-      num: 3,
-      title: 'Content Creation',
-      icon: 'pen-tool',
-      img: 'assets/1455390582262.jpg',
-      category: 'content-video',
-      group: 'Content & Video',
-      desc: 'Engaging written and visual content that communicates your brand message, boosts organic reach, and connects with your target audience.',
-      bullets: [
-        'Copywriting & Blog Articles',
-        'Graphic Design & Visual Assets',
-        'Product & Service Catalog Copy',
-        'SEO Content Strategy'
+      "id": "content-creation",
+      "num": 3,
+      "title": "Content Creation",
+      "icon": "pen-tool",
+      "img": "assets/1455390582262.jpg",
+      "category": "creative",
+      "group": "Content & Video",
+      "desc": "Engaging written and visual content that communicates your brand message, boosts organic reach, and connects with your target audience.",
+      "bullets": [
+        "Copywriting & Blog Articles",
+        "Graphic Design & Visual Assets",
+        "Product & Service Catalog Copy",
+        "SEO Content Strategy"
       ],
-      detailLead: 'Content systems that turn attention into action.',
-      projects: [
+      "detailLead": "Content systems that turn attention into action.",
+      "projects": [
         {
-          badge: 'Project Card',
-          metric: '7.4M Organic Views',
-          client: 'Nova Skin Care',
-          title: 'Launch Week Content Engine',
-          desc: 'A multi-format content rollout with campaign copy, product storytelling, and design assets for social and landing pages.',
-          img: 'assets/1455390582262.jpg',
-          highlights: ['7.4M total views', '240 assets delivered', '3x engagement lift'],
-          tags: ['Copywriting', 'Creative Direction', 'Social', 'SEO']
+          "badge": "Project Card",
+          "metric": "7.4M Organic Views",
+          "client": "Nova Skin Care",
+          "title": "Launch Week Content Engine",
+          "desc": "A multi-format content rollout with campaign copy, product storytelling, and design assets for social and landing pages.",
+          "img": "assets/1455390582262.jpg",
+          "highlights": [
+            "7.4M total views",
+            "240 assets delivered",
+            "3x engagement lift"
+          ],
+          "tags": [
+            "Copywriting",
+            "Creative Direction",
+            "Social",
+            "SEO"
+          ]
         },
         {
-          badge: 'Project Card',
-          metric: '61% More Inbound Demos',
-          client: 'Vector Analytics',
-          title: 'B2B Thought Leadership Suite',
-          desc: 'Executive ghostwriting, blog articles, and lead magnets built to move enterprise buyers through the funnel.',
-          img: 'assets/1516321497487.jpg',
-          highlights: ['61% more demos', '18 long-form articles', '12 lead magnets'],
-          tags: ['LinkedIn', 'Blog', 'Lead Gen', 'Brand Voice']
+          "badge": "Project Card",
+          "metric": "61% More Inbound Demos",
+          "client": "Vector Analytics",
+          "title": "B2B Thought Leadership Suite",
+          "desc": "Executive ghostwriting, blog articles, and lead magnets built to move enterprise buyers through the funnel.",
+          "img": "assets/1516321497487.jpg",
+          "highlights": [
+            "61% more demos",
+            "18 long-form articles",
+            "12 lead magnets"
+          ],
+          "tags": [
+            "LinkedIn",
+            "Blog",
+            "Lead Gen",
+            "Brand Voice"
+          ]
         }
       ]
     },
     {
-      id: 'video-production',
-      num: 4,
-      title: 'Video Production & Editing',
-      icon: 'video',
-      img: 'assets/1492619375914.jpg',
-      category: 'content-video',
-      group: 'Content & Video',
-      desc: 'High-impact video editing and production for Instagram Reels, YouTube Shorts, promotional ads, product videos, and corporate brand showcases.',
-      bullets: [
-        'Short-Form Video & Reels Editing',
-        'Promotional Ad Video Editing',
-        'Motion Graphics & Sound Design',
-        'Brand Story & Voiceover Sync'
+      "id": "video-production",
+      "num": 4,
+      "title": "Video Production & Editing",
+      "icon": "video",
+      "img": "assets/1492619375914.jpg",
+      "category": "creative",
+      "group": "Content & Video",
+      "desc": "High-impact video editing and production for Instagram Reels, YouTube Shorts, promotional ads, product videos, and corporate brand showcases.",
+      "bullets": [
+        "Short-Form Video & Reels Editing",
+        "Promotional Ad Video Editing",
+        "Motion Graphics & Sound Design",
+        "Brand Story & Voiceover Sync"
       ],
-      detailLead: 'Campaign visuals designed to stop the scroll.',
-      projects: [
+      "detailLead": "Campaign visuals designed to stop the scroll.",
+      "projects": [
         {
-          badge: 'Project Card',
-          metric: '4.1M Reel Views',
-          client: 'Vertex Audio',
-          title: 'Launch Film for Vertex Audio',
-          desc: 'A cinematic launch campaign with motion graphics, short-form edits, and tailored cutdowns for paid social placements.',
-          img: 'assets/1492619375914.jpg',
-          highlights: ['4.1M views', '220k saves', '16 deliverables'],
-          tags: ['Reels', 'Motion Graphics', 'Color Grade', 'Sound Design']
+          "badge": "Project Card",
+          "metric": "4.1M Reel Views",
+          "client": "Vertex Audio",
+          "title": "Launch Film for Vertex Audio",
+          "desc": "A cinematic launch campaign with motion graphics, short-form edits, and tailored cutdowns for paid social placements.",
+          "img": "assets/1492619375914.jpg",
+          "highlights": [
+            "4.1M views",
+            "220k saves",
+            "16 deliverables"
+          ],
+          "tags": [
+            "Reels",
+            "Motion Graphics",
+            "Color Grade",
+            "Sound Design"
+          ]
         },
         {
-          badge: 'Project Card',
-          metric: '11x CTR Lift',
-          client: 'Arc AI Tools',
-          title: 'Product Demo Motion Suite',
-          desc: 'Short demo videos and cutdowns engineered for landing pages, paid ads, and product launches across social channels.',
-          img: 'assets/1574717024653.jpg',
-          highlights: ['11x CTR lift', '6 ad variants', '2 language versions'],
-          tags: ['Promo Video', 'A/B Testing', 'Direct Response']
+          "badge": "Project Card",
+          "metric": "11x CTR Lift",
+          "client": "Arc AI Tools",
+          "title": "Product Demo Motion Suite",
+          "desc": "Short demo videos and cutdowns engineered for landing pages, paid ads, and product launches across social channels.",
+          "img": "assets/1574717024653.jpg",
+          "highlights": [
+            "11x CTR lift",
+            "6 ad variants",
+            "2 language versions"
+          ],
+          "tags": [
+            "Promo Video",
+            "A/B Testing",
+            "Direct Response"
+          ]
         }
       ]
     },
     {
-      id: 'smm',
-      num: 5,
-      title: 'Social Media Management',
-      icon: 'instagram',
-      img: 'assets/1611162617213.jpg',
-      category: 'ads-smm',
-      group: 'Paid Ads & SMM',
-      desc: 'End-to-end social media growth and management across Instagram, Facebook, and LinkedIn to build a vibrant, loyal community around your brand.',
-      bullets: [
-        'Content Calendar & Post Scheduling',
-        'Community Engagement & DM Lead Gen',
-        'Audience Analytics & Monthly Reports',
-        'Hashtag & Organic Growth Strategy'
+      "id": "smm",
+      "num": 5,
+      "title": "Social Media Management",
+      "icon": "instagram",
+      "img": "assets/1611162617213.jpg",
+      "category": "ads",
+      "group": "Paid Ads & SMM",
+      "desc": "End-to-end social media growth and management across Instagram, Facebook, and LinkedIn to build a vibrant, loyal community around your brand.",
+      "bullets": [
+        "Content Calendar & Post Scheduling",
+        "Community Engagement & DM Lead Gen",
+        "Audience Analytics & Monthly Reports",
+        "Hashtag & Organic Growth Strategy"
       ],
-      detailLead: 'Social growth plans that build durable audiences.',
-      projects: [
+      "detailLead": "Social growth plans that build durable audiences.",
+      "projects": [
         {
-          badge: 'Project Card',
-          metric: '320% Reservation Growth',
-          client: 'Cedar House Hotels',
-          title: 'Hospitality Growth Calendar',
-          desc: 'A social media system combining monthly content calendars, community management, and localized growth campaigns.',
-          img: 'assets/1555396273.jpg',
-          highlights: ['320% booking lift', '45k followers', 'Daily community replies'],
-          tags: ['Instagram', 'Facebook', 'Content Calendar', 'Community']
+          "badge": "Project Card",
+          "metric": "320% Reservation Growth",
+          "client": "Cedar House Hotels",
+          "title": "Hospitality Growth Calendar",
+          "desc": "A social media system combining monthly content calendars, community management, and localized growth campaigns.",
+          "img": "assets/1555396273.jpg",
+          "highlights": [
+            "320% booking lift",
+            "45k followers",
+            "Daily community replies"
+          ],
+          "tags": [
+            "Instagram",
+            "Facebook",
+            "Content Calendar",
+            "Community"
+          ]
         },
         {
-          badge: 'Project Card',
-          metric: '2.8M Impressions',
-          client: 'Mira Capital',
-          title: 'Founder Brand Social Playbook',
-          desc: 'A founder-led content strategy focused on authority posts, audience growth, and repeatable content pillars.',
-          img: 'assets/1516321318423.jpg',
-          highlights: ['2.8M impressions', '7 content pillars', '3x engagement'],
-          tags: ['LinkedIn', 'Instagram', 'Strategy', 'Reporting']
+          "badge": "Project Card",
+          "metric": "2.8M Impressions",
+          "client": "Mira Capital",
+          "title": "Founder Brand Social Playbook",
+          "desc": "A founder-led content strategy focused on authority posts, audience growth, and repeatable content pillars.",
+          "img": "assets/1516321318423.jpg",
+          "highlights": [
+            "2.8M impressions",
+            "7 content pillars",
+            "3x engagement"
+          ],
+          "tags": [
+            "LinkedIn",
+            "Instagram",
+            "Strategy",
+            "Reporting"
+          ]
         }
       ]
     },
     {
-      id: 'ads',
-      num: 6,
-      title: 'Google Ads & Meta Ads',
-      icon: 'target',
-      img: 'assets/1460925895917.jpg',
-      category: 'ads-smm',
-      group: 'Paid Ads & SMM',
-      desc: 'Targeted paid advertising campaigns on Google Search/Shopping and Meta (Facebook & Instagram) engineered for maximum ROI and quality lead acquisition.',
-      bullets: [
-        'Google Search, Display & Shopping Ads',
-        'Meta (FB & IG) Target Funnels',
-        'Audience Segmentation & Retargeting',
-        'A/B Creative & Copy Testing'
+      "id": "ads",
+      "num": 6,
+      "title": "Google Ads & Meta Ads",
+      "icon": "target",
+      "img": "assets/1460925895917.jpg",
+      "category": "ads",
+      "group": "Paid Ads & SMM",
+      "desc": "Targeted paid advertising campaigns on Google Search/Shopping and Meta (Facebook & Instagram) engineered for maximum ROI and quality lead acquisition.",
+      "bullets": [
+        "Google Search, Display & Shopping Ads",
+        "Meta (FB & IG) Target Funnels",
+        "Audience Segmentation & Retargeting",
+        "A/B Creative & Copy Testing"
       ],
-      detailLead: 'Performance marketing with measurable growth.',
-      projects: [
+      "detailLead": "Performance marketing with measurable growth.",
+      "projects": [
         {
-          badge: 'Project Card',
-          metric: '5.2x ROAS',
-          client: 'Aura Lifestyle Apparel',
-          title: 'Omnichannel Growth Campaign',
-          desc: 'Performance ad system using segmented funnels, high-velocity creatives, and iterative testing across channels.',
-          img: 'assets/1533750349088.jpg',
-          highlights: ['5.2x ROAS', '40% lower CPA', '3.8M impressions'],
-          tags: ['Meta Ads', 'Google Ads', 'Retargeting', 'Analytics']
+          "badge": "Project Card",
+          "metric": "5.2x ROAS",
+          "client": "Aura Lifestyle Apparel",
+          "title": "Omnichannel Growth Campaign",
+          "desc": "Performance ad system using segmented funnels, high-velocity creatives, and iterative testing across channels.",
+          "img": "assets/1533750349088.jpg",
+          "highlights": [
+            "5.2x ROAS",
+            "40% lower CPA",
+            "3.8M impressions"
+          ],
+          "tags": [
+            "Meta Ads",
+            "Google Ads",
+            "Retargeting",
+            "Analytics"
+          ]
         },
         {
-          badge: 'Project Card',
-          metric: '3.6x Qualified Leads',
-          client: 'Nimbus Workflow',
-          title: 'Lead Gen Funnel for B2B SaaS',
-          desc: 'Search and retargeting campaigns paired with landing page optimization to grow demo requests efficiently.',
-          img: 'assets/1460925895917.jpg',
-          highlights: ['3.6x lead lift', '27% lower CPL', '12 ad variants'],
-          tags: ['Search', 'Retargeting', 'Landing Pages']
+          "badge": "Project Card",
+          "metric": "3.6x Qualified Leads",
+          "client": "Nimbus Workflow",
+          "title": "Lead Gen Funnel for B2B SaaS",
+          "desc": "Search and retargeting campaigns paired with landing page optimization to grow demo requests efficiently.",
+          "img": "assets/1460925895917.jpg",
+          "highlights": [
+            "3.6x lead lift",
+            "27% lower CPL",
+            "12 ad variants"
+          ],
+          "tags": [
+            "Search",
+            "Retargeting",
+            "Landing Pages"
+          ]
         }
       ]
     },
     {
-      id: 'personal-branding',
-      num: 7,
-      title: 'Portfolio Creation for Personal Branding',
-      shortTitle: 'Portfolio for Personal Branding',
-      icon: 'user-round',
-      img: 'assets/1580489944761.jpg',
-      category: 'branding',
-      group: 'Branding & Portfolios',
-      desc: 'Establish authority and showcase your professional journey with custom executive digital portfolios, personal branding websites, and resume showcases.',
-      bullets: [
-        'Custom Executive Portfolios',
-        'Interactive Resume & Bio Showcase',
-        'Personal Brand Identity & Kit',
-        'Lead Form & Contact Integration'
+      "id": "personal-branding",
+      "num": 7,
+      "title": "Portfolio Creation for Personal Branding",
+      "shortTitle": "Portfolio for Personal Branding",
+      "icon": "user-round",
+      "img": "assets/1580489944761.jpg",
+      "category": "branding",
+      "group": "Branding & Portfolios",
+      "desc": "Establish authority and showcase your professional journey with custom executive digital portfolios, personal branding websites, and resume showcases.",
+      "bullets": [
+        "Custom Executive Portfolios",
+        "Interactive Resume & Bio Showcase",
+        "Personal Brand Identity & Kit",
+        "Lead Form & Contact Integration"
       ],
-      detailLead: 'Executive presence built for trust and authority.',
-      projects: [
+      "detailLead": "Executive presence built for trust and authority.",
+      "projects": [
         {
-          badge: 'Project Card',
-          metric: 'Forbes Feature Ready',
-          client: 'Dr. A. Sharma',
-          title: 'Executive Portfolio for a FinTech Founder',
-          desc: 'A personal brand website and content ecosystem built to position a founder as a trusted industry voice.',
-          img: 'assets/1507679799987.jpg',
-          highlights: ['120k follower growth', '5 podcast invites', '1 portfolio system'],
-          tags: ['Personal Brand', 'Portfolio', 'LinkedIn', 'PR']
+          "badge": "Project Card",
+          "metric": "Forbes Feature Ready",
+          "client": "Dr. A. Sharma",
+          "title": "Executive Portfolio for a FinTech Founder",
+          "desc": "A personal brand website and content ecosystem built to position a founder as a trusted industry voice.",
+          "img": "assets/1507679799987.jpg",
+          "highlights": [
+            "120k follower growth",
+            "5 podcast invites",
+            "1 portfolio system"
+          ],
+          "tags": [
+            "Personal Brand",
+            "Portfolio",
+            "LinkedIn",
+            "PR"
+          ]
         },
         {
-          badge: 'Project Card',
-          metric: '12 Speaking Inquiries',
-          client: 'Ava Mensah, Design Strategist',
-          title: 'Creator Authority Website',
-          desc: 'A refined digital presence for a creative leader featuring case studies, media mentions, and contact funnels.',
-          img: 'assets/1580489944761.jpg',
-          highlights: ['12 speaking inquiries', '3 media features', 'Brand kit refresh'],
-          tags: ['Executive Site', 'Media Kit', 'Authority']
+          "badge": "Project Card",
+          "metric": "12 Speaking Inquiries",
+          "client": "Ava Mensah, Design Strategist",
+          "title": "Creator Authority Website",
+          "desc": "A refined digital presence for a creative leader featuring case studies, media mentions, and contact funnels.",
+          "img": "assets/1580489944761.jpg",
+          "highlights": [
+            "12 speaking inquiries",
+            "3 media features",
+            "Brand kit refresh"
+          ],
+          "tags": [
+            "Executive Site",
+            "Media Kit",
+            "Authority"
+          ]
         }
       ]
     },
     {
-      id: 'product-branding',
-      num: 8,
-      title: 'Branding Products or Services',
-      icon: 'package',
-      img: 'assets/1523726491678.jpg',
-      category: 'branding',
-      group: 'Branding & Portfolios',
-      desc: 'Comprehensive brand identity design for new or existing products and services. From memorable logos and brand guidelines to market positioning.',
-      bullets: [
-        'Logo & Typography System Design',
-        'Brand Guidelines & Color Palette',
-        'Product Packaging & Digital Assets',
-        'Market Positioning & Messaging'
+      "id": "product-branding",
+      "num": 8,
+      "title": "Branding Products or Services",
+      "icon": "package",
+      "img": "assets/1523726491678.jpg",
+      "category": "branding",
+      "group": "Branding & Portfolios",
+      "desc": "Comprehensive brand identity design for new or existing products and services. From memorable logos and brand guidelines to market positioning.",
+      "bullets": [
+        "Logo & Typography System Design",
+        "Brand Guidelines & Color Palette",
+        "Product Packaging & Digital Assets",
+        "Market Positioning & Messaging"
       ],
-      detailLead: 'Brand systems that make new offers memorable.',
-      projects: [
+      "detailLead": "Brand systems that make new offers memorable.",
+      "projects": [
         {
-          badge: 'Project Card',
-          metric: 'Retail Launch Ready',
-          client: 'Luma Home Goods',
-          title: 'Signature Product Identity System',
-          desc: 'A cohesive identity system for a new product line including logo, packaging direction, and visual language.',
-          img: 'assets/1523726491678.jpg',
-          highlights: ['Packaging concept', 'Retail-ready system', 'Brand standards'],
-          tags: ['Packaging', 'Identity', 'Guidelines', 'Positioning']
+          "badge": "Project Card",
+          "metric": "Retail Launch Ready",
+          "client": "Luma Home Goods",
+          "title": "Signature Product Identity System",
+          "desc": "A cohesive identity system for a new product line including logo, packaging direction, and visual language.",
+          "img": "assets/1523726491678.jpg",
+          "highlights": [
+            "Packaging concept",
+            "Retail-ready system",
+            "Brand standards"
+          ],
+          "tags": [
+            "Packaging",
+            "Identity",
+            "Guidelines",
+            "Positioning"
+          ]
         },
         {
-          badge: 'Project Card',
-          metric: '2x Brand Recall',
-          client: 'Urban Nest Interiors',
-          title: 'Service Brand Refresh for Growth Stage',
-          desc: 'A full repositioning package that sharpened the offer, visual identity, and messaging across touchpoints.',
-          img: 'assets/1558655146.jpg',
-          highlights: ['2x recall lift', 'Messaging refresh', 'Unified digital assets'],
-          tags: ['Brand Strategy', 'Visual Identity', 'Launch']
+          "badge": "Project Card",
+          "metric": "2x Brand Recall",
+          "client": "Urban Nest Interiors",
+          "title": "Service Brand Refresh for Growth Stage",
+          "desc": "A full repositioning package that sharpened the offer, visual identity, and messaging across touchpoints.",
+          "img": "assets/1558655146.jpg",
+          "highlights": [
+            "2x recall lift",
+            "Messaging refresh",
+            "Unified digital assets"
+          ],
+          "tags": [
+            "Brand Strategy",
+            "Visual Identity",
+            "Launch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cms-wordpress",
+      "num": 9,
+      "title": "CMS & WordPress Development",
+      "icon": "layout-panel",
+      "img": "assets/1522542550221.jpg",
+      "category": "dev",
+      "group": "Web & Mobile",
+      "desc": "WordPress, Elementor Pro and custom-built CMS platforms your team can update without a developer — pages, products, blogs and forms, all editable.",
+      "bullets": [
+        "WordPress, Elementor Pro & Custom CMS",
+        "ACF, CPT UI & Dynamic Content",
+        "Client-Editable Pages & Blog Systems",
+        "Speed, Security & Maintenance"
+      ],
+      "detailLead": "Websites your team can run — no developer needed for everyday updates.",
+      "projects": [
+        {
+          "badge": "Project Card",
+          "metric": "-80% Update Time",
+          "client": "Manalot",
+          "title": "Manalot CMS Rebuild",
+          "desc": "Moved a growing marketing site onto a structured WordPress build with reusable blocks, so the team publishes campaigns without touching code.",
+          "img": "assets/1547658719.jpg",
+          "highlights": [
+            "Reusable content blocks",
+            "0 developer tickets for updates",
+            "Core Web Vitals in the green"
+          ],
+          "tags": [
+            "WordPress",
+            "Elementor Pro",
+            "ACF"
+          ]
+        },
+        {
+          "badge": "Project Card",
+          "metric": "12 Sites, 1 Stack",
+          "client": "Edubuk",
+          "title": "Edubuk Multi-Site Setup",
+          "desc": "A shared theme and component library powering multiple Edubuk properties from one CMS.",
+          "img": "assets/1522542550221.jpg",
+          "highlights": [
+            "One CMS for every property",
+            "Publish in minutes",
+            "Zero template drift"
+          ],
+          "tags": [
+            "CMS",
+            "Multi-site",
+            "Templates"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fullstack-apps",
+      "num": 10,
+      "title": "Full-Stack Web App Development",
+      "icon": "zap",
+      "img": "assets/1516321318423.jpg",
+      "category": "dev",
+      "group": "Web & Mobile",
+      "desc": "Complete web applications — React & Next.js front-ends wired to Node or PHP back-ends, databases, authentication and role-based dashboards that scale with your operations.",
+      "bullets": [
+        "React, Next.js & TypeScript Front-Ends",
+        "Node.js, PHP & REST API Back-Ends",
+        "Auth, Roles & Secure Databases",
+        "Dashboards, Reports & Data Flows"
+      ],
+      "detailLead": "From first sketch to production — one codebase, one team.",
+      "projects": [
+        {
+          "badge": "Project Card",
+          "metric": "3 Weeks to Launch",
+          "client": "FitnessPro Studios",
+          "title": "FitnessPro Member Platform",
+          "desc": "Membership app with plans, class bookings, payment flow and a staff admin console.",
+          "img": "assets/1516321318423.jpg",
+          "highlights": [
+            "Live in 3 weeks",
+            "Role-based admin console",
+            "Payments & bookings wired"
+          ],
+          "tags": [
+            "Next.js",
+            "Node.js",
+            "PostgreSQL"
+          ]
+        },
+        {
+          "badge": "Project Card",
+          "metric": "99.9% Uptime",
+          "client": "Elionyx",
+          "title": "Elionyx Operations Portal",
+          "desc": "An internal tool that replaced spreadsheets — tasks, approvals and reporting in one place.",
+          "img": "assets/1552664730.jpg",
+          "highlights": [
+            "9 spreadsheets retired",
+            "Approvals in one click",
+            "Weekly automated reports"
+          ],
+          "tags": [
+            "React",
+            "REST API",
+            "Cloud"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "crm-systems",
+      "num": 11,
+      "title": "CRM, PMS & Business Systems",
+      "icon": "users",
+      "img": "assets/1460925895917.jpg",
+      "category": "systems",
+      "group": "AI & Systems",
+      "desc": "Custom CRM, PMS and ERP software built around how your team actually works — leads, projects, property or patients tracked end to end, with reports you can act on.",
+      "bullets": [
+        "Lead, Deal & Pipeline Management",
+        "Project, Property & Service (PMS) Workflows",
+        "Role-Based Access & Audit Trails",
+        "Invoicing, Reports & Analytics"
+      ],
+      "detailLead": "Software that runs your operation — not just your website.",
+      "projects": [
+        {
+          "badge": "Project Card",
+          "metric": "+63% Closing Rate",
+          "client": "Aura Lifestyle Apparel",
+          "title": "Aura Sales CRM",
+          "desc": "Pipeline CRM with automated follow-ups, two-click quotations and manager dashboards.",
+          "img": "assets/1460925895917.jpg",
+          "highlights": [
+            "No lead left un-followed",
+            "Quotes in 2 clicks",
+            "Daily sales dashboard"
+          ],
+          "tags": [
+            "CRM",
+            "Automation",
+            "Dashboards"
+          ]
+        },
+        {
+          "badge": "Project Card",
+          "metric": "40 Hrs Saved / Month",
+          "client": "Sai Estates",
+          "title": "Sai Estates Property System",
+          "desc": "Units, tenants, rent cycles and maintenance requests managed in one place.",
+          "img": "assets/1531482615713.jpg",
+          "highlights": [
+            "Rent reminders automated",
+            "Maintenance tracking",
+            "Owner statements auto-generated"
+          ],
+          "tags": [
+            "PMS",
+            "System Design",
+            "Reports"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ai-automation",
+      "num": 12,
+      "title": "AI Features & Automation",
+      "icon": "sparkles",
+      "img": "assets/1523961131990.jpg",
+      "category": "systems",
+      "group": "AI & Systems",
+      "desc": "AI chat assistants, content and lead-qualification tools, plus workflow automation that removes the repetitive work inside your business.",
+      "bullets": [
+        "AI Chat & Website Assistants",
+        "Lead Qualification & Auto-Replies",
+        "Content & SEO Automation",
+        "Workflow & API Automations"
+      ],
+      "detailLead": "Let automation handle the repetitive work — your team handles growth.",
+      "projects": [
+        {
+          "badge": "Project Card",
+          "metric": "68% Faster Replies",
+          "client": "Edubuk",
+          "title": "Edubuk AI Support Assistant",
+          "desc": "A website assistant trained on their course catalogue that answers questions and routes enquiries to sales.",
+          "img": "assets/1523961131990.jpg",
+          "highlights": [
+            "Answers 24/7",
+            "Warm leads pushed to CRM",
+            "Human handover when unsure"
+          ],
+          "tags": [
+            "AI Assistant",
+            "RAG",
+            "API"
+          ]
+        },
+        {
+          "badge": "Project Card",
+          "metric": "9 Hrs Saved / Week",
+          "client": "Blue Diamond Auto Services",
+          "title": "Automated Enquiry Engine",
+          "desc": "Instagram and WhatsApp enquiries captured, tagged and followed up automatically.",
+          "img": "assets/1516321497487.jpg",
+          "highlights": [
+            "Auto-tagging by service type",
+            "Follow-up sequences",
+            "Weekly summary email"
+          ],
+          "tags": [
+            "Automation",
+            "WhatsApp API",
+            "CRM"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shopify-ecommerce",
+      "num": 13,
+      "title": "Shopify & E-Commerce",
+      "icon": "package",
+      "img": "assets/1557821552.jpg",
+      "category": "dev",
+      "group": "Web & Mobile",
+      "desc": "Shopify and WooCommerce stores built to sell — clean product pages, fast checkout, payment and shipping integrations, and CRO work that lifts revenue.",
+      "bullets": [
+        "Shopify & WooCommerce Builds",
+        "Payments, Shipping & Tax Setup",
+        "Products, Collections & Variants",
+        "Checkout & Conversion Optimisation"
+      ],
+      "detailLead": "Stores engineered for orders, not just for looks.",
+      "projects": [
+        {
+          "badge": "Project Card",
+          "metric": "2.4x Revenue",
+          "client": "SipLab",
+          "title": "SipLab D2C Store",
+          "desc": "Shopify build with bundles, a subscription option and a conversion-tuned checkout.",
+          "img": "assets/1557821552.jpg",
+          "highlights": [
+            "Bundles & subscriptions",
+            "Abandoned-cart flows",
+            "2.4x revenue in 5 months"
+          ],
+          "tags": [
+            "Shopify",
+            "CRO",
+            "Payments"
+          ]
+        },
+        {
+          "badge": "Project Card",
+          "metric": "-35% Cart Abandonment",
+          "client": "NexTech Retail Global",
+          "title": "WooCommerce Optimisation",
+          "desc": "Checkout and product-page rework for an existing WooCommerce store.",
+          "img": "assets/1512941937669.jpg",
+          "highlights": [
+            "One-click upsell",
+            "Faster checkout",
+            "Mobile-first product pages"
+          ],
+          "tags": [
+            "WooCommerce",
+            "UX",
+            "Analytics"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "backend-api",
+      "num": 14,
+      "title": "Backend, APIs & Integrations",
+      "icon": "shield-check",
+      "img": "assets/1558655146.jpg",
+      "category": "systems",
+      "group": "AI & Systems",
+      "desc": "The engine behind your product — REST APIs, databases, payment gateways, WhatsApp and Google integrations, and secure third-party connections.",
+      "bullets": [
+        "REST API Design & Development",
+        "Payment, WhatsApp & Maps Integrations",
+        "Databases, Caching & Queues",
+        "Security, Backups & Monitoring"
+      ],
+      "detailLead": "Where everything connects — reliable, secure and documented.",
+      "projects": [
+        {
+          "badge": "Project Card",
+          "metric": "12 APIs, 1 Platform",
+          "client": "Elionyx",
+          "title": "Elionyx Integration Layer",
+          "desc": "A unified API layer connecting payments, CRM and logistics partners.",
+          "img": "assets/1558655146.jpg",
+          "highlights": [
+            "Central auth & logging",
+            "Retry-safe webhooks",
+            "Docs for every endpoint"
+          ],
+          "tags": [
+            "REST API",
+            "Node.js",
+            "Security"
+          ]
+        },
+        {
+          "badge": "Project Card",
+          "metric": "Zero Downtime",
+          "client": "Perfect Air Conditioners",
+          "title": "Booking & Payments API",
+          "desc": "Moved a live booking system onto a new backend without downtime.",
+          "img": "assets/1519389950473.jpg",
+          "highlights": [
+            "Live migration",
+            "Automated backups",
+            "Monitoring & alerts"
+          ],
+          "tags": [
+            "API",
+            "Migration",
+            "Monitoring"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uiux-design",
+      "num": 15,
+      "title": "UI/UX Design & Prototyping",
+      "icon": "user-round",
+      "img": "assets/1552664730.jpg",
+      "category": "dev",
+      "group": "Web & Mobile",
+      "desc": "Research, wireframes, design systems and clickable prototypes — interfaces planned properly before a single line of code is written.",
+      "bullets": [
+        "User Flows, Wireframes & IA",
+        "Design Systems & Component Libraries",
+        "Figma Prototypes & Developer Handoff",
+        "Usability Reviews & Fixes"
+      ],
+      "detailLead": "Design decisions first — guesswork never.",
+      "projects": [
+        {
+          "badge": "Project Card",
+          "metric": "-42% Task Time",
+          "client": "Manalot",
+          "title": "Manalot Dashboard UX",
+          "desc": "Restructured a data-heavy dashboard around the three jobs users do every day.",
+          "img": "assets/1552664730.jpg",
+          "highlights": [
+            "Task time cut 42%",
+            "Consistent component library",
+            "Figma handoff included"
+          ],
+          "tags": [
+            "Figma",
+            "UX Research",
+            "Design System"
+          ]
+        },
+        {
+          "badge": "Project Card",
+          "metric": "2x Signups",
+          "client": "Edubuk",
+          "title": "Edubuk Onboarding Flow",
+          "desc": "A shorter, clearer signup and onboarding journey for prospective students.",
+          "img": "assets/1522542550221.jpg",
+          "highlights": [
+            "Steps cut from 7 to 3",
+            "Mobile-first forms",
+            "Prototype tested with users"
+          ],
+          "tags": [
+            "Prototyping",
+            "CRO",
+            "Mobile UX"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seo-performance",
+      "num": 16,
+      "title": "SEO & Performance Engineering",
+      "icon": "bar-chart",
+      "img": "assets/1533750349088.jpg",
+      "category": "ads",
+      "group": "Paid Ads & SMM",
+      "desc": "Technical audits, on-page SEO, Core Web Vitals and schema work that move you up the rankings — measured, not guessed.",
+      "bullets": [
+        "Technical SEO Audits & Fixes",
+        "Core Web Vitals & Speed Engineering",
+        "Keyword, Schema & Content Strategy",
+        "Rank, Traffic & Conversion Reporting"
+      ],
+      "detailLead": "Rankings that hold — from audit to reporting.",
+      "projects": [
+        {
+          "badge": "Project Card",
+          "metric": "+180% Organic Traffic",
+          "client": "Edubuk",
+          "title": "Edubuk Organic Growth",
+          "desc": "Technical fixes plus a content plan tied to real search demand.",
+          "img": "assets/1533750349088.jpg",
+          "highlights": [
+            "Core Web Vitals passed",
+            "Top-3 for 24 keywords",
+            "+180% organic traffic"
+          ],
+          "tags": [
+            "Technical SEO",
+            "Content",
+            "Schema"
+          ]
+        },
+        {
+          "badge": "Project Card",
+          "metric": "1.1s LCP",
+          "client": "Perfect Air Conditioners",
+          "title": "Core Web Vitals Rescue",
+          "desc": "Speed engineering on an image-heavy marketing site.",
+          "img": "assets/1460925895917.jpg",
+          "highlights": [
+            "LCP 4.6s to 1.1s",
+            "No layout shift",
+            "Bounce rate down 28%"
+          ],
+          "tags": [
+            "Performance",
+            "Caching",
+            "Images"
+          ]
         }
       ]
     }
@@ -673,11 +1253,30 @@ window.SOULD_DEFAULTS = {
   ],
 
   serviceFilters:   [
-    { id: 'all', label: 'All Services' },
-    { id: 'web-mobile', label: 'Web & Mobile' },
-    { id: 'ads-smm', label: 'Paid Ads & SMM' },
-    { id: 'content-video', label: 'Content & Video' },
-    { id: 'branding', label: 'Branding & Portfolios' }
+    {
+      "id": "all",
+      "label": "All Services"
+    },
+    {
+      "id": "dev",
+      "label": "Web & Mobile"
+    },
+    {
+      "id": "systems",
+      "label": "AI & Systems"
+    },
+    {
+      "id": "ads",
+      "label": "Ads, SEO & Growth"
+    },
+    {
+      "id": "creative",
+      "label": "Content & Video"
+    },
+    {
+      "id": "branding",
+      "label": "Branding & Portfolios"
+    }
   ],
 
   workFilters:   [
