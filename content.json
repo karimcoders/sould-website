@@ -555,6 +555,446 @@
           ]
         }
       ]
+    },
+    {
+      "id": "cms-wordpress",
+      "num": 9,
+      "title": "CMS & WordPress Development",
+      "icon": "layout-panel",
+      "img": "assets/1522542550221.jpg",
+      "category": "dev",
+      "group": "Web & Mobile",
+      "desc": "WordPress, Elementor Pro and custom-built CMS platforms your team can update without a developer — pages, products, blogs and forms, all editable.",
+      "bullets": [
+        "WordPress, Elementor Pro & Custom CMS",
+        "ACF, CPT UI & Dynamic Content",
+        "Client-Editable Pages & Blog Systems",
+        "Speed, Security & Maintenance"
+      ],
+      "detailLead": "Websites your team can run — no developer needed for everyday updates.",
+      "projects": [
+        {
+          "badge": "Project Card",
+          "metric": "-80% Update Time",
+          "client": "Manalot",
+          "title": "Manalot CMS Rebuild",
+          "desc": "Moved a growing marketing site onto a structured WordPress build with reusable blocks, so the team publishes campaigns without touching code.",
+          "img": "assets/1547658719.jpg",
+          "highlights": [
+            "Reusable content blocks",
+            "0 developer tickets for updates",
+            "Core Web Vitals in the green"
+          ],
+          "tags": [
+            "WordPress",
+            "Elementor Pro",
+            "ACF"
+          ]
+        },
+        {
+          "badge": "Project Card",
+          "metric": "12 Sites, 1 Stack",
+          "client": "Edubuk",
+          "title": "Edubuk Multi-Site Setup",
+          "desc": "A shared theme and component library powering multiple Edubuk properties from one CMS.",
+          "img": "assets/1522542550221.jpg",
+          "highlights": [
+            "One CMS for every property",
+            "Publish in minutes",
+            "Zero template drift"
+          ],
+          "tags": [
+            "CMS",
+            "Multi-site",
+            "Templates"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fullstack-apps",
+      "num": 10,
+      "title": "Full-Stack Web App Development",
+      "icon": "zap",
+      "img": "assets/1516321318423.jpg",
+      "category": "dev",
+      "group": "Web & Mobile",
+      "desc": "Complete web applications — React & Next.js front-ends wired to Node or PHP back-ends, databases, authentication and role-based dashboards that scale with your operations.",
+      "bullets": [
+        "React, Next.js & TypeScript Front-Ends",
+        "Node.js, PHP & REST API Back-Ends",
+        "Auth, Roles & Secure Databases",
+        "Dashboards, Reports & Data Flows"
+      ],
+      "detailLead": "From first sketch to production — one codebase, one team.",
+      "projects": [
+        {
+          "badge": "Project Card",
+          "metric": "3 Weeks to Launch",
+          "client": "FitnessPro Studios",
+          "title": "FitnessPro Member Platform",
+          "desc": "Membership app with plans, class bookings, payment flow and a staff admin console.",
+          "img": "assets/1516321318423.jpg",
+          "highlights": [
+            "Live in 3 weeks",
+            "Role-based admin console",
+            "Payments & bookings wired"
+          ],
+          "tags": [
+            "Next.js",
+            "Node.js",
+            "PostgreSQL"
+          ]
+        },
+        {
+          "badge": "Project Card",
+          "metric": "99.9% Uptime",
+          "client": "Elionyx",
+          "title": "Elionyx Operations Portal",
+          "desc": "An internal tool that replaced spreadsheets — tasks, approvals and reporting in one place.",
+          "img": "assets/1552664730.jpg",
+          "highlights": [
+            "9 spreadsheets retired",
+            "Approvals in one click",
+            "Weekly automated reports"
+          ],
+          "tags": [
+            "React",
+            "REST API",
+            "Cloud"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "crm-systems",
+      "num": 11,
+      "title": "CRM, PMS & Business Systems",
+      "icon": "users",
+      "img": "assets/1460925895917.jpg",
+      "category": "systems",
+      "group": "AI & Systems",
+      "desc": "Custom CRM, PMS and ERP software built around how your team actually works — leads, projects, property or patients tracked end to end, with reports you can act on.",
+      "bullets": [
+        "Lead, Deal & Pipeline Management",
+        "Project, Property & Service (PMS) Workflows",
+        "Role-Based Access & Audit Trails",
+        "Invoicing, Reports & Analytics"
+      ],
+      "detailLead": "Software that runs your operation — not just your website.",
+      "projects": [
+        {
+          "badge": "Project Card",
+          "metric": "+63% Closing Rate",
+          "client": "Aura Lifestyle Apparel",
+          "title": "Aura Sales CRM",
+          "desc": "Pipeline CRM with automated follow-ups, two-click quotations and manager dashboards.",
+          "img": "assets/1460925895917.jpg",
+          "highlights": [
+            "No lead left un-followed",
+            "Quotes in 2 clicks",
+            "Daily sales dashboard"
+          ],
+          "tags": [
+            "CRM",
+            "Automation",
+            "Dashboards"
+          ]
+        },
+        {
+          "badge": "Project Card",
+          "metric": "40 Hrs Saved / Month",
+          "client": "Sai Estates",
+          "title": "Sai Estates Property System",
+          "desc": "Units, tenants, rent cycles and maintenance requests managed in one place.",
+          "img": "assets/1531482615713.jpg",
+          "highlights": [
+            "Rent reminders automated",
+            "Maintenance tracking",
+            "Owner statements auto-generated"
+          ],
+          "tags": [
+            "PMS",
+            "System Design",
+            "Reports"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ai-automation",
+      "num": 12,
+      "title": "AI Features & Automation",
+      "icon": "sparkles",
+      "img": "assets/1523961131990.jpg",
+      "category": "systems",
+      "group": "AI & Systems",
+      "desc": "AI chat assistants, content and lead-qualification tools, plus workflow automation that removes the repetitive work inside your business.",
+      "bullets": [
+        "AI Chat & Website Assistants",
+        "Lead Qualification & Auto-Replies",
+        "Content & SEO Automation",
+        "Workflow & API Automations"
+      ],
+      "detailLead": "Let automation handle the repetitive work — your team handles growth.",
+      "projects": [
+        {
+          "badge": "Project Card",
+          "metric": "68% Faster Replies",
+          "client": "Edubuk",
+          "title": "Edubuk AI Support Assistant",
+          "desc": "A website assistant trained on their course catalogue that answers questions and routes enquiries to sales.",
+          "img": "assets/1523961131990.jpg",
+          "highlights": [
+            "Answers 24/7",
+            "Warm leads pushed to CRM",
+            "Human handover when unsure"
+          ],
+          "tags": [
+            "AI Assistant",
+            "RAG",
+            "API"
+          ]
+        },
+        {
+          "badge": "Project Card",
+          "metric": "9 Hrs Saved / Week",
+          "client": "Blue Diamond Auto Services",
+          "title": "Automated Enquiry Engine",
+          "desc": "Instagram and WhatsApp enquiries captured, tagged and followed up automatically.",
+          "img": "assets/1516321497487.jpg",
+          "highlights": [
+            "Auto-tagging by service type",
+            "Follow-up sequences",
+            "Weekly summary email"
+          ],
+          "tags": [
+            "Automation",
+            "WhatsApp API",
+            "CRM"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shopify-ecommerce",
+      "num": 13,
+      "title": "Shopify & E-Commerce",
+      "icon": "package",
+      "img": "assets/1557821552.jpg",
+      "category": "dev",
+      "group": "Web & Mobile",
+      "desc": "Shopify and WooCommerce stores built to sell — clean product pages, fast checkout, payment and shipping integrations, and CRO work that lifts revenue.",
+      "bullets": [
+        "Shopify & WooCommerce Builds",
+        "Payments, Shipping & Tax Setup",
+        "Products, Collections & Variants",
+        "Checkout & Conversion Optimisation"
+      ],
+      "detailLead": "Stores engineered for orders, not just for looks.",
+      "projects": [
+        {
+          "badge": "Project Card",
+          "metric": "2.4x Revenue",
+          "client": "SipLab",
+          "title": "SipLab D2C Store",
+          "desc": "Shopify build with bundles, a subscription option and a conversion-tuned checkout.",
+          "img": "assets/1557821552.jpg",
+          "highlights": [
+            "Bundles & subscriptions",
+            "Abandoned-cart flows",
+            "2.4x revenue in 5 months"
+          ],
+          "tags": [
+            "Shopify",
+            "CRO",
+            "Payments"
+          ]
+        },
+        {
+          "badge": "Project Card",
+          "metric": "-35% Cart Abandonment",
+          "client": "NexTech Retail Global",
+          "title": "WooCommerce Optimisation",
+          "desc": "Checkout and product-page rework for an existing WooCommerce store.",
+          "img": "assets/1512941937669.jpg",
+          "highlights": [
+            "One-click upsell",
+            "Faster checkout",
+            "Mobile-first product pages"
+          ],
+          "tags": [
+            "WooCommerce",
+            "UX",
+            "Analytics"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "backend-api",
+      "num": 14,
+      "title": "Backend, APIs & Integrations",
+      "icon": "shield-check",
+      "img": "assets/1558655146.jpg",
+      "category": "systems",
+      "group": "AI & Systems",
+      "desc": "The engine behind your product — REST APIs, databases, payment gateways, WhatsApp and Google integrations, and secure third-party connections.",
+      "bullets": [
+        "REST API Design & Development",
+        "Payment, WhatsApp & Maps Integrations",
+        "Databases, Caching & Queues",
+        "Security, Backups & Monitoring"
+      ],
+      "detailLead": "Where everything connects — reliable, secure and documented.",
+      "projects": [
+        {
+          "badge": "Project Card",
+          "metric": "12 APIs, 1 Platform",
+          "client": "Elionyx",
+          "title": "Elionyx Integration Layer",
+          "desc": "A unified API layer connecting payments, CRM and logistics partners.",
+          "img": "assets/1558655146.jpg",
+          "highlights": [
+            "Central auth & logging",
+            "Retry-safe webhooks",
+            "Docs for every endpoint"
+          ],
+          "tags": [
+            "REST API",
+            "Node.js",
+            "Security"
+          ]
+        },
+        {
+          "badge": "Project Card",
+          "metric": "Zero Downtime",
+          "client": "Perfect Air Conditioners",
+          "title": "Booking & Payments API",
+          "desc": "Moved a live booking system onto a new backend without downtime.",
+          "img": "assets/1519389950473.jpg",
+          "highlights": [
+            "Live migration",
+            "Automated backups",
+            "Monitoring & alerts"
+          ],
+          "tags": [
+            "API",
+            "Migration",
+            "Monitoring"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uiux-design",
+      "num": 15,
+      "title": "UI/UX Design & Prototyping",
+      "icon": "user-round",
+      "img": "assets/1552664730.jpg",
+      "category": "dev",
+      "group": "Web & Mobile",
+      "desc": "Research, wireframes, design systems and clickable prototypes — interfaces planned properly before a single line of code is written.",
+      "bullets": [
+        "User Flows, Wireframes & IA",
+        "Design Systems & Component Libraries",
+        "Figma Prototypes & Developer Handoff",
+        "Usability Reviews & Fixes"
+      ],
+      "detailLead": "Design decisions first — guesswork never.",
+      "projects": [
+        {
+          "badge": "Project Card",
+          "metric": "-42% Task Time",
+          "client": "Manalot",
+          "title": "Manalot Dashboard UX",
+          "desc": "Restructured a data-heavy dashboard around the three jobs users do every day.",
+          "img": "assets/1552664730.jpg",
+          "highlights": [
+            "Task time cut 42%",
+            "Consistent component library",
+            "Figma handoff included"
+          ],
+          "tags": [
+            "Figma",
+            "UX Research",
+            "Design System"
+          ]
+        },
+        {
+          "badge": "Project Card",
+          "metric": "2x Signups",
+          "client": "Edubuk",
+          "title": "Edubuk Onboarding Flow",
+          "desc": "A shorter, clearer signup and onboarding journey for prospective students.",
+          "img": "assets/1522542550221.jpg",
+          "highlights": [
+            "Steps cut from 7 to 3",
+            "Mobile-first forms",
+            "Prototype tested with users"
+          ],
+          "tags": [
+            "Prototyping",
+            "CRO",
+            "Mobile UX"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seo-performance",
+      "num": 16,
+      "title": "SEO & Performance Engineering",
+      "icon": "bar-chart",
+      "img": "assets/1533750349088.jpg",
+      "category": "ads",
+      "group": "Paid Ads & SMM",
+      "desc": "Technical audits, on-page SEO, Core Web Vitals and schema work that move you up the rankings — measured, not guessed.",
+      "bullets": [
+        "Technical SEO Audits & Fixes",
+        "Core Web Vitals & Speed Engineering",
+        "Keyword, Schema & Content Strategy",
+        "Rank, Traffic & Conversion Reporting"
+      ],
+      "detailLead": "Rankings that hold — from audit to reporting.",
+      "projects": [
+        {
+          "badge": "Project Card",
+          "metric": "+180% Organic Traffic",
+          "client": "Edubuk",
+          "title": "Edubuk Organic Growth",
+          "desc": "Technical fixes plus a content plan tied to real search demand.",
+          "img": "assets/1533750349088.jpg",
+          "highlights": [
+            "Core Web Vitals passed",
+            "Top-3 for 24 keywords",
+            "+180% organic traffic"
+          ],
+          "tags": [
+            "Technical SEO",
+            "Content",
+            "Schema"
+          ]
+        },
+        {
+          "badge": "Project Card",
+          "metric": "1.1s LCP",
+          "client": "Perfect Air Conditioners",
+          "title": "Core Web Vitals Rescue",
+          "desc": "Speed engineering on an image-heavy marketing site.",
+          "img": "assets/1460925895917.jpg",
+          "highlights": [
+            "LCP 4.6s to 1.1s",
+            "No layout shift",
+            "Bounce rate down 28%"
+          ],
+          "tags": [
+            "Performance",
+            "Caching",
+            "Images"
+          ]
+        }
+      ]
     }
   ],
   "stats": [
@@ -874,8 +1314,12 @@
       "label": "Web & Mobile"
     },
     {
+      "id": "systems",
+      "label": "AI & Systems"
+    },
+    {
       "id": "ads",
-      "label": "Paid Ads & SMM"
+      "label": "Ads, SEO & Growth"
     },
     {
       "id": "creative",
