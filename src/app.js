@@ -142,7 +142,7 @@ function Header(route) {
             <a class="nav-link ${isActive('/services') ? 'active' : ''}" href="#/services">
               Services ${icon('chevron-down', 14)}
             </a>
-            <div class="nav-menu">${svcLinks}</div>
+            <div class="nav-menu${CONTENT.services.length > 10 ? ' many' : ''}">${svcLinks}</div>
           </div>
           <a href="#/work" class="${route.path === '/work' ? 'active' : ''}">${esc(CONTENT.copy.navWork)}</a>
           <a href="#/about" class="${route.path === '/about' ? 'active' : ''}">${esc(CONTENT.copy.navAbout)}</a>
