@@ -121,7 +121,6 @@
       "detailLead": "High-converting digital experiences for ambitious brands.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "+186% Online Orders",
           "client": "Atlas Retail Group",
           "title": "Atlas Commerce Platform",
@@ -137,10 +136,10 @@
             "E-commerce",
             "SEO",
             "Performance"
-          ]
+          ],
+          "chip": "Featured Build"
         },
         {
-          "badge": "Project Card",
           "metric": "4x More Qualified Leads",
           "client": "Foundry Creative Co.",
           "title": "Foundry Studio Website Redesign",
@@ -156,7 +155,8 @@
             "CMS",
             "UI Motion",
             "Lead Gen"
-          ]
+          ],
+          "chip": "Growth Case"
         }
       ]
     },
@@ -178,7 +178,6 @@
       "detailLead": "Mobile products built to engage users and scale fast.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "160k+ Installs",
           "client": "PulseFit Studios",
           "title": "PulseFit Mobile Companion",
@@ -194,10 +193,10 @@
             "Firebase",
             "Subscriptions",
             "Push Alerts"
-          ]
+          ],
+          "chip": "Mobile Product"
         },
         {
-          "badge": "Project Card",
           "metric": "30% Faster Dispatch",
           "client": "Northline Logistics",
           "title": "FleetOps Driver Portal",
@@ -213,7 +212,8 @@
             "Android",
             "Operations",
             "Realtime"
-          ]
+          ],
+          "chip": "Platform Build"
         }
       ]
     },
@@ -235,7 +235,6 @@
       "detailLead": "Content systems that turn attention into action.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "7.4M Organic Views",
           "client": "Nova Skin Care",
           "title": "Launch Week Content Engine",
@@ -251,10 +250,10 @@
             "Creative Direction",
             "Social",
             "SEO"
-          ]
+          ],
+          "chip": "Content System"
         },
         {
-          "badge": "Project Card",
           "metric": "61% More Inbound Demos",
           "client": "Vector Analytics",
           "title": "B2B Thought Leadership Suite",
@@ -270,7 +269,8 @@
             "Blog",
             "Lead Gen",
             "Brand Voice"
-          ]
+          ],
+          "chip": "Product Copy"
         }
       ]
     },
@@ -292,7 +292,6 @@
       "detailLead": "Campaign visuals designed to stop the scroll.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "4.1M Reel Views",
           "client": "Vertex Audio",
           "title": "Launch Film for Vertex Audio",
@@ -308,10 +307,10 @@
             "Motion Graphics",
             "Color Grade",
             "Sound Design"
-          ]
+          ],
+          "chip": "Video Campaign"
         },
         {
-          "badge": "Project Card",
           "metric": "11x CTR Lift",
           "client": "Arc AI Tools",
           "title": "Product Demo Motion Suite",
@@ -326,7 +325,8 @@
             "Promo Video",
             "A/B Testing",
             "Direct Response"
-          ]
+          ],
+          "chip": "Reels & Ads"
         }
       ]
     },
@@ -348,7 +348,6 @@
       "detailLead": "Social growth plans that build durable audiences.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "320% Reservation Growth",
           "client": "Cedar House Hotels",
           "title": "Hospitality Growth Calendar",
@@ -364,10 +363,10 @@
             "Facebook",
             "Content Calendar",
             "Community"
-          ]
+          ],
+          "chip": "Community Growth"
         },
         {
-          "badge": "Project Card",
           "metric": "2.8M Impressions",
           "client": "Mira Capital",
           "title": "Founder Brand Social Playbook",
@@ -383,7 +382,8 @@
             "Instagram",
             "Strategy",
             "Reporting"
-          ]
+          ],
+          "chip": "Paid Social"
         }
       ]
     },
@@ -405,7 +405,6 @@
       "detailLead": "Performance marketing with measurable growth.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "5.2x ROAS",
           "client": "Aura Lifestyle Apparel",
           "title": "Omnichannel Growth Campaign",
@@ -421,10 +420,10 @@
             "Google Ads",
             "Retargeting",
             "Analytics"
-          ]
+          ],
+          "chip": "Paid Acquisition"
         },
         {
-          "badge": "Project Card",
           "metric": "3.6x Qualified Leads",
           "client": "Nimbus Workflow",
           "title": "Lead Gen Funnel for B2B SaaS",
@@ -439,7 +438,8 @@
             "Search",
             "Retargeting",
             "Landing Pages"
-          ]
+          ],
+          "chip": "Performance"
         }
       ]
     },
@@ -462,7 +462,6 @@
       "detailLead": "Executive presence built for trust and authority.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "Forbes Feature Ready",
           "client": "Dr. A. Sharma",
           "title": "Executive Portfolio for a FinTech Founder",
@@ -478,10 +477,10 @@
             "Portfolio",
             "LinkedIn",
             "PR"
-          ]
+          ],
+          "chip": "Case Study"
         },
         {
-          "badge": "Project Card",
           "metric": "12 Speaking Inquiries",
           "client": "Ava Mensah, Design Strategist",
           "title": "Creator Authority Website",
@@ -496,7 +495,8 @@
             "Executive Site",
             "Media Kit",
             "Authority"
-          ]
+          ],
+          "chip": "Project"
         }
       ]
     },
@@ -518,7 +518,6 @@
       "detailLead": "Brand systems that make new offers memorable.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "Retail Launch Ready",
           "client": "Luma Home Goods",
           "title": "Signature Product Identity System",
@@ -534,10 +533,10 @@
             "Identity",
             "Guidelines",
             "Positioning"
-          ]
+          ],
+          "chip": "Case Study"
         },
         {
-          "badge": "Project Card",
           "metric": "2x Brand Recall",
           "client": "Urban Nest Interiors",
           "title": "Service Brand Refresh for Growth Stage",
@@ -552,7 +551,8 @@
             "Brand Strategy",
             "Visual Identity",
             "Launch"
-          ]
+          ],
+          "chip": "Project"
         }
       ]
     },
@@ -574,7 +574,6 @@
       "detailLead": "Websites your team can run — no developer needed for everyday updates.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "-80% Update Time",
           "client": "Manalot",
           "title": "Manalot CMS Rebuild",
@@ -589,10 +588,10 @@
             "WordPress",
             "Elementor Pro",
             "ACF"
-          ]
+          ],
+          "chip": "CMS Build"
         },
         {
-          "badge": "Project Card",
           "metric": "12 Sites, 1 Stack",
           "client": "Edubuk",
           "title": "Edubuk Multi-Site Setup",
@@ -607,7 +606,8 @@
             "CMS",
             "Multi-site",
             "Templates"
-          ]
+          ],
+          "chip": "Multi-Site"
         }
       ]
     },
@@ -629,7 +629,6 @@
       "detailLead": "From first sketch to production — one codebase, one team.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "3 Weeks to Launch",
           "client": "FitnessPro Studios",
           "title": "FitnessPro Member Platform",
@@ -644,10 +643,10 @@
             "Next.js",
             "Node.js",
             "PostgreSQL"
-          ]
+          ],
+          "chip": "Product Build"
         },
         {
-          "badge": "Project Card",
           "metric": "99.9% Uptime",
           "client": "Elionyx",
           "title": "Elionyx Operations Portal",
@@ -662,7 +661,8 @@
             "React",
             "REST API",
             "Cloud"
-          ]
+          ],
+          "chip": "Internal Tool"
         }
       ]
     },
@@ -684,7 +684,6 @@
       "detailLead": "Software that runs your operation — not just your website.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "+63% Closing Rate",
           "client": "Aura Lifestyle Apparel",
           "title": "Aura Sales CRM",
@@ -699,10 +698,10 @@
             "CRM",
             "Automation",
             "Dashboards"
-          ]
+          ],
+          "chip": "CRM Build"
         },
         {
-          "badge": "Project Card",
           "metric": "40 Hrs Saved / Month",
           "client": "Sai Estates",
           "title": "Sai Estates Property System",
@@ -717,7 +716,8 @@
             "PMS",
             "System Design",
             "Reports"
-          ]
+          ],
+          "chip": "PMS Build"
         }
       ]
     },
@@ -739,7 +739,6 @@
       "detailLead": "Let automation handle the repetitive work — your team handles growth.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "68% Faster Replies",
           "client": "Edubuk",
           "title": "Edubuk AI Support Assistant",
@@ -754,10 +753,10 @@
             "AI Assistant",
             "RAG",
             "API"
-          ]
+          ],
+          "chip": "AI Feature"
         },
         {
-          "badge": "Project Card",
           "metric": "9 Hrs Saved / Week",
           "client": "Blue Diamond Auto Services",
           "title": "Automated Enquiry Engine",
@@ -772,7 +771,8 @@
             "Automation",
             "WhatsApp API",
             "CRM"
-          ]
+          ],
+          "chip": "Automation"
         }
       ]
     },
@@ -794,7 +794,6 @@
       "detailLead": "Stores engineered for orders, not just for looks.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "2.4x Revenue",
           "client": "SipLab",
           "title": "SipLab D2C Store",
@@ -809,10 +808,10 @@
             "Shopify",
             "CRO",
             "Payments"
-          ]
+          ],
+          "chip": "Shopify Build"
         },
         {
-          "badge": "Project Card",
           "metric": "-35% Cart Abandonment",
           "client": "NexTech Retail Global",
           "title": "WooCommerce Optimisation",
@@ -827,7 +826,8 @@
             "WooCommerce",
             "UX",
             "Analytics"
-          ]
+          ],
+          "chip": "WooCommerce"
         }
       ]
     },
@@ -849,7 +849,6 @@
       "detailLead": "Where everything connects — reliable, secure and documented.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "12 APIs, 1 Platform",
           "client": "Elionyx",
           "title": "Elionyx Integration Layer",
@@ -864,10 +863,10 @@
             "REST API",
             "Node.js",
             "Security"
-          ]
+          ],
+          "chip": "API Platform"
         },
         {
-          "badge": "Project Card",
           "metric": "Zero Downtime",
           "client": "Perfect Air Conditioners",
           "title": "Booking & Payments API",
@@ -882,7 +881,8 @@
             "API",
             "Migration",
             "Monitoring"
-          ]
+          ],
+          "chip": "Live Migration"
         }
       ]
     },
@@ -904,7 +904,6 @@
       "detailLead": "Design decisions first — guesswork never.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "-42% Task Time",
           "client": "Manalot",
           "title": "Manalot Dashboard UX",
@@ -919,10 +918,10 @@
             "Figma",
             "UX Research",
             "Design System"
-          ]
+          ],
+          "chip": "UX Overhaul"
         },
         {
-          "badge": "Project Card",
           "metric": "2x Signups",
           "client": "Edubuk",
           "title": "Edubuk Onboarding Flow",
@@ -937,7 +936,8 @@
             "Prototyping",
             "CRO",
             "Mobile UX"
-          ]
+          ],
+          "chip": "Onboarding"
         }
       ]
     },
@@ -959,7 +959,6 @@
       "detailLead": "Rankings that hold — from audit to reporting.",
       "projects": [
         {
-          "badge": "Project Card",
           "metric": "+180% Organic Traffic",
           "client": "Edubuk",
           "title": "Edubuk Organic Growth",
@@ -974,10 +973,10 @@
             "Technical SEO",
             "Content",
             "Schema"
-          ]
+          ],
+          "chip": "Organic Growth"
         },
         {
-          "badge": "Project Card",
           "metric": "1.1s LCP",
           "client": "Perfect Air Conditioners",
           "title": "Core Web Vitals Rescue",
@@ -992,7 +991,8 @@
             "Performance",
             "Caching",
             "Images"
-          ]
+          ],
+          "chip": "Performance"
         }
       ]
     }
