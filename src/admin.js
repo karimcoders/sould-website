@@ -585,14 +585,15 @@ function viewPages() {
 
 function viewServices() {
   const arr = get('services') || [];
-  const ICONS = ['globe', 'smartphone', 'pen-tool', 'video', 'instagram', 'target', 'user-round', 'package', 'message', 'send', 'bar-chart', 'shield-check', 'users', 'heart', 'zap', 'clock'];
+  const ICONS = ['globe', 'smartphone', 'pen-tool', 'video', 'instagram', 'target', 'user-round', 'package', 'message', 'send', 'bar-chart', 'shield-check', 'users', 'heart', 'zap', 'clock', 'layout-panel', 'badge-dollar', 'sparkles', 'megaphone', 'clapperboard'];
   const CATS = [
-  ['dev', 'Web & Mobile — websites, apps, CMS & e-commerce'],
-  ['systems', 'AI & Systems — CRM/PMS, AI features, backend & APIs'],
-  ['ads', 'Ads, SEO & Growth'],
-  ['creative', 'Content & Video'],
-  ['branding', 'Branding & Portfolios']
-];
+    ['dev', 'Web & Apps'],
+    ['cms', 'CMS & E-commerce'],
+    ['ai', 'AI & Automation'],
+    ['ads', 'Paid Ads & SMM'],
+    ['creative', 'Content & Video'],
+    ['branding', 'Branding & Portfolios']
+  ];
   return `
   <div class="banner">
     Each service automatically appears on the home carousel, the Services page and the footer.
@@ -612,6 +613,7 @@ function viewServices() {
       <div class="f"><label>Category (used by the filter buttons)</label><select data-path="${key}.category">
         ${CATS.map(([v, l]) => `<option value="${v}" ${s.category === v ? 'selected' : ''}>${l}</option>`).join('')}
       </select></div>
+      ${fText(key + '.shortTitle', 'Short name (nav menu)', { tip: 'e.g. Web Apps & SaaS' })}
       ${fText(key + '.group', 'Group label')}
       ${fText(key + '.desc', 'Short description', { type: 'area', rows: 3, full: true })}
       ${fText(key + '.detailLead', 'Detail page sub-heading', { full: true })}
@@ -634,7 +636,7 @@ function viewServices() {
           ${fText(pkey + '.metric', 'Result badge', { tip: 'shown on the image' })}
           ${fText(pkey + '.title', 'Project title', { full: true })}
           ${fText(pkey + '.desc', 'Description', { type: 'area', rows: 3, full: true })}
-          ${fText(pkey + '.badge', 'Small badge')}
+          ${fText(pkey + '.badge', 'Small badge', { tip: 'corner label on the image (default: Project Card)' })}
         </div>
         <div style="margin-top:12px">${fImage(pkey + '.img', 'Project image')}</div>
         <div style="margin-top:12px">${strList(pkey + '.highlights', { label: 'Key highlights', addLabel: 'Add highlight' })}</div>
