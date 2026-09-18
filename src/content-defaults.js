@@ -5,134 +5,110 @@
    ========================================================================== */
 
 window.SOULD_DEFAULTS = {
-
-  /* ------------------------------------------------------------------
-     COPY — every heading / paragraph on the site.
-     [b]...[/b] renders the text in Soul-D blue.
-     [w]...[/w] renders it white (used inside a blue phrase).
-     A blank line or \n creates a line break.
-     ------------------------------------------------------------------ */
-  copy: {
-    navHome: 'Home',
-    navServices: 'Services',
-    navWork: 'Our Work',
-    navAbout: 'About Us',
-    navContact: 'Contact',
-    navCta: 'Get a Free Quote',
-
-    homeHero1: 'Elevate Your Brand with Soul-D.',
-    homeHero2: 'The Best [b]Digital Marketing[/b]\n[b]Agency[/b] in Hyderabad',
-    homeHeroBtn1: 'Get a Free Quote',
-    homeHeroBtn2: 'Learn More',
-
-    homeAboutTitle: 'Transforming Ideas\ninto High-Performance\n[b]Digital Assets[/b]',
-    homeAboutText: 'Whether you need a custom responsive website, a feature-packed mobile app, or an executive brand portfolio, Soul-D. combines creative design and modern technology to launch your brand effortlessly.',
-    homeAboutBtn: 'Explore Web & App Solutions',
-    homeAboutLink: 'Explore all features',
-
-    homeStrategyTitle: 'Strategies that Turn\n[b]Attention [w]into[/w] Growth[/b]',
-    homeStrategyText: 'At Soul-D., we believe top-tier digital marketing should be both powerful and affordable. We craft tailored strategies across web, mobile, creative content, and targeted ad channels.',
-    homeStrategyLink: 'Learn More',
-
-    homeRecognitionTitle: 'Trusted Industry Recognition',
-    homeRecognitionText: 'Certified by global tech platforms and top-rated by clients for delivering high performance, transparent pricing, and measurable growth.',
-
-    homeProposalTitle: 'A focused plan for your next digital growth move.',
-    homeProposalText: 'Share your project goals and our team will shape a practical proposal with the right services, timeline, and budget range for your brand.',
-
-    formTitle: 'Get Custom Proposal',
-    formHint: 'Tell us what you need and we will prepare a clear next-step plan.',
-    formSubmit: 'Submit Your Request',
-
-    homeFaqTitle: 'Frequently Asked Questions',
-    homeFaqText: 'Everything you need to know about partnering with Soul-D.',
-
-    servicesHeroTitle: 'Solutions Designed To\n[b]Scale Your Business[/b]',
-    servicesHeroText: 'From modern web & mobile applications to high-ROI Meta & Google ad campaigns and creative video production — explore our full suite of services.',
-    servicesProcessTitle: 'Our Proven Service Delivery Process',
-    servicesProcessText: 'We streamline execution to ensure your projects are delivered on time, within budget, and to the highest standards.',
-    servicesCtaTitle: 'Ready to Take Your Brand to the Next Level?',
-    servicesCtaText: 'Get in touch with our team today for a tailored quote and strategy blueprint tailored to your budget.',
-    servicesCtaBtn: 'Get Free Quote Now',
-
-    detailProjectsWord: 'Projects',
-    detailCtaTitle: 'Projects tailored to your brief',
-    detailCtaText: 'Want a project like these? We can scope, design, and deliver a custom solution for your brand, product, or campaign.',
-    detailCtaBtn: 'Request a Quote',
-
-    workHeroTitle: 'Our Work & [b]Case Studies[/b]',
-    workHeroText: 'Explore how we help startups, businesses, and executives turn digital investments into revenue, engagement, and market leadership.',
-    workCtaTitle: 'Want Similar Growth Results For Your Brand?',
-    workCtaText: 'Let our team engineer a customized digital marketing and development roadmap for your company.',
-    workCtaBtn: 'Start Your Project',
-
-    aboutHeroTitle: 'Driven by Passion,\n[b]Engineered for Results[/b]',
-    aboutHeroText: 'At Soul-D. Digital Marketing Solutions, we empower brands, startups, and executives with world-class digital services at accessible rates.',
-    aboutStoryEyebrow: 'Our Story',
-    aboutStoryTitle: 'Making Premium Digital Growth Accessible To Everyone',
-    aboutStoryP1: 'Founded with a mission to bridge the gap between expensive traditional agencies and budget constraints, Soul-D. provides complete digital marketing, web/app development, video production, and advertising solutions.',
-    aboutStoryP2: 'We believe every business — whether a local storefront, an emerging startup, or an executive establishing a personal brand — deserves top-tier digital assets that perform.',
-    aboutMottoLabel: 'Our Motto',
-    aboutMottoText: '“Digital Marketing Solutions at Reasonable Rates.”',
-    aboutValuesTitle: 'The Principles That Guide Us',
-    aboutValuesText: 'Every decision we make is rooted in core values designed to deliver maximum value to our clients.',
-    aboutTeamTitle: 'Meet the Experts Behind Your Growth',
-    aboutTeamText: 'Our multi-talented team combines creative innovation and technical mastery.',
-    aboutCtaTitle: 'Let’s Build Something Remarkable Together',
-    aboutCtaText: 'Partner with Soul-D. today and transform your online presence with industry-leading solutions.',
-    aboutCtaBtn: 'Get Started Today',
-
-    contactHeroTitle: 'Let’s Discuss Your [b]Next Project[/b]',
-    contactHeroText: 'Have a question or ready to launch your next website, mobile app, or ad campaign? Reach out to us today.',
-    contactDirectTitle: 'Direct Contact Information',
-    contactDirectText: 'Prefer direct communication? Reach out via phone, email, or schedule a quick discovery call with our team.',
-
-    footerTagline: 'We would love to hear from you. Subscribe for more information.',
-    footerServicesTitle: 'Our Services',
-    footerContactTitle: 'Get in Touch',
-    footerCopyright: '© 2026 Soul-D. | Digital Marketing Solutions. All rights reserved.'
+  "copy": {
+    "navHome": "Home",
+    "navServices": "Services",
+    "navWork": "Our Work",
+    "navAbout": "About Us",
+    "navContact": "Contact",
+    "navCta": "Get a Free Quote",
+    "homeHero1": "Elevate Your Brand with Soul-D.",
+    "homeHero2": "The Best [b]Digital Marketing[/b]\n[b]Agency[/b] in Hyderabad",
+    "homeHeroBtn1": "Get a Free Quote",
+    "homeHeroBtn2": "Learn More",
+    "homeAboutTitle": "Transforming Ideas\ninto High-Performance\n[b]Digital Assets[/b]",
+    "homeAboutText": "Whether you need a custom responsive website, a feature-packed mobile app, or an executive brand portfolio, Soul-D. combines creative design and modern technology to launch your brand effortlessly.",
+    "homeAboutBtn": "Explore Web & App Solutions",
+    "homeAboutLink": "Explore all features",
+    "homeStrategyTitle": "Strategies that Turn\n[b]Attention [w]into[/w] Growth[/b]",
+    "homeStrategyText": "At Soul-D., we believe top-tier digital marketing should be both powerful and affordable. We craft tailored strategies across web, mobile, creative content, and targeted ad channels.",
+    "homeStrategyLink": "Learn More",
+    "homeRecognitionTitle": "Trusted Industry Recognition",
+    "homeRecognitionText": "Certified by global tech platforms and top-rated by clients for delivering high performance, transparent pricing, and measurable growth.",
+    "homeProposalTitle": "A focused plan for your next digital growth move.",
+    "homeProposalText": "Share your project goals and our team will shape a practical proposal with the right services, timeline, and budget range for your brand.",
+    "formTitle": "Get Custom Proposal",
+    "formHint": "Tell us what you need and we will prepare a clear next-step plan.",
+    "formSubmit": "Submit Your Request",
+    "homeFaqTitle": "Frequently Asked Questions",
+    "homeFaqText": "Everything you need to know about partnering with Soul-D.",
+    "servicesHeroTitle": "Advanced Digital Services,\n[b]Built For Every Industry[/b]",
+    "servicesHeroText": "From full-stack web apps, CMS, CRM and AI automation to high-ROI Meta & Google ad campaigns and creative video — we design, build and grow digital products across every industry.",
+    "servicesProcessTitle": "Our Proven Service Delivery Process",
+    "servicesProcessText": "We streamline execution to ensure your projects are delivered on time, within budget, and to the highest standards.",
+    "servicesCtaTitle": "Ready to Take Your Brand to the Next Level?",
+    "servicesCtaText": "Get in touch with our team today for a tailored quote and strategy blueprint tailored to your budget.",
+    "servicesCtaBtn": "Get Free Quote Now",
+    "detailProjectsWord": "Projects",
+    "detailCtaTitle": "Projects tailored to your brief",
+    "detailCtaText": "Want a project like these? We can scope, design, and deliver a custom solution for your brand, product, or campaign.",
+    "detailCtaBtn": "Request a Quote",
+    "workHeroTitle": "Our Work & [b]Case Studies[/b]",
+    "workHeroText": "Explore how we help startups, businesses, and executives turn digital investments into revenue, engagement, and market leadership.",
+    "workCtaTitle": "Want Similar Growth Results For Your Brand?",
+    "workCtaText": "Let our team engineer a customized digital marketing and development roadmap for your company.",
+    "workCtaBtn": "Start Your Project",
+    "aboutHeroTitle": "Driven by Passion,\n[b]Engineered for Results[/b]",
+    "aboutHeroText": "At Soul-D. Digital Marketing Solutions, we empower brands, startups, and executives with world-class digital services at accessible rates.",
+    "aboutStoryEyebrow": "Our Story",
+    "aboutStoryTitle": "Making Premium Digital Growth Accessible To Everyone",
+    "aboutStoryP1": "Founded with a mission to bridge the gap between expensive traditional agencies and budget constraints, Soul-D. provides complete digital marketing, web/app development, video production, and advertising solutions.",
+    "aboutStoryP2": "We believe every business — whether a local storefront, an emerging startup, or an executive establishing a personal brand — deserves top-tier digital assets that perform.",
+    "aboutMottoLabel": "Our Motto",
+    "aboutMottoText": "“Digital Marketing Solutions at Reasonable Rates.”",
+    "aboutValuesTitle": "The Principles That Guide Us",
+    "aboutValuesText": "Every decision we make is rooted in core values designed to deliver maximum value to our clients.",
+    "aboutTeamTitle": "Meet the Experts Behind Your Growth",
+    "aboutTeamText": "Our multi-talented team combines creative innovation and technical mastery.",
+    "aboutCtaTitle": "Let’s Build Something Remarkable Together",
+    "aboutCtaText": "Partner with Soul-D. today and transform your online presence with industry-leading solutions.",
+    "aboutCtaBtn": "Get Started Today",
+    "contactHeroTitle": "Let’s Discuss Your [b]Next Project[/b]",
+    "contactHeroText": "Have a question or ready to launch your next website, mobile app, or ad campaign? Reach out to us today.",
+    "contactDirectTitle": "Direct Contact Information",
+    "contactDirectText": "Prefer direct communication? Reach out via phone, email, or schedule a quick discovery call with our team.",
+    "footerTagline": "We would love to hear from you. Subscribe for more information.",
+    "footerServicesTitle": "Our Services",
+    "footerContactTitle": "Get in Touch",
+    "footerCopyright": "© 2026 Soul-D. | Digital Marketing Solutions. All rights reserved."
   },
-
-  site:   {
-    name: 'Soul-D.',
-    tagline: 'Digital Marketing Solutions',
-    domain: 'www.soulddigitalmarketing.com',
-    email: 'hello@soulddigitalmarketing.com',
-    phone: '+91 9866500578',
-    tel: '+919866500578',
-    whatsapp: '919866500578',
-    hours: 'Mon - Sat: 9:00 AM - 8:00 PM',
-    address: 'Suncity, Near Vantage Line Mall, Bandlaguda Jagir, Hyderabad - 91',
-    social: {
-      linkedin: 'https://www.linkedin.com/company/soulddigitallysoulful',
-      instagram: 'https://www.instagram.com/soulddigitalmarketing',
-      facebook: 'https://www.facebook.com/soul.d.digitalmarketing',
-      youtube: 'https://www.youtube.com/@Soul.D.DigitalMarketing',
-      twitter: 'https://x.com/soul_d_digital'
+  "site": {
+    "name": "Soul-D.",
+    "tagline": "Digital Marketing Solutions",
+    "domain": "www.soulddigitalmarketing.com",
+    "email": "hello@soulddigitalmarketing.com",
+    "phone": "+91 9866500578",
+    "tel": "+919866500578",
+    "whatsapp": "919866500578",
+    "hours": "Mon - Sat: 9:00 AM - 8:00 PM",
+    "address": "Suncity, Near Vantage Line Mall, Bandlaguda Jagir, Hyderabad - 91",
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/soulddigitallysoulful",
+      "instagram": "https://www.instagram.com/soulddigitalmarketing",
+      "facebook": "https://www.facebook.com/soul.d.digitalmarketing",
+      "youtube": "https://www.youtube.com/@Soul.D.DigitalMarketing",
+      "twitter": "https://x.com/soul_d_digital"
     }
   },
-
-  images:   {
-    souldLogoHeader: 'assets/sould-logo-1-BkM_pOXT.png',
-    souldLogoFooter: 'assets/sould-logo-C0ARBR39.png',
-    hub1: 'assets/hubspot_image_1-U-VcNU6N.jpg',
-    hub2: 'assets/hubspot_image_3-BRNm9t2P.jpg',
-    blueDiamond: 'assets/blue-diamond-logo-Bijj6Bm0.png',
-    edubuk: 'assets/edubuk-logo-BSwzF_C-.png',
-    elionyx: 'assets/elionyx-Div9V71c.png',
-    manalot: 'assets/manalog-logo-Bu4g3Yim.png',
-    perfectAir: 'assets/perfect-air-conditioners-CpO9eHv-.png'
+  "images": {
+    "souldLogoHeader": "assets/sould-logo-1-BkM_pOXT.png",
+    "souldLogoFooter": "assets/sould-logo-C0ARBR39.png",
+    "hub1": "assets/hubspot_image_1-U-VcNU6N.jpg",
+    "hub2": "assets/hubspot_image_3-BRNm9t2P.jpg",
+    "blueDiamond": "assets/blue-diamond-logo-Bijj6Bm0.png",
+    "edubuk": "assets/edubuk-logo-BSwzF_C-.png",
+    "elionyx": "assets/elionyx-Div9V71c.png",
+    "manalot": "assets/manalog-logo-Bu4g3Yim.png",
+    "perfectAir": "assets/perfect-air-conditioners-CpO9eHv-.png"
   },
-
-  heroSlides:   [
-    'assets/1522071820081.jpg',
-    'assets/1552664730.jpg',
-    'assets/1460925895917.jpg',
-    'assets/1533750349088.jpg',
-    'assets/1519389950473.jpg'
+  "heroSlides": [
+    "assets/1522071820081.jpg",
+    "assets/1552664730.jpg",
+    "assets/1460925895917.jpg",
+    "assets/1533750349088.jpg",
+    "assets/1519389950473.jpg"
   ],
-
-  services:   [
+  "services": [
     {
       "id": "web-dev",
       "num": 1,
@@ -151,6 +127,7 @@ window.SOULD_DEFAULTS = {
       "detailLead": "High-converting digital experiences for ambitious brands.",
       "projects": [
         {
+          "badge": "Project Card",
           "metric": "+186% Online Orders",
           "client": "Atlas Retail Group",
           "title": "Atlas Commerce Platform",
@@ -166,10 +143,10 @@ window.SOULD_DEFAULTS = {
             "E-commerce",
             "SEO",
             "Performance"
-          ],
-          "chip": "Featured Build"
+          ]
         },
         {
+          "badge": "Project Card",
           "metric": "4x More Qualified Leads",
           "client": "Foundry Creative Co.",
           "title": "Foundry Studio Website Redesign",
@@ -185,14 +162,72 @@ window.SOULD_DEFAULTS = {
             "CMS",
             "UI Motion",
             "Lead Gen"
-          ],
-          "chip": "Growth Case"
+          ]
         }
-      ]
+      ],
+      "shortTitle": "Website Development"
+    },
+    {
+      "id": "fullstack-apps",
+      "title": "Full-Stack Web Apps & SaaS",
+      "shortTitle": "Web Apps & SaaS",
+      "icon": "layout-panel",
+      "category": "dev",
+      "group": "Web & Apps",
+      "img": "assets/1552664730.jpg",
+      "desc": "Complete web applications and SaaS platforms — dashboards, user accounts, subscriptions and databases. Built with React, Next.js, Node and secure APIs, ready to scale with your business.",
+      "bullets": [
+        "Custom Dashboards & Admin Panels",
+        "User Roles, Auth & Subscriptions",
+        "Real-Time Data & Integrations",
+        "Scalable Cloud-Ready Architecture"
+      ],
+      "detailLead": "From idea to a live product your team runs every day.",
+      "projects": [
+        {
+          "badge": "Project Card",
+          "metric": "12k+ Users Onboarded",
+          "client": "NexaDesk Technologies",
+          "title": "NexaDesk Client Portal SaaS",
+          "desc": "A multi-tenant client portal with role-based access, ticketing, billing and analytics — replacing four disconnected tools.",
+          "img": "assets/1557821552.jpg",
+          "highlights": [
+            "4 tools replaced",
+            "+63% support efficiency",
+            "99.9% uptime"
+          ],
+          "tags": [
+            "Next.js",
+            "Node.js",
+            "PostgreSQL",
+            "Stripe"
+          ]
+        },
+        {
+          "badge": "Project Card",
+          "metric": "8 Weeks To Launch",
+          "client": "MediTrack Systems",
+          "title": "MediTrack Operations Platform",
+          "desc": "Scheduling, inventory and reporting platform for a multi-clinic healthcare group with audit-ready permissions.",
+          "img": "assets/1460925895917.jpg",
+          "highlights": [
+            "5 clinics onboarded",
+            "18 hrs/week saved",
+            "Role-based security"
+          ],
+          "tags": [
+            "React",
+            "REST APIs",
+            "Firebase",
+            "RBAC"
+          ]
+        }
+      ],
+      "num": 2
     },
     {
       "id": "app-dev",
-      "num": 2,
+      "num": 3,
       "title": "Mobile App Development",
       "icon": "smartphone",
       "img": "assets/1512941937669.jpg",
@@ -208,6 +243,7 @@ window.SOULD_DEFAULTS = {
       "detailLead": "Mobile products built to engage users and scale fast.",
       "projects": [
         {
+          "badge": "Project Card",
           "metric": "160k+ Installs",
           "client": "PulseFit Studios",
           "title": "PulseFit Mobile Companion",
@@ -223,10 +259,10 @@ window.SOULD_DEFAULTS = {
             "Firebase",
             "Subscriptions",
             "Push Alerts"
-          ],
-          "chip": "Mobile Product"
+          ]
         },
         {
+          "badge": "Project Card",
           "metric": "30% Faster Dispatch",
           "client": "Northline Logistics",
           "title": "FleetOps Driver Portal",
@@ -242,14 +278,362 @@ window.SOULD_DEFAULTS = {
             "Android",
             "Operations",
             "Realtime"
-          ],
-          "chip": "Platform Build"
+          ]
         }
-      ]
+      ],
+      "shortTitle": "Mobile Apps"
+    },
+    {
+      "id": "custom-cms",
+      "title": "Custom CMS Development",
+      "shortTitle": "Custom CMS",
+      "icon": "package",
+      "category": "cms",
+      "group": "CMS & E-commerce",
+      "img": "assets/hubspot_image_1-U-VcNU6N.jpg",
+      "desc": "Headless and custom-built content management systems that let your team edit every page, section and collection without touching code — like WordPress, built around your workflow.",
+      "bullets": [
+        "Custom Admin Panels & Editors",
+        "Headless / API-First Content",
+        "Media Library & Version Backups",
+        "Role Permissions For Your Team"
+      ],
+      "detailLead": "Your team edits everything. Nothing breaks.",
+      "projects": [
+        {
+          "badge": "Project Card",
+          "metric": "3x Faster Publishing",
+          "client": "Urban Roots Media",
+          "title": "Urban Roots Publishing CMS",
+          "desc": "A magazine-style CMS with multi-author workflows, scheduled publishing, SEO fields and instant previews.",
+          "img": "assets/1516321497487.jpg",
+          "highlights": [
+            "3x faster publishing",
+            "120+ pages managed",
+            "Zero code edits"
+          ],
+          "tags": [
+            "Custom CMS",
+            "REST API",
+            "SEO Fields",
+            "Roles"
+          ]
+        },
+        {
+          "badge": "Project Card",
+          "metric": "100% Editable Website",
+          "client": "Horizon Interiors",
+          "title": "Horizon Content System",
+          "desc": "A visual content system where the client edits headings, images, services and testimonials with one click.",
+          "img": "assets/1522542550221.jpg",
+          "highlights": [
+            "100% self-editable",
+            "40% less dev time",
+            "Auto backups"
+          ],
+          "tags": [
+            "Headless CMS",
+            "Image Library",
+            "Versioning",
+            "Docs"
+          ]
+        }
+      ],
+      "num": 4
+    },
+    {
+      "id": "wordpress-elementor",
+      "title": "WordPress & Elementor Development",
+      "shortTitle": "WordPress & Elementor",
+      "icon": "zap",
+      "category": "cms",
+      "group": "CMS & E-commerce",
+      "img": "assets/hubspot_image_3-BRNm9t2P.jpg",
+      "desc": "Custom WordPress websites built with Elementor Pro, ACF and WooCommerce — fast, secure and fully editable by your own team, with clean code instead of bloated templates.",
+      "bullets": [
+        "Custom Themes & Elementor Pro Builds",
+        "ACF, CPT & Dynamic Content Setup",
+        "Speed, Security & Core Web Vitals",
+        "Migrations, Fixes & Ongoing Upkeep"
+      ],
+      "detailLead": "The world most-editable platform, built properly.",
+      "projects": [
+        {
+          "badge": "Project Card",
+          "metric": "2.1s to 0.9s Load Time",
+          "client": "Sharma Legal Associates",
+          "title": "Legal Practice Website Rebuild",
+          "desc": "Rebuilt a slow, bloated theme into a clean Elementor Pro build with structured practice-area templates.",
+          "img": "assets/1557821552.jpg",
+          "highlights": [
+            "0.9s load speed",
+            "+58% enquiries",
+            "100 SEO score"
+          ],
+          "tags": [
+            "WordPress",
+            "Elementor Pro",
+            "ACF",
+            "Speed"
+          ]
+        },
+        {
+          "badge": "Project Card",
+          "metric": "+71% Organic Traffic",
+          "client": "GreenLeaf Organics",
+          "title": "Organic Store & Blog Platform",
+          "desc": "A WooCommerce store with a content hub, category templates and automated product schema.",
+          "img": "assets/1558655146.jpg",
+          "highlights": [
+            "+71% organic traffic",
+            "240 products live",
+            "Self-managed blog"
+          ],
+          "tags": [
+            "WooCommerce",
+            "Elementor",
+            "Schema",
+            "SEO"
+          ]
+        }
+      ],
+      "num": 5
+    },
+    {
+      "id": "ecommerce-shopify",
+      "title": "E-commerce & Shopify",
+      "shortTitle": "E-commerce & Shopify",
+      "icon": "badge-dollar",
+      "category": "cms",
+      "group": "CMS & E-commerce",
+      "img": "assets/1555396273.jpg",
+      "desc": "Shopify and WooCommerce stores built to convert — product systems, collections, checkout customisation, payment and shipping integrations, and a store your team can run easily.",
+      "bullets": [
+        "Shopify & WooCommerce Builds",
+        "Product, Inventory & Order Systems",
+        "Payments, Shipping & Tax Setup",
+        "Conversion & Checkout Optimisation"
+      ],
+      "detailLead": "Stores built for sales, not just for looking good.",
+      "projects": [
+        {
+          "badge": "Project Card",
+          "metric": "+128% Revenue",
+          "client": "Alora Skincare",
+          "title": "Alora Shopify Store Launch",
+          "desc": "A conversion-focused Shopify store with bundle upsells, subscription options and ad-ready product pages.",
+          "img": "assets/1523726491678.jpg",
+          "highlights": [
+            "+128% revenue",
+            "3.2x ROAS",
+            "42% repeat buyers"
+          ],
+          "tags": [
+            "Shopify",
+            "Liquid",
+            "Upsells",
+            "Analytics"
+          ]
+        },
+        {
+          "badge": "Project Card",
+          "metric": "Rs 18L First-Quarter Sales",
+          "client": "Craft & Copper",
+          "title": "Craft & Copper WooCommerce Setup",
+          "desc": "Multi-category WooCommerce store with GST invoicing, courier integration and bulk inventory sync.",
+          "img": "assets/1555396273.jpg",
+          "highlights": [
+            "1,100 SKUs synced",
+            "Auto GST invoices",
+            "Courier API"
+          ],
+          "tags": [
+            "WooCommerce",
+            "GST",
+            "Inventory",
+            "Couriers"
+          ]
+        }
+      ],
+      "num": 6
+    },
+    {
+      "id": "crm-pms",
+      "title": "CRM, PMS & Business Dashboards",
+      "shortTitle": "CRM, PMS & Dashboards",
+      "icon": "bar-chart",
+      "category": "dev",
+      "group": "Web & Apps",
+      "img": "assets/1519389950473.jpg",
+      "desc": "Custom CRM and project-management systems built around how your business actually works — leads, pipelines, tasks, teams, invoicing and reports in one place.",
+      "bullets": [
+        "Lead & Sales Pipeline CRMs",
+        "Project & Task Management (PMS)",
+        "Team Roles, Approvals & Automation",
+        "Live Reports & Business Dashboards"
+      ],
+      "detailLead": "Stop juggling spreadsheets and five different apps.",
+      "projects": [
+        {
+          "badge": "Project Card",
+          "metric": "+34% Lead Conversion",
+          "client": "Vertex Realty Group",
+          "title": "Vertex Sales CRM",
+          "desc": "A real-estate CRM with lead capture, follow-up reminders, site-visit tracking and agent performance dashboards.",
+          "img": "assets/1460925895917.jpg",
+          "highlights": [
+            "+34% conversion",
+            "5,000+ leads managed",
+            "WhatsApp automation"
+          ],
+          "tags": [
+            "CRM",
+            "Dashboards",
+            "Automation",
+            "WhatsApp API"
+          ]
+        },
+        {
+          "badge": "Project Card",
+          "metric": "180 Live Projects Tracked",
+          "client": "BuildRight Constructions",
+          "title": "BuildRight Project Management Suite",
+          "desc": "Site-wise PMS with milestones, material tracking, contractor billing and daily progress reporting.",
+          "img": "assets/1533750349088.jpg",
+          "highlights": [
+            "180 live projects",
+            "Billing automated",
+            "Daily site reports"
+          ],
+          "tags": [
+            "PMS",
+            "Billing",
+            "Reports",
+            "Mobile-friendly"
+          ]
+        }
+      ],
+      "num": 7
+    },
+    {
+      "id": "ai-automation",
+      "title": "AI & Automation",
+      "shortTitle": "AI & Automation",
+      "icon": "sparkles",
+      "category": "ai",
+      "group": "AI & Automation",
+      "img": "assets/1523961131990.jpg",
+      "desc": "AI features and automation that save real hours — chat assistants, content and SEO tools, document workflows, and integrations that connect the apps you already use.",
+      "bullets": [
+        "AI Chat & Support Assistants",
+        "Content, SEO & Report Automation",
+        "Workflow & Data Automations",
+        "AI APIs & Model Integrations"
+      ],
+      "detailLead": "Practical AI — measured in hours saved, not hype.",
+      "projects": [
+        {
+          "badge": "Project Card",
+          "metric": "62% Tickets Auto-Resolved",
+          "client": "HelpHive Support",
+          "title": "AI Support Assistant",
+          "desc": "A trained assistant that answers product questions, routes complex tickets and drafts replies for the support team.",
+          "img": "assets/1523961131990.jpg",
+          "highlights": [
+            "62% auto-resolved",
+            "24/7 coverage",
+            "38% faster replies"
+          ],
+          "tags": [
+            "LLM APIs",
+            "Vector Search",
+            "CRM Sync",
+            "Analytics"
+          ]
+        },
+        {
+          "badge": "Project Card",
+          "metric": "26 Hours Saved / Month",
+          "client": "Brightpath Agencies",
+          "title": "Marketing Reporting Automation",
+          "desc": "Automated pipelines that pull ad and analytics data into client-ready reports with AI-written insights.",
+          "img": "assets/1516321318423.jpg",
+          "highlights": [
+            "26 hrs/month saved",
+            "12 data sources",
+            "Auto insights"
+          ],
+          "tags": [
+            "Automation",
+            "APIs",
+            "Reporting",
+            "Sheets"
+          ]
+        }
+      ],
+      "num": 8
+    },
+    {
+      "id": "backend-api",
+      "title": "Backend & API Development",
+      "shortTitle": "Backend & APIs",
+      "icon": "send",
+      "category": "dev",
+      "group": "Web & Apps",
+      "img": "assets/1522542550221.jpg",
+      "desc": "The engine behind your product — secure servers, REST APIs, databases, authentication, payment gateways and third-party integrations, built to handle real traffic and real data.",
+      "bullets": [
+        "REST & Webhook API Development",
+        "Database Design & Optimisation",
+        "Auth, Payments & Integrations",
+        "Deployment, Logging & Monitoring"
+      ],
+      "detailLead": "Reliable foundations your frontend can trust.",
+      "projects": [
+        {
+          "badge": "Project Card",
+          "metric": "3.1M API Calls / Month",
+          "client": "FleetPulse Telematics",
+          "title": "FleetPulse Tracking Backend",
+          "desc": "A high-throughput backend ingesting live vehicle data with geofencing alerts and driver scorecards.",
+          "img": "assets/1522542550221.jpg",
+          "highlights": [
+            "3.1M calls/month",
+            "<180ms avg response",
+            "Live geofencing"
+          ],
+          "tags": [
+            "Node.js",
+            "PostgreSQL",
+            "WebSockets",
+            "Redis"
+          ]
+        },
+        {
+          "badge": "Project Card",
+          "metric": "9 Platforms Connected",
+          "client": "PayNest Fintech",
+          "title": "PayNest Integration Layer",
+          "desc": "A unified integration service connecting payments, KYC, CRM and ERP systems behind one secure API.",
+          "img": "assets/1516321497487.jpg",
+          "highlights": [
+            "9 integrations",
+            "PCI-aware design",
+            "99.95% success rate"
+          ],
+          "tags": [
+            "API Gateway",
+            "OAuth 2.0",
+            "Webhooks",
+            "Security"
+          ]
+        }
+      ],
+      "num": 9
     },
     {
       "id": "content-creation",
-      "num": 3,
+      "num": 10,
       "title": "Content Creation",
       "icon": "pen-tool",
       "img": "assets/1455390582262.jpg",
@@ -265,6 +649,7 @@ window.SOULD_DEFAULTS = {
       "detailLead": "Content systems that turn attention into action.",
       "projects": [
         {
+          "badge": "Project Card",
           "metric": "7.4M Organic Views",
           "client": "Nova Skin Care",
           "title": "Launch Week Content Engine",
@@ -280,10 +665,10 @@ window.SOULD_DEFAULTS = {
             "Creative Direction",
             "Social",
             "SEO"
-          ],
-          "chip": "Content System"
+          ]
         },
         {
+          "badge": "Project Card",
           "metric": "61% More Inbound Demos",
           "client": "Vector Analytics",
           "title": "B2B Thought Leadership Suite",
@@ -299,14 +684,14 @@ window.SOULD_DEFAULTS = {
             "Blog",
             "Lead Gen",
             "Brand Voice"
-          ],
-          "chip": "Product Copy"
+          ]
         }
-      ]
+      ],
+      "shortTitle": "Content Creation"
     },
     {
       "id": "video-production",
-      "num": 4,
+      "num": 11,
       "title": "Video Production & Editing",
       "icon": "video",
       "img": "assets/1492619375914.jpg",
@@ -322,6 +707,7 @@ window.SOULD_DEFAULTS = {
       "detailLead": "Campaign visuals designed to stop the scroll.",
       "projects": [
         {
+          "badge": "Project Card",
           "metric": "4.1M Reel Views",
           "client": "Vertex Audio",
           "title": "Launch Film for Vertex Audio",
@@ -337,10 +723,10 @@ window.SOULD_DEFAULTS = {
             "Motion Graphics",
             "Color Grade",
             "Sound Design"
-          ],
-          "chip": "Video Campaign"
+          ]
         },
         {
+          "badge": "Project Card",
           "metric": "11x CTR Lift",
           "client": "Arc AI Tools",
           "title": "Product Demo Motion Suite",
@@ -355,14 +741,14 @@ window.SOULD_DEFAULTS = {
             "Promo Video",
             "A/B Testing",
             "Direct Response"
-          ],
-          "chip": "Reels & Ads"
+          ]
         }
-      ]
+      ],
+      "shortTitle": "Video Production"
     },
     {
       "id": "smm",
-      "num": 5,
+      "num": 12,
       "title": "Social Media Management",
       "icon": "instagram",
       "img": "assets/1611162617213.jpg",
@@ -378,6 +764,7 @@ window.SOULD_DEFAULTS = {
       "detailLead": "Social growth plans that build durable audiences.",
       "projects": [
         {
+          "badge": "Project Card",
           "metric": "320% Reservation Growth",
           "client": "Cedar House Hotels",
           "title": "Hospitality Growth Calendar",
@@ -393,10 +780,10 @@ window.SOULD_DEFAULTS = {
             "Facebook",
             "Content Calendar",
             "Community"
-          ],
-          "chip": "Community Growth"
+          ]
         },
         {
+          "badge": "Project Card",
           "metric": "2.8M Impressions",
           "client": "Mira Capital",
           "title": "Founder Brand Social Playbook",
@@ -412,14 +799,14 @@ window.SOULD_DEFAULTS = {
             "Instagram",
             "Strategy",
             "Reporting"
-          ],
-          "chip": "Paid Social"
+          ]
         }
-      ]
+      ],
+      "shortTitle": "Social Media"
     },
     {
       "id": "ads",
-      "num": 6,
+      "num": 13,
       "title": "Google Ads & Meta Ads",
       "icon": "target",
       "img": "assets/1460925895917.jpg",
@@ -435,6 +822,7 @@ window.SOULD_DEFAULTS = {
       "detailLead": "Performance marketing with measurable growth.",
       "projects": [
         {
+          "badge": "Project Card",
           "metric": "5.2x ROAS",
           "client": "Aura Lifestyle Apparel",
           "title": "Omnichannel Growth Campaign",
@@ -450,10 +838,10 @@ window.SOULD_DEFAULTS = {
             "Google Ads",
             "Retargeting",
             "Analytics"
-          ],
-          "chip": "Paid Acquisition"
+          ]
         },
         {
+          "badge": "Project Card",
           "metric": "3.6x Qualified Leads",
           "client": "Nimbus Workflow",
           "title": "Lead Gen Funnel for B2B SaaS",
@@ -468,71 +856,14 @@ window.SOULD_DEFAULTS = {
             "Search",
             "Retargeting",
             "Landing Pages"
-          ],
-          "chip": "Performance"
+          ]
         }
-      ]
-    },
-    {
-      "id": "personal-branding",
-      "num": 7,
-      "title": "Portfolio Creation for Personal Branding",
-      "shortTitle": "Portfolio for Personal Branding",
-      "icon": "user-round",
-      "img": "assets/1580489944761.jpg",
-      "category": "branding",
-      "group": "Branding & Portfolios",
-      "desc": "Establish authority and showcase your professional journey with custom executive digital portfolios, personal branding websites, and resume showcases.",
-      "bullets": [
-        "Custom Executive Portfolios",
-        "Interactive Resume & Bio Showcase",
-        "Personal Brand Identity & Kit",
-        "Lead Form & Contact Integration"
       ],
-      "detailLead": "Executive presence built for trust and authority.",
-      "projects": [
-        {
-          "metric": "Forbes Feature Ready",
-          "client": "Dr. A. Sharma",
-          "title": "Executive Portfolio for a FinTech Founder",
-          "desc": "A personal brand website and content ecosystem built to position a founder as a trusted industry voice.",
-          "img": "assets/1507679799987.jpg",
-          "highlights": [
-            "120k follower growth",
-            "5 podcast invites",
-            "1 portfolio system"
-          ],
-          "tags": [
-            "Personal Brand",
-            "Portfolio",
-            "LinkedIn",
-            "PR"
-          ],
-          "chip": "Case Study"
-        },
-        {
-          "metric": "12 Speaking Inquiries",
-          "client": "Ava Mensah, Design Strategist",
-          "title": "Creator Authority Website",
-          "desc": "A refined digital presence for a creative leader featuring case studies, media mentions, and contact funnels.",
-          "img": "assets/1580489944761.jpg",
-          "highlights": [
-            "12 speaking inquiries",
-            "3 media features",
-            "Brand kit refresh"
-          ],
-          "tags": [
-            "Executive Site",
-            "Media Kit",
-            "Authority"
-          ],
-          "chip": "Project"
-        }
-      ]
+      "shortTitle": "Google & Meta Ads"
     },
     {
       "id": "product-branding",
-      "num": 8,
+      "num": 14,
       "title": "Branding Products or Services",
       "icon": "package",
       "img": "assets/1523726491678.jpg",
@@ -548,6 +879,7 @@ window.SOULD_DEFAULTS = {
       "detailLead": "Brand systems that make new offers memorable.",
       "projects": [
         {
+          "badge": "Project Card",
           "metric": "Retail Launch Ready",
           "client": "Luma Home Goods",
           "title": "Signature Product Identity System",
@@ -563,10 +895,10 @@ window.SOULD_DEFAULTS = {
             "Identity",
             "Guidelines",
             "Positioning"
-          ],
-          "chip": "Case Study"
+          ]
         },
         {
+          "badge": "Project Card",
           "metric": "2x Brand Recall",
           "client": "Urban Nest Interiors",
           "title": "Service Brand Refresh for Growth Stage",
@@ -581,693 +913,396 @@ window.SOULD_DEFAULTS = {
             "Brand Strategy",
             "Visual Identity",
             "Launch"
-          ],
-          "chip": "Project"
+          ]
         }
-      ]
-    },
-    {
-      "id": "cms-wordpress",
-      "num": 9,
-      "title": "CMS & WordPress Development",
-      "icon": "layout-panel",
-      "img": "assets/1522542550221.jpg",
-      "category": "dev",
-      "group": "Web & Mobile",
-      "desc": "WordPress, Elementor Pro and custom-built CMS platforms your team can update without a developer — pages, products, blogs and forms, all editable.",
-      "bullets": [
-        "WordPress, Elementor Pro & Custom CMS",
-        "ACF, CPT UI & Dynamic Content",
-        "Client-Editable Pages & Blog Systems",
-        "Speed, Security & Maintenance"
       ],
-      "detailLead": "Websites your team can run — no developer needed for everyday updates.",
-      "projects": [
-        {
-          "metric": "-80% Update Time",
-          "client": "Manalot",
-          "title": "Manalot CMS Rebuild",
-          "desc": "Moved a growing marketing site onto a structured WordPress build with reusable blocks, so the team publishes campaigns without touching code.",
-          "img": "assets/1547658719.jpg",
-          "highlights": [
-            "Reusable content blocks",
-            "0 developer tickets for updates",
-            "Core Web Vitals in the green"
-          ],
-          "tags": [
-            "WordPress",
-            "Elementor Pro",
-            "ACF"
-          ],
-          "chip": "CMS Build"
-        },
-        {
-          "metric": "12 Sites, 1 Stack",
-          "client": "Edubuk",
-          "title": "Edubuk Multi-Site Setup",
-          "desc": "A shared theme and component library powering multiple Edubuk properties from one CMS.",
-          "img": "assets/1522542550221.jpg",
-          "highlights": [
-            "One CMS for every property",
-            "Publish in minutes",
-            "Zero template drift"
-          ],
-          "tags": [
-            "CMS",
-            "Multi-site",
-            "Templates"
-          ],
-          "chip": "Multi-Site"
-        }
-      ]
+      "shortTitle": "Branding"
     },
     {
-      "id": "fullstack-apps",
-      "num": 10,
-      "title": "Full-Stack Web App Development",
-      "icon": "zap",
-      "img": "assets/1516321318423.jpg",
-      "category": "dev",
-      "group": "Web & Mobile",
-      "desc": "Complete web applications — React & Next.js front-ends wired to Node or PHP back-ends, databases, authentication and role-based dashboards that scale with your operations.",
-      "bullets": [
-        "React, Next.js & TypeScript Front-Ends",
-        "Node.js, PHP & REST API Back-Ends",
-        "Auth, Roles & Secure Databases",
-        "Dashboards, Reports & Data Flows"
-      ],
-      "detailLead": "From first sketch to production — one codebase, one team.",
-      "projects": [
-        {
-          "metric": "3 Weeks to Launch",
-          "client": "FitnessPro Studios",
-          "title": "FitnessPro Member Platform",
-          "desc": "Membership app with plans, class bookings, payment flow and a staff admin console.",
-          "img": "assets/1516321318423.jpg",
-          "highlights": [
-            "Live in 3 weeks",
-            "Role-based admin console",
-            "Payments & bookings wired"
-          ],
-          "tags": [
-            "Next.js",
-            "Node.js",
-            "PostgreSQL"
-          ],
-          "chip": "Product Build"
-        },
-        {
-          "metric": "99.9% Uptime",
-          "client": "Elionyx",
-          "title": "Elionyx Operations Portal",
-          "desc": "An internal tool that replaced spreadsheets — tasks, approvals and reporting in one place.",
-          "img": "assets/1552664730.jpg",
-          "highlights": [
-            "9 spreadsheets retired",
-            "Approvals in one click",
-            "Weekly automated reports"
-          ],
-          "tags": [
-            "React",
-            "REST API",
-            "Cloud"
-          ],
-          "chip": "Internal Tool"
-        }
-      ]
-    },
-    {
-      "id": "crm-systems",
-      "num": 11,
-      "title": "CRM, PMS & Business Systems",
-      "icon": "users",
-      "img": "assets/1460925895917.jpg",
-      "category": "systems",
-      "group": "AI & Systems",
-      "desc": "Custom CRM, PMS and ERP software built around how your team actually works — leads, projects, property or patients tracked end to end, with reports you can act on.",
-      "bullets": [
-        "Lead, Deal & Pipeline Management",
-        "Project, Property & Service (PMS) Workflows",
-        "Role-Based Access & Audit Trails",
-        "Invoicing, Reports & Analytics"
-      ],
-      "detailLead": "Software that runs your operation — not just your website.",
-      "projects": [
-        {
-          "metric": "+63% Closing Rate",
-          "client": "Aura Lifestyle Apparel",
-          "title": "Aura Sales CRM",
-          "desc": "Pipeline CRM with automated follow-ups, two-click quotations and manager dashboards.",
-          "img": "assets/1460925895917.jpg",
-          "highlights": [
-            "No lead left un-followed",
-            "Quotes in 2 clicks",
-            "Daily sales dashboard"
-          ],
-          "tags": [
-            "CRM",
-            "Automation",
-            "Dashboards"
-          ],
-          "chip": "CRM Build"
-        },
-        {
-          "metric": "40 Hrs Saved / Month",
-          "client": "Sai Estates",
-          "title": "Sai Estates Property System",
-          "desc": "Units, tenants, rent cycles and maintenance requests managed in one place.",
-          "img": "assets/1531482615713.jpg",
-          "highlights": [
-            "Rent reminders automated",
-            "Maintenance tracking",
-            "Owner statements auto-generated"
-          ],
-          "tags": [
-            "PMS",
-            "System Design",
-            "Reports"
-          ],
-          "chip": "PMS Build"
-        }
-      ]
-    },
-    {
-      "id": "ai-automation",
-      "num": 12,
-      "title": "AI Features & Automation",
-      "icon": "sparkles",
-      "img": "assets/1523961131990.jpg",
-      "category": "systems",
-      "group": "AI & Systems",
-      "desc": "AI chat assistants, content and lead-qualification tools, plus workflow automation that removes the repetitive work inside your business.",
-      "bullets": [
-        "AI Chat & Website Assistants",
-        "Lead Qualification & Auto-Replies",
-        "Content & SEO Automation",
-        "Workflow & API Automations"
-      ],
-      "detailLead": "Let automation handle the repetitive work — your team handles growth.",
-      "projects": [
-        {
-          "metric": "68% Faster Replies",
-          "client": "Edubuk",
-          "title": "Edubuk AI Support Assistant",
-          "desc": "A website assistant trained on their course catalogue that answers questions and routes enquiries to sales.",
-          "img": "assets/1523961131990.jpg",
-          "highlights": [
-            "Answers 24/7",
-            "Warm leads pushed to CRM",
-            "Human handover when unsure"
-          ],
-          "tags": [
-            "AI Assistant",
-            "RAG",
-            "API"
-          ],
-          "chip": "AI Feature"
-        },
-        {
-          "metric": "9 Hrs Saved / Week",
-          "client": "Blue Diamond Auto Services",
-          "title": "Automated Enquiry Engine",
-          "desc": "Instagram and WhatsApp enquiries captured, tagged and followed up automatically.",
-          "img": "assets/1516321497487.jpg",
-          "highlights": [
-            "Auto-tagging by service type",
-            "Follow-up sequences",
-            "Weekly summary email"
-          ],
-          "tags": [
-            "Automation",
-            "WhatsApp API",
-            "CRM"
-          ],
-          "chip": "Automation"
-        }
-      ]
-    },
-    {
-      "id": "shopify-ecommerce",
-      "num": 13,
-      "title": "Shopify & E-Commerce",
-      "icon": "package",
-      "img": "assets/1557821552.jpg",
-      "category": "dev",
-      "group": "Web & Mobile",
-      "desc": "Shopify and WooCommerce stores built to sell — clean product pages, fast checkout, payment and shipping integrations, and CRO work that lifts revenue.",
-      "bullets": [
-        "Shopify & WooCommerce Builds",
-        "Payments, Shipping & Tax Setup",
-        "Products, Collections & Variants",
-        "Checkout & Conversion Optimisation"
-      ],
-      "detailLead": "Stores engineered for orders, not just for looks.",
-      "projects": [
-        {
-          "metric": "2.4x Revenue",
-          "client": "SipLab",
-          "title": "SipLab D2C Store",
-          "desc": "Shopify build with bundles, a subscription option and a conversion-tuned checkout.",
-          "img": "assets/1557821552.jpg",
-          "highlights": [
-            "Bundles & subscriptions",
-            "Abandoned-cart flows",
-            "2.4x revenue in 5 months"
-          ],
-          "tags": [
-            "Shopify",
-            "CRO",
-            "Payments"
-          ],
-          "chip": "Shopify Build"
-        },
-        {
-          "metric": "-35% Cart Abandonment",
-          "client": "NexTech Retail Global",
-          "title": "WooCommerce Optimisation",
-          "desc": "Checkout and product-page rework for an existing WooCommerce store.",
-          "img": "assets/1512941937669.jpg",
-          "highlights": [
-            "One-click upsell",
-            "Faster checkout",
-            "Mobile-first product pages"
-          ],
-          "tags": [
-            "WooCommerce",
-            "UX",
-            "Analytics"
-          ],
-          "chip": "WooCommerce"
-        }
-      ]
-    },
-    {
-      "id": "backend-api",
-      "num": 14,
-      "title": "Backend, APIs & Integrations",
-      "icon": "shield-check",
-      "img": "assets/1558655146.jpg",
-      "category": "systems",
-      "group": "AI & Systems",
-      "desc": "The engine behind your product — REST APIs, databases, payment gateways, WhatsApp and Google integrations, and secure third-party connections.",
-      "bullets": [
-        "REST API Design & Development",
-        "Payment, WhatsApp & Maps Integrations",
-        "Databases, Caching & Queues",
-        "Security, Backups & Monitoring"
-      ],
-      "detailLead": "Where everything connects — reliable, secure and documented.",
-      "projects": [
-        {
-          "metric": "12 APIs, 1 Platform",
-          "client": "Elionyx",
-          "title": "Elionyx Integration Layer",
-          "desc": "A unified API layer connecting payments, CRM and logistics partners.",
-          "img": "assets/1558655146.jpg",
-          "highlights": [
-            "Central auth & logging",
-            "Retry-safe webhooks",
-            "Docs for every endpoint"
-          ],
-          "tags": [
-            "REST API",
-            "Node.js",
-            "Security"
-          ],
-          "chip": "API Platform"
-        },
-        {
-          "metric": "Zero Downtime",
-          "client": "Perfect Air Conditioners",
-          "title": "Booking & Payments API",
-          "desc": "Moved a live booking system onto a new backend without downtime.",
-          "img": "assets/1519389950473.jpg",
-          "highlights": [
-            "Live migration",
-            "Automated backups",
-            "Monitoring & alerts"
-          ],
-          "tags": [
-            "API",
-            "Migration",
-            "Monitoring"
-          ],
-          "chip": "Live Migration"
-        }
-      ]
-    },
-    {
-      "id": "uiux-design",
+      "id": "personal-branding",
       "num": 15,
-      "title": "UI/UX Design & Prototyping",
+      "title": "Portfolio Creation for Personal Branding",
+      "shortTitle": "Personal Portfolio",
       "icon": "user-round",
-      "img": "assets/1552664730.jpg",
-      "category": "dev",
-      "group": "Web & Mobile",
-      "desc": "Research, wireframes, design systems and clickable prototypes — interfaces planned properly before a single line of code is written.",
+      "img": "assets/1580489944761.jpg",
+      "category": "branding",
+      "group": "Branding & Portfolios",
+      "desc": "Establish authority and showcase your professional journey with custom executive digital portfolios, personal branding websites, and resume showcases.",
       "bullets": [
-        "User Flows, Wireframes & IA",
-        "Design Systems & Component Libraries",
-        "Figma Prototypes & Developer Handoff",
-        "Usability Reviews & Fixes"
+        "Custom Executive Portfolios",
+        "Interactive Resume & Bio Showcase",
+        "Personal Brand Identity & Kit",
+        "Lead Form & Contact Integration"
       ],
-      "detailLead": "Design decisions first — guesswork never.",
+      "detailLead": "Executive presence built for trust and authority.",
       "projects": [
         {
-          "metric": "-42% Task Time",
-          "client": "Manalot",
-          "title": "Manalot Dashboard UX",
-          "desc": "Restructured a data-heavy dashboard around the three jobs users do every day.",
-          "img": "assets/1552664730.jpg",
+          "badge": "Project Card",
+          "metric": "Forbes Feature Ready",
+          "client": "Dr. A. Sharma",
+          "title": "Executive Portfolio for a FinTech Founder",
+          "desc": "A personal brand website and content ecosystem built to position a founder as a trusted industry voice.",
+          "img": "assets/1507679799987.jpg",
           "highlights": [
-            "Task time cut 42%",
-            "Consistent component library",
-            "Figma handoff included"
+            "120k follower growth",
+            "5 podcast invites",
+            "1 portfolio system"
           ],
           "tags": [
-            "Figma",
-            "UX Research",
-            "Design System"
-          ],
-          "chip": "UX Overhaul"
+            "Personal Brand",
+            "Portfolio",
+            "LinkedIn",
+            "PR"
+          ]
         },
         {
-          "metric": "2x Signups",
-          "client": "Edubuk",
-          "title": "Edubuk Onboarding Flow",
-          "desc": "A shorter, clearer signup and onboarding journey for prospective students.",
-          "img": "assets/1522542550221.jpg",
+          "badge": "Project Card",
+          "metric": "12 Speaking Inquiries",
+          "client": "Ava Mensah, Design Strategist",
+          "title": "Creator Authority Website",
+          "desc": "A refined digital presence for a creative leader featuring case studies, media mentions, and contact funnels.",
+          "img": "assets/1580489944761.jpg",
           "highlights": [
-            "Steps cut from 7 to 3",
-            "Mobile-first forms",
-            "Prototype tested with users"
+            "12 speaking inquiries",
+            "3 media features",
+            "Brand kit refresh"
           ],
           "tags": [
-            "Prototyping",
-            "CRO",
-            "Mobile UX"
-          ],
-          "chip": "Onboarding"
+            "Executive Site",
+            "Media Kit",
+            "Authority"
+          ]
         }
       ]
+    }
+  ],
+  "stats": [
+    {
+      "value": 100,
+      "suffix": "+",
+      "label": "Projects Delivered"
     },
     {
-      "id": "seo-performance",
-      "num": 16,
-      "title": "SEO & Performance Engineering",
+      "value": 88,
+      "suffix": "%",
+      "label": "Client Retention Rate"
+    },
+    {
+      "value": 10,
+      "suffix": "+",
+      "label": "Industries Covered"
+    },
+    {
+      "value": 3,
+      "suffix": "+",
+      "label": "Countries, Global Footprint"
+    }
+  ],
+  "strategies": [
+    {
+      "icon": "message",
+      "title": "Strategic Brand Foundation",
+      "text": "We define your unique positioning, product branding, and target audience touchpoints so your business stands out in competitive markets."
+    },
+    {
+      "icon": "send",
+      "title": "Multi-Channel Execution",
+      "text": "From high-converting Meta & Google ad campaigns to video editing, mobile apps, and social media management, we execute with precision."
+    },
+    {
       "icon": "bar-chart",
-      "img": "assets/1533750349088.jpg",
-      "category": "ads",
-      "group": "Paid Ads & SMM",
-      "desc": "Technical audits, on-page SEO, Core Web Vitals and schema work that move you up the rankings — measured, not guessed.",
-      "bullets": [
-        "Technical SEO Audits & Fixes",
-        "Core Web Vitals & Speed Engineering",
-        "Keyword, Schema & Content Strategy",
-        "Rank, Traffic & Conversion Reporting"
+      "title": "Reasonable Rates & High ROI",
+      "text": "We track metrics that directly drive revenue — leads, app downloads, and sales — offering premium marketing solutions at budget-friendly rates."
+    }
+  ],
+  "transformFeatures": [
+    {
+      "icon": "smartphone",
+      "label": "Web & Mobile Apps"
+    },
+    {
+      "icon": "megaphone",
+      "label": "Meta & Google Ads"
+    },
+    {
+      "icon": "clapperboard",
+      "label": "Video Editing & Reels"
+    },
+    {
+      "icon": "badge-dollar",
+      "label": "Reasonable Pricing"
+    }
+  ],
+  "clients": [
+    {
+      "name": "Perfect Air Conditioners",
+      "img": "assets/perfect-air-conditioners-CpO9eHv-.png"
+    },
+    {
+      "name": "Blue Diamond Auto Services",
+      "img": "assets/blue-diamond-logo-Bijj6Bm0.png"
+    },
+    {
+      "name": "Edubuk",
+      "img": "assets/edubuk-logo-BSwzF_C-.png"
+    },
+    {
+      "name": "Elionyx",
+      "img": "assets/elionyx-Div9V71c.png"
+    },
+    {
+      "name": "Manalot",
+      "img": "assets/manalog-logo-Bu4g3Yim.png"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Soul-D. helped us turn our data into clear analytics and a practical dashboard that makes better decisions easier.",
+      "name": "Anil Raikundlia",
+      "role": "Founder, Manalot"
+    },
+    {
+      "quote": "Soul-D. created our brand identity from scratch and gave Edubuk a clear, consistent presence we are proud to share.",
+      "name": "Apoorva Bajaj",
+      "role": "Co-Founder & CEO, Edubuk"
+    },
+    {
+      "quote": "Soul-D. redesigned our website from simple to visually rich and professional, while keeping the experience easy to use.",
+      "name": "Naveen Kumar Geddha",
+      "role": "Co-Founder Elionyxtech"
+    },
+    {
+      "quote": "Soul-D. understood our vision quickly and turned it into a digital presence that finally feels like us.",
+      "name": "Blue Diamond Auto Services",
+      "role": "Automotive services"
+    },
+    {
+      "quote": "Soul-D. helped us refine website and market us effectively.",
+      "name": "Perfect Air Conditioners",
+      "role": "HVAC services"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How fast do you respond to project inquiries?",
+      "a": "We typically respond to all inquiries within 2 to 4 business hours with a preliminary assessment or to schedule a discovery call."
+    },
+    {
+      "q": "Are your rates really reasonable compared to traditional agencies?",
+      "a": "Yes! Our streamlined, tech-enabled workflow allows us to deliver top-tier agency quality at competitive rates with zero bloated overheads."
+    },
+    {
+      "q": "Do you offer custom packages for small businesses and startups?",
+      "a": "Absolutely. We tailor package solutions specifically based on your goals, stage, and budget constraints."
+    },
+    {
+      "q": "Can we get an ongoing monthly retainer for Meta & Google Ads or SMM?",
+      "a": "Yes, we offer both project-based fixed deliverables and monthly growth retainers for advertising and content management."
+    }
+  ],
+  "works": [
+    {
+      "cat": "web-apps",
+      "chip": "Web & E-Commerce",
+      "metric": "+240% Sales Conversion",
+      "client": "NexTech Retail Global",
+      "title": "NexTech E-Commerce Ecosystem",
+      "desc": "Custom headless storefront with lightning-fast page speed, automated inventory sync, and multi-currency checkout.",
+      "img": "assets/1460925895917.jpg",
+      "highlights": [
+        "2.1s Avg Load Speed",
+        "+240% Conversion Rate",
+        "$1.4M Q4 Revenue"
       ],
-      "detailLead": "Rankings that hold — from audit to reporting.",
-      "projects": [
-        {
-          "metric": "+180% Organic Traffic",
-          "client": "Edubuk",
-          "title": "Edubuk Organic Growth",
-          "desc": "Technical fixes plus a content plan tied to real search demand.",
-          "img": "assets/1533750349088.jpg",
-          "highlights": [
-            "Core Web Vitals passed",
-            "Top-3 for 24 keywords",
-            "+180% organic traffic"
-          ],
-          "tags": [
-            "Technical SEO",
-            "Content",
-            "Schema"
-          ],
-          "chip": "Organic Growth"
-        },
-        {
-          "metric": "1.1s LCP",
-          "client": "Perfect Air Conditioners",
-          "title": "Core Web Vitals Rescue",
-          "desc": "Speed engineering on an image-heavy marketing site.",
-          "img": "assets/1460925895917.jpg",
-          "highlights": [
-            "LCP 4.6s to 1.1s",
-            "No layout shift",
-            "Bounce rate down 28%"
-          ],
-          "tags": [
-            "Performance",
-            "Caching",
-            "Images"
-          ],
-          "chip": "Performance"
-        }
+      "tags": [
+        "React",
+        "Node.js",
+        "Tailwind",
+        "Stripe Integration"
+      ],
+      "catLabel": "Mobile App"
+    },
+    {
+      "cat": "web-apps",
+      "chip": "Mobile App",
+      "metric": "150k+ App Installs",
+      "client": "FitnessPro Studios",
+      "title": "FitnessPro Cross-Platform Mobile App",
+      "desc": "Interactive workout tracking app with real-time video coaching, habit streaks, and automated subscription billing.",
+      "img": "assets/1512941937669.jpg",
+      "highlights": [
+        "150k+ Active Downloads",
+        "4.9 App Store Rating",
+        "82% User Retention"
+      ],
+      "tags": [
+        "React Native",
+        "Firebase",
+        "Push Notifications"
+      ]
+    },
+    {
+      "cat": "ads",
+      "chip": "Performance Marketing",
+      "metric": "5.2x Verified ROAS",
+      "client": "Aura Lifestyle Apparel",
+      "title": "Meta & Google Ads Scaling Strategy",
+      "desc": "Data-driven omni-channel ad campaigns targeting high-intent demographics with custom video creatives and lookalike audiences.",
+      "img": "assets/1533750349088.jpg",
+      "highlights": [
+        "5.2x Omnichannel ROAS",
+        "40% Lower CPA",
+        "3.8M Impressions"
+      ],
+      "tags": [
+        "Meta Ads",
+        "Google Ads",
+        "Retargeting",
+        "Analytics"
+      ]
+    },
+    {
+      "cat": "video",
+      "chip": "Video & Content",
+      "metric": "4.5M Organic Reel Views",
+      "client": "Veloce Smart Tech",
+      "title": "Cinematic Product Video Campaign",
+      "desc": "High-production 4K promotional commercial series designed for Instagram Reels, YouTube Shorts, and Meta video ads.",
+      "img": "assets/1574717024653.jpg",
+      "highlights": [
+        "4.5M Total Video Views",
+        "350k Shares & Saves",
+        "12k Direct Inquiries"
+      ],
+      "tags": [
+        "4K Cinema",
+        "Motion Graphics",
+        "Sound Design"
+      ]
+    },
+    {
+      "cat": "branding",
+      "chip": "Personal Branding",
+      "metric": "Featured on Forbes & TechCrunch",
+      "client": "Dr. A. Sharma (FinTech Founder)",
+      "title": "Executive Personal Branding Portfolio",
+      "desc": "Complete digital presence rebrand including bespoke personal website, LinkedIn content strategy, and press feature syndication.",
+      "img": "assets/1507679799987.jpg",
+      "highlights": [
+        "120k LinkedIn Followers Growth",
+        "5 Top-Tier Podcast Invites",
+        "2 Keynote Speaking Deals"
+      ],
+      "tags": [
+        "Branding",
+        "PR Syndication",
+        "LinkedIn Strategy"
+      ]
+    },
+    {
+      "cat": "ads",
+      "chip": "SMM & Organic Growth",
+      "metric": "300% Monthly Reservation Spike",
+      "client": "Bistro Fine Dining Chain",
+      "title": "Social Media Management & Growth",
+      "desc": "Daily aesthetic content curation, community management, influencer partnerships, and localized Geo-targeted campaigns.",
+      "img": "assets/1555396273.jpg",
+      "highlights": [
+        "300% Booking Increase",
+        "45k Organic Followers",
+        "98% Positive Sentiment"
+      ],
+      "tags": [
+        "SMM",
+        "Influencer Marketing",
+        "Community Care"
       ]
     }
   ],
-
-  stats:   [
-    { value: 100, suffix: '+', label: 'Projects Delivered' },
-    { value: 88, suffix: '%', label: 'Client Retention Rate' },
-    { value: 10, suffix: '+', label: 'Industries Covered' },
-    { value: 3, suffix: '+', label: 'Countries, Global Footprint' }
-  ],
-
-  strategies:   [
+  "process": [
     {
-      icon: 'message',
-      title: 'Strategic Brand Foundation',
-      text: 'We define your unique positioning, product branding, and target audience touchpoints so your business stands out in competitive markets.'
+      "n": "01",
+      "title": "Discovery & Consultation",
+      "text": "We analyze your business goals, target audience, and current digital presence to chart a tailored plan."
     },
     {
-      icon: 'send',
-      title: 'Multi-Channel Execution',
-      text: 'From high-converting Meta & Google ad campaigns to video editing, mobile apps, and social media management, we execute with precision.'
+      "n": "02",
+      "title": "Strategic Planning",
+      "text": "Our team crafts a step-by-step roadmap with clear deliverables, timeline, and measurable KPIs."
     },
     {
-      icon: 'bar-chart',
-      title: 'Reasonable Rates & High ROI',
-      text: 'We track metrics that directly drive revenue — leads, app downloads, and sales — offering premium marketing solutions at budget-friendly rates.'
+      "n": "03",
+      "title": "Agile Execution",
+      "text": "From custom code to video edits and ad campaigns, we execute rapidly with quality checks at every stage."
+    },
+    {
+      "n": "04",
+      "title": "Growth & Optimization",
+      "text": "We continuously monitor performance, run split tests, and refine strategies to maximize your ROI."
     }
   ],
-
-  transformFeatures:   [
-    { icon: 'smartphone', label: 'Web & Mobile Apps' },
-    { icon: 'megaphone', label: 'Meta & Google Ads' },
-    { icon: 'clapperboard', label: 'Video Editing & Reels' },
-    { icon: 'badge-dollar', label: 'Reasonable Pricing' }
-  ],
-
-  clients:   [
-    { name: 'Perfect Air Conditioners', img: 'assets/perfect-air-conditioners-CpO9eHv-.png' },
-    { name: 'Blue Diamond Auto Services', img: 'assets/blue-diamond-logo-Bijj6Bm0.png' },
-    { name: 'Edubuk', img: 'assets/edubuk-logo-BSwzF_C-.png' },
-    { name: 'Elionyx', img: 'assets/elionyx-Div9V71c.png' },
-    { name: 'Manalot', img: 'assets/manalog-logo-Bu4g3Yim.png' }
-  ],
-
-  testimonials:   [
+  "values": [
     {
-      quote: 'Soul-D. helped us turn our data into clear analytics and a practical dashboard that makes better decisions easier.',
-      name: 'Anil Raikundlia',
-      role: 'Founder, Manalot'
+      "icon": "target",
+      "title": "ROI-First Mentality",
+      "text": "We focus on metrics that impact your bottom line — sales, leads, traffic, and user retention — rather than vanity metrics."
     },
     {
-      quote: 'Soul-D. created our brand identity from scratch and gave Edubuk a clear, consistent presence we are proud to share.',
-      name: 'Apoorva Bajaj',
-      role: 'Co-Founder & CEO, Edubuk'
+      "icon": "shield-check",
+      "title": "Reasonable & Transparent Rates",
+      "text": "Top-tier agency quality shouldn’t break your bank. We offer transparent pricing structures with zero hidden fees."
     },
     {
-      quote: 'Soul-D. redesigned our website from simple to visually rich and professional, while keeping the experience easy to use.',
-      name: 'Naveen Kumar Geddha',
-      role: 'Co-Founder Elionyxtech'
+      "icon": "users",
+      "title": "Dedicated Partnership",
+      "text": "We act as an extension of your internal team, providing active communication, regular reports, and hands-on support."
     },
     {
-      quote: 'Soul-D. understood our vision quickly and turned it into a digital presence that finally feels like us.',
-      name: 'Blue Diamond Auto Services',
-      role: 'Automotive services'
-    },
-    {
-      quote: 'Soul-D. helped us refine website and market us effectively.',
-      name: 'Perfect Air Conditioners',
-      role: 'HVAC services'
+      "icon": "heart",
+      "title": "Craft & Innovation",
+      "text": "We stay on the cutting edge of web technology, AI tools, video editing trends, and advertising algorithms to keep you ahead."
     }
   ],
-
-  faqs:   [
+  "team": [
     {
-      q: 'How fast do you respond to project inquiries?',
-      a: 'We typically respond to all inquiries within 2 to 4 business hours with a preliminary assessment or to schedule a discovery call.'
+      "img": "assets/1522071820081.jpg",
+      "title": "Soul-D. Creative Team",
+      "role": "Full-Stack Brand Strategy",
+      "text": "Combining brand strategists, UI/UX designers, developers, and media buyers who craft campaigns that convert."
     },
     {
-      q: 'Are your rates really reasonable compared to traditional agencies?',
-      a: 'Yes! Our streamlined, tech-enabled workflow allows us to deliver top-tier agency quality at competitive rates with zero bloated overheads.'
+      "img": "assets/1531482615713.jpg",
+      "title": "Media & Production Crew",
+      "role": "Video & Ad Creators",
+      "text": "Specialized video directors, sound engineers, and ad copywriters behind viral video campaigns and high-ROAS ad creatives."
     },
     {
-      q: 'Do you offer custom packages for small businesses and startups?',
-      a: 'Absolutely. We tailor package solutions specifically based on your goals, stage, and budget constraints.'
-    },
-    {
-      q: 'Can we get an ongoing monthly retainer for Meta & Google Ads or SMM?',
-      a: 'Yes, we offer both project-based fixed deliverables and monthly growth retainers for advertising and content management.'
+      "img": "assets/1573496359142.jpg",
+      "title": "Engineering Hub",
+      "role": "Web & App Developers",
+      "text": "Architects of high-speed web apps, iOS & Android mobile platforms, and enterprise CMS integrations."
     }
   ],
-
-  works:   [
-    {
-      cat: 'web-mobile',
-      chip: 'Web & E-Commerce',
-      metric: '+240% Sales Conversion',
-      client: 'NexTech Retail Global',
-      title: 'NexTech E-Commerce Ecosystem',
-      desc: 'Custom headless storefront with lightning-fast page speed, automated inventory sync, and multi-currency checkout.',
-      img: 'assets/1460925895917.jpg',
-      highlights: ['2.1s Avg Load Speed', '+240% Conversion Rate', '$1.4M Q4 Revenue'],
-      tags: ['React', 'Node.js', 'Tailwind', 'Stripe Integration'],
-      catLabel: { 'web-mobile': 'Mobile App', 'ads-smm': 'Performance Marketing', 'content-video': 'Video & Content', branding: 'Personal Branding' }['web-mobile']
-    },
-    {
-      cat: 'web-mobile',
-      chip: 'Mobile App',
-      metric: '150k+ App Installs',
-      client: 'FitnessPro Studios',
-      title: 'FitnessPro Cross-Platform Mobile App',
-      desc: 'Interactive workout tracking app with real-time video coaching, habit streaks, and automated subscription billing.',
-      img: 'assets/1512941937669.jpg',
-      highlights: ['150k+ Active Downloads', '4.9 App Store Rating', '82% User Retention'],
-      tags: ['React Native', 'Firebase', 'Push Notifications']
-    },
-    {
-      cat: 'ads-smm',
-      chip: 'Performance Marketing',
-      metric: '5.2x Verified ROAS',
-      client: 'Aura Lifestyle Apparel',
-      title: 'Meta & Google Ads Scaling Strategy',
-      desc: 'Data-driven omni-channel ad campaigns targeting high-intent demographics with custom video creatives and lookalike audiences.',
-      img: 'assets/1533750349088.jpg',
-      highlights: ['5.2x Omnichannel ROAS', '40% Lower CPA', '3.8M Impressions'],
-      tags: ['Meta Ads', 'Google Ads', 'Retargeting', 'Analytics']
-    },
-    {
-      cat: 'content-video',
-      chip: 'Video & Content',
-      metric: '4.5M Organic Reel Views',
-      client: 'Veloce Smart Tech',
-      title: 'Cinematic Product Video Campaign',
-      desc: 'High-production 4K promotional commercial series designed for Instagram Reels, YouTube Shorts, and Meta video ads.',
-      img: 'assets/1574717024653.jpg',
-      highlights: ['4.5M Total Video Views', '350k Shares & Saves', '12k Direct Inquiries'],
-      tags: ['4K Cinema', 'Motion Graphics', 'Sound Design']
-    },
-    {
-      cat: 'branding',
-      chip: 'Personal Branding',
-      metric: 'Featured on Forbes & TechCrunch',
-      client: 'Dr. A. Sharma (FinTech Founder)',
-      title: 'Executive Personal Branding Portfolio',
-      desc: 'Complete digital presence rebrand including bespoke personal website, LinkedIn content strategy, and press feature syndication.',
-      img: 'assets/1507679799987.jpg',
-      highlights: ['120k LinkedIn Followers Growth', '5 Top-Tier Podcast Invites', '2 Keynote Speaking Deals'],
-      tags: ['Branding', 'PR Syndication', 'LinkedIn Strategy']
-    },
-    {
-      cat: 'ads-smm',
-      chip: 'SMM & Organic Growth',
-      metric: '300% Monthly Reservation Spike',
-      client: 'Bistro Fine Dining Chain',
-      title: 'Social Media Management & Growth',
-      desc: 'Daily aesthetic content curation, community management, influencer partnerships, and localized Geo-targeted campaigns.',
-      img: 'assets/1555396273.jpg',
-      highlights: ['300% Booking Increase', '45k Organic Followers', '98% Positive Sentiment'],
-      tags: ['SMM', 'Influencer Marketing', 'Community Care']
-    }
-  ],
-
-  process:   [
-    {
-      n: '01',
-      title: 'Discovery & Consultation',
-      text: 'We analyze your business goals, target audience, and current digital presence to chart a tailored plan.'
-    },
-    {
-      n: '02',
-      title: 'Strategic Planning',
-      text: 'Our team crafts a step-by-step roadmap with clear deliverables, timeline, and measurable KPIs.'
-    },
-    {
-      n: '03',
-      title: 'Agile Execution',
-      text: 'From custom code to video edits and ad campaigns, we execute rapidly with quality checks at every stage.'
-    },
-    {
-      n: '04',
-      title: 'Growth & Optimization',
-      text: 'We continuously monitor performance, run split tests, and refine strategies to maximize your ROI.'
-    }
-  ],
-
-  values:   [
-    {
-      icon: 'target',
-      title: 'ROI-First Mentality',
-      text: 'We focus on metrics that impact your bottom line — sales, leads, traffic, and user retention — rather than vanity metrics.'
-    },
-    {
-      icon: 'shield-check',
-      title: 'Reasonable & Transparent Rates',
-      text: 'Top-tier agency quality shouldn’t break your bank. We offer transparent pricing structures with zero hidden fees.'
-    },
-    {
-      icon: 'users',
-      title: 'Dedicated Partnership',
-      text: 'We act as an extension of your internal team, providing active communication, regular reports, and hands-on support.'
-    },
-    {
-      icon: 'heart',
-      title: 'Craft & Innovation',
-      text: 'We stay on the cutting edge of web technology, AI tools, video editing trends, and advertising algorithms to keep you ahead.'
-    }
-  ],
-
-  team:   [
-    {
-      img: 'assets/1522071820081.jpg',
-      title: 'Soul-D. Creative Team',
-      role: 'Full-Stack Brand Strategy',
-      text: 'Combining brand strategists, UI/UX designers, developers, and media buyers who craft campaigns that convert.'
-    },
-    {
-      img: 'assets/1531482615713.jpg',
-      title: 'Media & Production Crew',
-      role: 'Video & Ad Creators',
-      text: 'Specialized video directors, sound engineers, and ad copywriters behind viral video campaigns and high-ROAS ad creatives.'
-    },
-    {
-      img: 'assets/1573496359142.jpg',
-      title: 'Engineering Hub',
-      role: 'Web & App Developers',
-      text: 'Architects of high-speed web apps, iOS & Android mobile platforms, and enterprise CMS integrations.'
-    }
-  ],
-
-  serviceFilters:   [
+  "serviceFilters": [
     {
       "id": "all",
       "label": "All Services"
     },
     {
       "id": "dev",
-      "label": "Web & Mobile"
+      "label": "Web & Apps"
     },
     {
-      "id": "systems",
-      "label": "AI & Systems"
+      "id": "cms",
+      "label": "CMS & E-commerce"
+    },
+    {
+      "id": "ai",
+      "label": "AI & Automation"
     },
     {
       "id": "ads",
-      "label": "Ads, SEO & Growth"
+      "label": "Paid Ads & SMM"
     },
     {
       "id": "creative",
@@ -1278,12 +1313,26 @@ window.SOULD_DEFAULTS = {
       "label": "Branding & Portfolios"
     }
   ],
-
-  workFilters:   [
-    { id: 'all', label: 'All Projects' },
-    { id: 'web-mobile', label: 'Web & Mobile Apps' },
-    { id: 'ads-smm', label: 'Ads & Growth' },
-    { id: 'content-video', label: 'Video & Content' },
-    { id: 'branding', label: 'Branding' }
+  "workFilters": [
+    {
+      "id": "all",
+      "label": "All Projects"
+    },
+    {
+      "id": "web-apps",
+      "label": "Web & Mobile Apps"
+    },
+    {
+      "id": "ads",
+      "label": "Ads & Growth"
+    },
+    {
+      "id": "video",
+      "label": "Video & Content"
+    },
+    {
+      "id": "branding",
+      "label": "Branding"
+    }
   ]
 };
