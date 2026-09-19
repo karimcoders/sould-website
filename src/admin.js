@@ -298,6 +298,7 @@ const SECTIONS = [
   ['faq', 'FAQ', 'help'],
   ['about', 'About & Team', 'users'],
   ['extras', 'Stats / Process / Logos', 'award'],
+  ['build', 'What We Can Build', 'layers'],
   ['settings', 'Publish & Settings', 'settings']
 ];
 
@@ -351,6 +352,7 @@ function panel() {
     case 'faq': return viewFaq();
     case 'about': return viewAbout();
     case 'extras': return viewExtras();
+    case 'build': return viewBuild();
     case 'settings': return viewSettings();
     default: return '';
   }
@@ -585,13 +587,11 @@ function viewPages() {
 
 function viewServices() {
   const arr = get('services') || [];
-  const ICONS = ['globe', 'smartphone', 'pen-tool', 'video', 'instagram', 'target', 'user-round', 'package', 'message', 'send', 'bar-chart', 'shield-check', 'users', 'heart', 'zap', 'clock', 'layout-panel', 'badge-dollar', 'sparkles', 'megaphone', 'clapperboard'];
+  const ICONS = ['globe', 'smartphone', 'pen-tool', 'video', 'instagram', 'target', 'user-round', 'package', 'message', 'send', 'bar-chart', 'shield-check', 'users', 'heart', 'zap', 'clock'];
   const CATS = [
-    ['dev', 'Web & Apps'],
-    ['cms', 'CMS & E-commerce'],
-    ['ai', 'AI & Automation'],
-    ['ads', 'Paid Ads & SMM'],
-    ['creative', 'Content & Video'],
+    ['web-mobile', 'Web & Mobile'],
+    ['ads-smm', 'Paid Ads & SMM'],
+    ['content-video', 'Content & Video'],
     ['branding', 'Branding & Portfolios']
   ];
   return `
@@ -613,7 +613,6 @@ function viewServices() {
       <div class="f"><label>Category (used by the filter buttons)</label><select data-path="${key}.category">
         ${CATS.map(([v, l]) => `<option value="${v}" ${s.category === v ? 'selected' : ''}>${l}</option>`).join('')}
       </select></div>
-      ${fText(key + '.shortTitle', 'Short name (nav menu)', { tip: 'e.g. Web Apps & SaaS' })}
       ${fText(key + '.group', 'Group label')}
       ${fText(key + '.desc', 'Short description', { type: 'area', rows: 3, full: true })}
       ${fText(key + '.detailLead', 'Detail page sub-heading', { full: true })}
@@ -636,7 +635,7 @@ function viewServices() {
           ${fText(pkey + '.metric', 'Result badge', { tip: 'shown on the image' })}
           ${fText(pkey + '.title', 'Project title', { full: true })}
           ${fText(pkey + '.desc', 'Description', { type: 'area', rows: 3, full: true })}
-          ${fText(pkey + '.badge', 'Small badge', { tip: 'corner label on the image (default: Project Card)' })}
+          ${fText(pkey + '.badge', 'Small badge')}
         </div>
         <div style="margin-top:12px">${fImage(pkey + '.img', 'Project image')}</div>
         <div style="margin-top:12px">${strList(pkey + '.highlights', { label: 'Key highlights', addLabel: 'Add highlight' })}</div>
@@ -655,9 +654,9 @@ function viewServices() {
 function viewWork() {
   const arr = get('works') || [];
   const CATS = [
-    ['web-apps', 'Web & Mobile Apps'],
-    ['ads', 'Ads & Growth'],
-    ['video', 'Video & Content'],
+    ['web-mobile', 'Web & Mobile Apps'],
+    ['ads-smm', 'Ads & Growth'],
+    ['content-video', 'Video & Content'],
     ['branding', 'Branding']
   ];
   return `
@@ -848,6 +847,43 @@ function viewExtras() {
   </div>`;
 }
 
+
+function viewBuild() {
+  return `
+  <div class="card">
+    <h2>What We Can Build</h2>
+    <p class="hint">Home page ka section "From Website to Complete Digital Growth System" — yahan se
+      cards add / edit / reorder karo. Emoji box me koi bhi emoji ya icon daal sakte ho (🌐 🛒 🤖 📈 …).</p>
+    <div class="grid">
+      ${fText('copy.homeBuildTitle', 'Section heading')}
+      ${fText('copy.homeBuildLink', 'Button text')}
+      ${fText('copy.homeBuildText', 'Section text', { full: true, area: true })}
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Cards</h2>
+    <p class="hint">Har card = ek capability. Order up/down buttons se badalta hai.</p>
+    ${objList(
+      'build.items',
+      get('build.items') || [],
+      (b, i, key) => `
+      <div class="grid">
+        ${fText(key + '.emoji', 'Emoji / icon')}
+        ${fText(key + '.title', 'Title')}
+        ${fText(key + '.desc', 'One-line description', { full: true, area: true })}
+      </div>`,
+      { tpl: 'build', addLabel: 'Add card', title: (b) => `${b.emoji || ''} ${b.title || ''}`.trim() }
+    )}
+  </div>
+
+  <div class="card">
+    <h2>Tip</h2>
+    <p class="hint">Ye section website par <b>Home → Services ke neeche, Our Work se pehle</b> dikhta hai.
+      Services add ya edit karne ke liye left me <b>Services</b> section kholo.</p>
+  </div>`;
+}
+
 function viewSettings() {
   const size = new Blob([JSON.stringify(C)]).size;
   const connected = canPublish();
@@ -897,9 +933,9 @@ function viewSettings() {
     </p>
 
     ${connected
-      ? `<div class="banner ok"><b>Connected.</b> Repo <code>${esc(S.repo)}</code> ·
-           branch <code>${esc(S.branch)}</code> · file <code>${esc(S.filePath)}</code>
-           ${S.endpoint ? ' · using a publish server (no token needed here)' : ''}</div>`
+      ? `<div class="banner ok"><b>Connected.</b> ${PROXY.ok
+            ? `Publish server live hai (<code>/api/publish</code>)${PROXY.repo ? ' → <code>' + esc(PROXY.repo) + '</code>' : ''} — token server pe hi rehta hai, yahan kuch daalne ki zarurat nahi.`
+            : `Repo <code>${esc(S.repo)}</code> · branch <code>${esc(S.branch)}</code> · file <code>${esc(S.filePath)}</code>${S.endpoint ? ' · using a publish server (no token needed here)' : ''}`}</div>`
       : `<div class="banner warn">
            <b>Step 1.</b> GitHub → Settings → Developer settings → Personal access tokens →
            <b>Tokens (classic)</b> → <b>Generate new token</b>.<br>
@@ -947,6 +983,8 @@ function viewSettings() {
 /* ---------------------------------------------------------------- events */
 const TEMPLATES = {
   str: '',
+  build: { emoji: '✨', title: 'New Capability', desc: 'What this includes.' },
+  filterW: { id: 'new-filter', label: 'New Filter' },
   hero: 'assets/1522071820081.jpg',
   service: {
     id: 'new-service',
@@ -1143,6 +1181,8 @@ function bind() {
    koi repo, koi GitHub. Save = turant live (WordPress jaisa).
    ====================================================================== */
 let SERVER = { checked: false, ok: false, url: '', error: '' };
+/* same-origin publish function (Vercel / Netlify) — token server pe rehta hai */
+const PROXY = { ok: false, configured: false, repo: '' };
 
 function serverBase() {
   if (S.endpoint) return String(S.endpoint).replace(/\/publish\/?$/, '');
@@ -1166,6 +1206,20 @@ async function checkServer(force) {
     try {
       const r = await fetch(serverBase() + '/api/health', { cache: 'no-store' });
       if (r.ok) SERVER.ok = true;
+    } catch (e) {}
+  }
+  /* Vercel / Netlify par same-origin publish function khud dhoondh lo —
+     isse client ko token ki zarurat hi nahi padti (sirf password). */
+  if (!SERVER.ok && location.protocol.startsWith('http')) {
+    try {
+      const r = await fetch('api/publish', { cache: 'no-store' });
+      const d = await r.json().catch(() => ({}));
+      if (r.ok && d && d.service === 'sould-publish') {
+        PROXY.ok = true;
+        PROXY.configured = Boolean(d.configured);
+        PROXY.repo = d.repo || '';
+        if (!S.endpoint) { S.endpoint = location.origin + '/api/publish'; if (!S.autoPublish) S.autoPublish = true; saveSettings(); }
+      }
     } catch (e) {}
   }
   return SERVER;
@@ -1211,6 +1265,14 @@ function saveDraft() {
   /* Content-server mode → Save IS the update (koi GitHub nahi chahiye) */
   if (SERVER.ok) {
     saveLive().catch((e) => toast('Save failed: ' + e.message + ' — password theek hai?', 'err'));
+    return;
+  }
+  /* Vercel/Netlify publish function: token server pe hai — Save hi publish hai */
+  if (PROXY.ok) {
+    localStorage.setItem(LS_DRAFT, JSON.stringify(C));
+    dirty = false;
+    document.getElementById('dirty')?.classList.remove('on');
+    publish();
     return;
   }
   try {
@@ -1271,6 +1333,7 @@ function importJson() {
 /** Are we able to publish at all? (either a proxy endpoint or a token) */
 function canPublish() {
   if (SERVER.ok) return true;
+  if (PROXY.ok) return true;
   if (S.endpoint) return true;
   return Boolean(S.token && S.repo);
 }
