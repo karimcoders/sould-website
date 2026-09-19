@@ -159,6 +159,14 @@ const server = http.createServer(async (req, res) => {
     'Content-Type': MIME[ext] || 'application/octet-stream',
     'Cache-Control': ext === '.json' || ext === '.html' ? 'no-store' : 'public, max-age=300',
   });
+
+  /* HTML me marker daal do — front-end isse turant pata kar leta hai ki
+     content server chal raha hai (warna 404 requests ka console noise aata hai). */
+  if (ext === '.html') {
+    let html = fs.readFileSync(file, 'utf8');
+    html = html.replace('<head>', '<head>\n    <script>window.SOULD_SERVER = true;</script>');
+    return res.end(html);
+  }
   fs.createReadStream(file).pipe(res);
 });
 
