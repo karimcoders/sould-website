@@ -39,6 +39,7 @@
 
         /* 1) content server (live editing — save karte hi update) */
         try {
+          if (!window.SOULD_SERVER) throw new Error('no server');
           const res = await fetch('api/content', { cache: 'no-store' });
           if (res.ok) {
             const d = await res.json();
