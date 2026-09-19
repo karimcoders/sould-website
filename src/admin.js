@@ -227,6 +227,7 @@ async function bootCms() {
   /* 1) content server (agar chal raha ho) — usme hamesha sabse naya content hota hai */
   let gotServer = false;
   try {
+    if (!window.SOULD_SERVER) throw new Error('no server');
     const res = await fetch('api/content', { cache: 'no-store' });
     if (res.ok) {
       const d = await res.json();
@@ -1192,16 +1193,18 @@ function serverBase() {
 async function checkServer(force) {
   if (SERVER.checked && !force) return SERVER;
   SERVER = { checked: true, ok: false, url: serverBase(), error: '' };
-  try {
-    const r = await fetch('api/content', { cache: 'no-store' });
-    if (r.ok) {
-      const d = await r.json().catch(() => null);
-      if (d && typeof d === 'object' && Object.keys(d).length) {
-        SERVER.ok = true;
-        SERVER.sameOrigin = true;
+  if (window.SOULD_SERVER) {
+    try {
+      const r = await fetch('api/content', { cache: 'no-store' });
+      if (r.ok) {
+        const d = await r.json().catch(() => null);
+        if (d && typeof d === 'object' && Object.keys(d).length) {
+          SERVER.ok = true;
+          SERVER.sameOrigin = true;
+        }
       }
-    }
-  } catch (e) { SERVER.error = e.message; }
+    } catch (e) { SERVER.error = e.message; }
+  }
   if (!SERVER.ok && S.endpoint) {
     try {
       const r = await fetch(serverBase() + '/api/health', { cache: 'no-store' });
