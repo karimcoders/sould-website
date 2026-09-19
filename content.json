@@ -26,8 +26,8 @@
     "formSubmit": "Submit Your Request",
     "homeFaqTitle": "Frequently Asked Questions",
     "homeFaqText": "Everything you need to know about partnering with Soul-D.",
-    "servicesHeroTitle": "Advanced Digital Services,\n[b]Built For Every Industry[/b]",
-    "servicesHeroText": "From full-stack web apps, CMS, CRM and AI automation to high-ROI Meta & Google ad campaigns and creative video — we design, build and grow digital products across every industry.",
+    "servicesHeroTitle": "Solutions Designed To\n[b]Scale Your Business[/b]",
+    "servicesHeroText": "From modern web & mobile applications to high-ROI Meta & Google ad campaigns and creative video production — explore our full suite of services.",
     "servicesProcessTitle": "Our Proven Service Delivery Process",
     "servicesProcessText": "We streamline execution to ensure your projects are delivered on time, within budget, and to the highest standards.",
     "servicesCtaTitle": "Ready to Take Your Brand to the Next Level?",
@@ -64,7 +64,10 @@
     "footerTagline": "We would love to hear from you. Subscribe for more information.",
     "footerServicesTitle": "Our Services",
     "footerContactTitle": "Get in Touch",
-    "footerCopyright": "© 2026 Soul-D. | Digital Marketing Solutions. All rights reserved."
+    "footerCopyright": "© 2026 Soul-D. | Digital Marketing Solutions. All rights reserved.",
+    "homeBuildTitle": "From Website to Complete Digital Growth System",
+    "homeBuildText": "One team for design, development, content, ads, AI and analytics — everything connected instead of handed between agencies.",
+    "homeBuildLink": "Explore all services"
   },
   "site": {
     "name": "Soul-D.",
@@ -116,7 +119,9 @@
         "Custom Responsive Layouts & UI/UX",
         "High-Speed Performance & Security",
         "SEO & Mobile Optimization",
-        "E-commerce & CMS Integration"
+        "E-commerce & CMS Integration",
+        "Landing Pages & Conversion Design",
+        "CMS, Dashboards & Custom Admin Panels"
       ],
       "detailLead": "High-converting digital experiences for ambitious brands.",
       "projects": [
@@ -158,70 +163,11 @@
             "Lead Gen"
           ]
         }
-      ],
-      "shortTitle": "Website Development"
-    },
-    {
-      "id": "fullstack-apps",
-      "title": "Full-Stack Web Apps & SaaS",
-      "shortTitle": "Web Apps & SaaS",
-      "icon": "layout-panel",
-      "category": "dev",
-      "group": "Web & Apps",
-      "img": "assets/1552664730.jpg",
-      "desc": "Complete web applications and SaaS platforms — dashboards, user accounts, subscriptions and databases. Built with React, Next.js, Node and secure APIs, ready to scale with your business.",
-      "bullets": [
-        "Custom Dashboards & Admin Panels",
-        "User Roles, Auth & Subscriptions",
-        "Real-Time Data & Integrations",
-        "Scalable Cloud-Ready Architecture"
-      ],
-      "detailLead": "From idea to a live product your team runs every day.",
-      "projects": [
-        {
-          "badge": "Project Card",
-          "metric": "12k+ Users Onboarded",
-          "client": "NexaDesk Technologies",
-          "title": "NexaDesk Client Portal SaaS",
-          "desc": "A multi-tenant client portal with role-based access, ticketing, billing and analytics — replacing four disconnected tools.",
-          "img": "assets/1557821552.jpg",
-          "highlights": [
-            "4 tools replaced",
-            "+63% support efficiency",
-            "99.9% uptime"
-          ],
-          "tags": [
-            "Next.js",
-            "Node.js",
-            "PostgreSQL",
-            "Stripe"
-          ]
-        },
-        {
-          "badge": "Project Card",
-          "metric": "8 Weeks To Launch",
-          "client": "MediTrack Systems",
-          "title": "MediTrack Operations Platform",
-          "desc": "Scheduling, inventory and reporting platform for a multi-clinic healthcare group with audit-ready permissions.",
-          "img": "assets/1460925895917.jpg",
-          "highlights": [
-            "5 clinics onboarded",
-            "18 hrs/week saved",
-            "Role-based security"
-          ],
-          "tags": [
-            "React",
-            "REST APIs",
-            "Firebase",
-            "RBAC"
-          ]
-        }
-      ],
-      "num": 2
+      ]
     },
     {
       "id": "app-dev",
-      "num": 3,
+      "num": 2,
       "title": "Mobile App Development",
       "icon": "smartphone",
       "img": "assets/1512941937669.jpg",
@@ -232,7 +178,9 @@
         "iOS & Android Cross-Platform Apps",
         "Intuitive UI/UX Interface Design",
         "API Integration & Cloud Backend",
-        "App Store & Play Store Publishing"
+        "App Store & Play Store Publishing",
+        "SaaS & Customer-Facing Apps",
+        "Push Notifications & Real-Time Features"
       ],
       "detailLead": "Mobile products built to engage users and scale fast.",
       "projects": [
@@ -274,360 +222,11 @@
             "Realtime"
           ]
         }
-      ],
-      "shortTitle": "Mobile Apps"
-    },
-    {
-      "id": "custom-cms",
-      "title": "Custom CMS Development",
-      "shortTitle": "Custom CMS",
-      "icon": "package",
-      "category": "cms",
-      "group": "CMS & E-commerce",
-      "img": "assets/hubspot_image_1-U-VcNU6N.jpg",
-      "desc": "Headless and custom-built content management systems that let your team edit every page, section and collection without touching code — like WordPress, built around your workflow.",
-      "bullets": [
-        "Custom Admin Panels & Editors",
-        "Headless / API-First Content",
-        "Media Library & Version Backups",
-        "Role Permissions For Your Team"
-      ],
-      "detailLead": "Your team edits everything. Nothing breaks.",
-      "projects": [
-        {
-          "badge": "Project Card",
-          "metric": "3x Faster Publishing",
-          "client": "Urban Roots Media",
-          "title": "Urban Roots Publishing CMS",
-          "desc": "A magazine-style CMS with multi-author workflows, scheduled publishing, SEO fields and instant previews.",
-          "img": "assets/1516321497487.jpg",
-          "highlights": [
-            "3x faster publishing",
-            "120+ pages managed",
-            "Zero code edits"
-          ],
-          "tags": [
-            "Custom CMS",
-            "REST API",
-            "SEO Fields",
-            "Roles"
-          ]
-        },
-        {
-          "badge": "Project Card",
-          "metric": "100% Editable Website",
-          "client": "Horizon Interiors",
-          "title": "Horizon Content System",
-          "desc": "A visual content system where the client edits headings, images, services and testimonials with one click.",
-          "img": "assets/1522542550221.jpg",
-          "highlights": [
-            "100% self-editable",
-            "40% less dev time",
-            "Auto backups"
-          ],
-          "tags": [
-            "Headless CMS",
-            "Image Library",
-            "Versioning",
-            "Docs"
-          ]
-        }
-      ],
-      "num": 4
-    },
-    {
-      "id": "wordpress-elementor",
-      "title": "WordPress & Elementor Development",
-      "shortTitle": "WordPress & Elementor",
-      "icon": "zap",
-      "category": "cms",
-      "group": "CMS & E-commerce",
-      "img": "assets/hubspot_image_3-BRNm9t2P.jpg",
-      "desc": "Custom WordPress websites built with Elementor Pro, ACF and WooCommerce — fast, secure and fully editable by your own team, with clean code instead of bloated templates.",
-      "bullets": [
-        "Custom Themes & Elementor Pro Builds",
-        "ACF, CPT & Dynamic Content Setup",
-        "Speed, Security & Core Web Vitals",
-        "Migrations, Fixes & Ongoing Upkeep"
-      ],
-      "detailLead": "The world most-editable platform, built properly.",
-      "projects": [
-        {
-          "badge": "Project Card",
-          "metric": "2.1s to 0.9s Load Time",
-          "client": "Sharma Legal Associates",
-          "title": "Legal Practice Website Rebuild",
-          "desc": "Rebuilt a slow, bloated theme into a clean Elementor Pro build with structured practice-area templates.",
-          "img": "assets/1557821552.jpg",
-          "highlights": [
-            "0.9s load speed",
-            "+58% enquiries",
-            "100 SEO score"
-          ],
-          "tags": [
-            "WordPress",
-            "Elementor Pro",
-            "ACF",
-            "Speed"
-          ]
-        },
-        {
-          "badge": "Project Card",
-          "metric": "+71% Organic Traffic",
-          "client": "GreenLeaf Organics",
-          "title": "Organic Store & Blog Platform",
-          "desc": "A WooCommerce store with a content hub, category templates and automated product schema.",
-          "img": "assets/1558655146.jpg",
-          "highlights": [
-            "+71% organic traffic",
-            "240 products live",
-            "Self-managed blog"
-          ],
-          "tags": [
-            "WooCommerce",
-            "Elementor",
-            "Schema",
-            "SEO"
-          ]
-        }
-      ],
-      "num": 5
-    },
-    {
-      "id": "ecommerce-shopify",
-      "title": "E-commerce & Shopify",
-      "shortTitle": "E-commerce & Shopify",
-      "icon": "badge-dollar",
-      "category": "cms",
-      "group": "CMS & E-commerce",
-      "img": "assets/1555396273.jpg",
-      "desc": "Shopify and WooCommerce stores built to convert — product systems, collections, checkout customisation, payment and shipping integrations, and a store your team can run easily.",
-      "bullets": [
-        "Shopify & WooCommerce Builds",
-        "Product, Inventory & Order Systems",
-        "Payments, Shipping & Tax Setup",
-        "Conversion & Checkout Optimisation"
-      ],
-      "detailLead": "Stores built for sales, not just for looking good.",
-      "projects": [
-        {
-          "badge": "Project Card",
-          "metric": "+128% Revenue",
-          "client": "Alora Skincare",
-          "title": "Alora Shopify Store Launch",
-          "desc": "A conversion-focused Shopify store with bundle upsells, subscription options and ad-ready product pages.",
-          "img": "assets/1523726491678.jpg",
-          "highlights": [
-            "+128% revenue",
-            "3.2x ROAS",
-            "42% repeat buyers"
-          ],
-          "tags": [
-            "Shopify",
-            "Liquid",
-            "Upsells",
-            "Analytics"
-          ]
-        },
-        {
-          "badge": "Project Card",
-          "metric": "Rs 18L First-Quarter Sales",
-          "client": "Craft & Copper",
-          "title": "Craft & Copper WooCommerce Setup",
-          "desc": "Multi-category WooCommerce store with GST invoicing, courier integration and bulk inventory sync.",
-          "img": "assets/1555396273.jpg",
-          "highlights": [
-            "1,100 SKUs synced",
-            "Auto GST invoices",
-            "Courier API"
-          ],
-          "tags": [
-            "WooCommerce",
-            "GST",
-            "Inventory",
-            "Couriers"
-          ]
-        }
-      ],
-      "num": 6
-    },
-    {
-      "id": "crm-pms",
-      "title": "CRM, PMS & Business Dashboards",
-      "shortTitle": "CRM, PMS & Dashboards",
-      "icon": "bar-chart",
-      "category": "dev",
-      "group": "Web & Apps",
-      "img": "assets/1519389950473.jpg",
-      "desc": "Custom CRM and project-management systems built around how your business actually works — leads, pipelines, tasks, teams, invoicing and reports in one place.",
-      "bullets": [
-        "Lead & Sales Pipeline CRMs",
-        "Project & Task Management (PMS)",
-        "Team Roles, Approvals & Automation",
-        "Live Reports & Business Dashboards"
-      ],
-      "detailLead": "Stop juggling spreadsheets and five different apps.",
-      "projects": [
-        {
-          "badge": "Project Card",
-          "metric": "+34% Lead Conversion",
-          "client": "Vertex Realty Group",
-          "title": "Vertex Sales CRM",
-          "desc": "A real-estate CRM with lead capture, follow-up reminders, site-visit tracking and agent performance dashboards.",
-          "img": "assets/1460925895917.jpg",
-          "highlights": [
-            "+34% conversion",
-            "5,000+ leads managed",
-            "WhatsApp automation"
-          ],
-          "tags": [
-            "CRM",
-            "Dashboards",
-            "Automation",
-            "WhatsApp API"
-          ]
-        },
-        {
-          "badge": "Project Card",
-          "metric": "180 Live Projects Tracked",
-          "client": "BuildRight Constructions",
-          "title": "BuildRight Project Management Suite",
-          "desc": "Site-wise PMS with milestones, material tracking, contractor billing and daily progress reporting.",
-          "img": "assets/1533750349088.jpg",
-          "highlights": [
-            "180 live projects",
-            "Billing automated",
-            "Daily site reports"
-          ],
-          "tags": [
-            "PMS",
-            "Billing",
-            "Reports",
-            "Mobile-friendly"
-          ]
-        }
-      ],
-      "num": 7
-    },
-    {
-      "id": "ai-automation",
-      "title": "AI & Automation",
-      "shortTitle": "AI & Automation",
-      "icon": "sparkles",
-      "category": "ai",
-      "group": "AI & Automation",
-      "img": "assets/1523961131990.jpg",
-      "desc": "AI features and automation that save real hours — chat assistants, content and SEO tools, document workflows, and integrations that connect the apps you already use.",
-      "bullets": [
-        "AI Chat & Support Assistants",
-        "Content, SEO & Report Automation",
-        "Workflow & Data Automations",
-        "AI APIs & Model Integrations"
-      ],
-      "detailLead": "Practical AI — measured in hours saved, not hype.",
-      "projects": [
-        {
-          "badge": "Project Card",
-          "metric": "62% Tickets Auto-Resolved",
-          "client": "HelpHive Support",
-          "title": "AI Support Assistant",
-          "desc": "A trained assistant that answers product questions, routes complex tickets and drafts replies for the support team.",
-          "img": "assets/1523961131990.jpg",
-          "highlights": [
-            "62% auto-resolved",
-            "24/7 coverage",
-            "38% faster replies"
-          ],
-          "tags": [
-            "LLM APIs",
-            "Vector Search",
-            "CRM Sync",
-            "Analytics"
-          ]
-        },
-        {
-          "badge": "Project Card",
-          "metric": "26 Hours Saved / Month",
-          "client": "Brightpath Agencies",
-          "title": "Marketing Reporting Automation",
-          "desc": "Automated pipelines that pull ad and analytics data into client-ready reports with AI-written insights.",
-          "img": "assets/1516321318423.jpg",
-          "highlights": [
-            "26 hrs/month saved",
-            "12 data sources",
-            "Auto insights"
-          ],
-          "tags": [
-            "Automation",
-            "APIs",
-            "Reporting",
-            "Sheets"
-          ]
-        }
-      ],
-      "num": 8
-    },
-    {
-      "id": "backend-api",
-      "title": "Backend & API Development",
-      "shortTitle": "Backend & APIs",
-      "icon": "send",
-      "category": "dev",
-      "group": "Web & Apps",
-      "img": "assets/1522542550221.jpg",
-      "desc": "The engine behind your product — secure servers, REST APIs, databases, authentication, payment gateways and third-party integrations, built to handle real traffic and real data.",
-      "bullets": [
-        "REST & Webhook API Development",
-        "Database Design & Optimisation",
-        "Auth, Payments & Integrations",
-        "Deployment, Logging & Monitoring"
-      ],
-      "detailLead": "Reliable foundations your frontend can trust.",
-      "projects": [
-        {
-          "badge": "Project Card",
-          "metric": "3.1M API Calls / Month",
-          "client": "FleetPulse Telematics",
-          "title": "FleetPulse Tracking Backend",
-          "desc": "A high-throughput backend ingesting live vehicle data with geofencing alerts and driver scorecards.",
-          "img": "assets/1522542550221.jpg",
-          "highlights": [
-            "3.1M calls/month",
-            "<180ms avg response",
-            "Live geofencing"
-          ],
-          "tags": [
-            "Node.js",
-            "PostgreSQL",
-            "WebSockets",
-            "Redis"
-          ]
-        },
-        {
-          "badge": "Project Card",
-          "metric": "9 Platforms Connected",
-          "client": "PayNest Fintech",
-          "title": "PayNest Integration Layer",
-          "desc": "A unified integration service connecting payments, KYC, CRM and ERP systems behind one secure API.",
-          "img": "assets/1516321497487.jpg",
-          "highlights": [
-            "9 integrations",
-            "PCI-aware design",
-            "99.95% success rate"
-          ],
-          "tags": [
-            "API Gateway",
-            "OAuth 2.0",
-            "Webhooks",
-            "Security"
-          ]
-        }
-      ],
-      "num": 9
+      ]
     },
     {
       "id": "content-creation",
-      "num": 10,
+      "num": 3,
       "title": "Content Creation",
       "icon": "pen-tool",
       "img": "assets/1455390582262.jpg",
@@ -638,7 +237,9 @@
         "Copywriting & Blog Articles",
         "Graphic Design & Visual Assets",
         "Product & Service Catalog Copy",
-        "SEO Content Strategy"
+        "SEO Content Strategy",
+        "AI-Assisted Content Systems",
+        "Conversion Copy for Ads & Landing Pages"
       ],
       "detailLead": "Content systems that turn attention into action.",
       "projects": [
@@ -680,12 +281,11 @@
             "Brand Voice"
           ]
         }
-      ],
-      "shortTitle": "Content Creation"
+      ]
     },
     {
       "id": "video-production",
-      "num": 11,
+      "num": 4,
       "title": "Video Production & Editing",
       "icon": "video",
       "img": "assets/1492619375914.jpg",
@@ -696,7 +296,9 @@
         "Short-Form Video & Reels Editing",
         "Promotional Ad Video Editing",
         "Motion Graphics & Sound Design",
-        "Brand Story & Voiceover Sync"
+        "Brand Story & Voiceover Sync",
+        "AI Video, UGC & Ad Creatives",
+        "Long-Form YouTube & Podcast Editing"
       ],
       "detailLead": "Campaign visuals designed to stop the scroll.",
       "projects": [
@@ -737,12 +339,11 @@
             "Direct Response"
           ]
         }
-      ],
-      "shortTitle": "Video Production"
+      ]
     },
     {
       "id": "smm",
-      "num": 12,
+      "num": 5,
       "title": "Social Media Management",
       "icon": "instagram",
       "img": "assets/1611162617213.jpg",
@@ -753,7 +354,9 @@
         "Content Calendar & Post Scheduling",
         "Community Engagement & DM Lead Gen",
         "Audience Analytics & Monthly Reports",
-        "Hashtag & Organic Growth Strategy"
+        "Hashtag & Organic Growth Strategy",
+        "Social Media Automation",
+        "Influencer & UGC Campaigns"
       ],
       "detailLead": "Social growth plans that build durable audiences.",
       "projects": [
@@ -795,12 +398,11 @@
             "Reporting"
           ]
         }
-      ],
-      "shortTitle": "Social Media"
+      ]
     },
     {
       "id": "ads",
-      "num": 13,
+      "num": 6,
       "title": "Google Ads & Meta Ads",
       "icon": "target",
       "img": "assets/1460925895917.jpg",
@@ -811,7 +413,9 @@
         "Google Search, Display & Shopping Ads",
         "Meta (FB & IG) Target Funnels",
         "Audience Segmentation & Retargeting",
-        "A/B Creative & Copy Testing"
+        "A/B Creative & Copy Testing",
+        "Lead Generation & Marketing Funnels",
+        "Conversion Rate Optimization (CRO)"
       ],
       "detailLead": "Performance marketing with measurable growth.",
       "projects": [
@@ -852,71 +456,13 @@
             "Landing Pages"
           ]
         }
-      ],
-      "shortTitle": "Google & Meta Ads"
-    },
-    {
-      "id": "product-branding",
-      "num": 14,
-      "title": "Branding Products or Services",
-      "icon": "package",
-      "img": "assets/1523726491678.jpg",
-      "category": "branding",
-      "group": "Branding & Portfolios",
-      "desc": "Comprehensive brand identity design for new or existing products and services. From memorable logos and brand guidelines to market positioning.",
-      "bullets": [
-        "Logo & Typography System Design",
-        "Brand Guidelines & Color Palette",
-        "Product Packaging & Digital Assets",
-        "Market Positioning & Messaging"
-      ],
-      "detailLead": "Brand systems that make new offers memorable.",
-      "projects": [
-        {
-          "badge": "Project Card",
-          "metric": "Retail Launch Ready",
-          "client": "Luma Home Goods",
-          "title": "Signature Product Identity System",
-          "desc": "A cohesive identity system for a new product line including logo, packaging direction, and visual language.",
-          "img": "assets/1523726491678.jpg",
-          "highlights": [
-            "Packaging concept",
-            "Retail-ready system",
-            "Brand standards"
-          ],
-          "tags": [
-            "Packaging",
-            "Identity",
-            "Guidelines",
-            "Positioning"
-          ]
-        },
-        {
-          "badge": "Project Card",
-          "metric": "2x Brand Recall",
-          "client": "Urban Nest Interiors",
-          "title": "Service Brand Refresh for Growth Stage",
-          "desc": "A full repositioning package that sharpened the offer, visual identity, and messaging across touchpoints.",
-          "img": "assets/1558655146.jpg",
-          "highlights": [
-            "2x recall lift",
-            "Messaging refresh",
-            "Unified digital assets"
-          ],
-          "tags": [
-            "Brand Strategy",
-            "Visual Identity",
-            "Launch"
-          ]
-        }
-      ],
-      "shortTitle": "Branding"
+      ]
     },
     {
       "id": "personal-branding",
-      "num": 15,
+      "num": 7,
       "title": "Portfolio Creation for Personal Branding",
-      "shortTitle": "Personal Portfolio",
+      "shortTitle": "Portfolio for Personal Branding",
       "icon": "user-round",
       "img": "assets/1580489944761.jpg",
       "category": "branding",
@@ -926,7 +472,9 @@
         "Custom Executive Portfolios",
         "Interactive Resume & Bio Showcase",
         "Personal Brand Identity & Kit",
-        "Lead Form & Contact Integration"
+        "Lead Form & Contact Integration",
+        "LinkedIn & Founder Branding",
+        "Personal Brand Content System"
       ],
       "detailLead": "Executive presence built for trust and authority.",
       "projects": [
@@ -968,6 +516,352 @@
           ]
         }
       ]
+    },
+    {
+      "id": "product-branding",
+      "num": 8,
+      "title": "Branding Products or Services",
+      "icon": "package",
+      "img": "assets/1523726491678.jpg",
+      "category": "branding",
+      "group": "Branding & Portfolios",
+      "desc": "Comprehensive brand identity design for new or existing products and services. From memorable logos and brand guidelines to market positioning.",
+      "bullets": [
+        "Logo & Typography System Design",
+        "Brand Guidelines & Color Palette",
+        "Product Packaging & Digital Assets",
+        "Market Positioning & Messaging",
+        "AI Creative Production",
+        "Brand Launch & Campaign Assets"
+      ],
+      "detailLead": "Brand systems that make new offers memorable.",
+      "projects": [
+        {
+          "badge": "Project Card",
+          "metric": "Retail Launch Ready",
+          "client": "Luma Home Goods",
+          "title": "Signature Product Identity System",
+          "desc": "A cohesive identity system for a new product line including logo, packaging direction, and visual language.",
+          "img": "assets/1523726491678.jpg",
+          "highlights": [
+            "Packaging concept",
+            "Retail-ready system",
+            "Brand standards"
+          ],
+          "tags": [
+            "Packaging",
+            "Identity",
+            "Guidelines",
+            "Positioning"
+          ]
+        },
+        {
+          "badge": "Project Card",
+          "metric": "2x Brand Recall",
+          "client": "Urban Nest Interiors",
+          "title": "Service Brand Refresh for Growth Stage",
+          "desc": "A full repositioning package that sharpened the offer, visual identity, and messaging across touchpoints.",
+          "img": "assets/1558655146.jpg",
+          "highlights": [
+            "2x recall lift",
+            "Messaging refresh",
+            "Unified digital assets"
+          ],
+          "tags": [
+            "Brand Strategy",
+            "Visual Identity",
+            "Launch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "web-apps",
+      "title": "Web Apps, CRM & SaaS Development",
+      "icon": "layout-panel",
+      "category": "dev",
+      "group": "Web & Mobile",
+      "img": "assets/1460925895917.jpg",
+      "desc": "Full-stack product development — CRM, PMS, ERP, booking and dashboard systems built with secure APIs, databases and role-based access.",
+      "bullets": [
+        "Custom CRM & PMS Platforms",
+        "SaaS Product Development",
+        "Admin Dashboards & Analytics Panels",
+        "API, Database & Backend Architecture",
+        "Authentication, Roles & Permissions",
+        "Payment & Third-Party Integrations"
+      ],
+      "detailLead": "From idea to a working product your team can run every day.",
+      "projects": [
+        {
+          "badge": "Project Card",
+          "metric": "60% Faster Operations",
+          "client": "Manalot",
+          "title": "Manalot CRM & Analytics Platform",
+          "desc": "A custom CRM with lead pipeline, task automation and a live analytics dashboard that replaced spreadsheets across the sales team.",
+          "img": "assets/1460925895917.jpg",
+          "highlights": [
+            "Unified lead pipeline",
+            "Role-based access",
+            "60% faster reporting"
+          ],
+          "tags": [
+            "React",
+            "Node.js",
+            "CRM",
+            "API"
+          ]
+        },
+        {
+          "badge": "Project Card",
+          "metric": "3x Faster Bookings",
+          "client": "Service Industry Client",
+          "title": "Project & Booking Management System (PMS)",
+          "desc": "Scheduling, invoicing, staff allocation and client portals in one PMS — with automated reminders over WhatsApp and email.",
+          "img": "assets/1552664730.jpg",
+          "highlights": [
+            "Automated scheduling",
+            "Client self-service portal",
+            "3x faster booking cycle"
+          ],
+          "tags": [
+            "Full-Stack",
+            "PMS",
+            "Automation",
+            "Dashboard"
+          ]
+        }
+      ],
+      "num": 9
+    },
+    {
+      "id": "wordpress-shopify",
+      "title": "WordPress, Elementor & Shopify",
+      "icon": "package",
+      "category": "dev",
+      "group": "Web & Mobile",
+      "img": "assets/1547658719.jpg",
+      "desc": "Content-managed websites and online stores your team can run without a developer — WordPress, Elementor Pro, WooCommerce, Shopify and headless CMS setups.",
+      "bullets": [
+        "WordPress + Elementor Pro Builds",
+        "Shopify Store Development",
+        "WooCommerce & Payment Setup",
+        "Custom Themes, ACF & CPT UI",
+        "Speed, Security & Ongoing Maintenance",
+        "Headless CMS & API Integrations"
+      ],
+      "detailLead": "Websites you can edit yourself — no developer needed for daily changes.",
+      "projects": [
+        {
+          "badge": "Project Card",
+          "metric": "2x Enquiries",
+          "client": "Perfect Air Conditioners",
+          "title": "Service Business Website on WordPress",
+          "desc": "A fast, mobile-first WordPress build with Elementor Pro, service pages, enquiry funnels and local SEO structure.",
+          "img": "assets/1547658719.jpg",
+          "highlights": [
+            "Editable by the client",
+            "Local SEO structure",
+            "2x enquiry growth"
+          ],
+          "tags": [
+            "WordPress",
+            "Elementor",
+            "SEO",
+            "Speed"
+          ]
+        },
+        {
+          "badge": "Project Card",
+          "metric": "+140% Revenue",
+          "client": "Blue Diamond Auto Services",
+          "title": "Shopify & WooCommerce Store Launch",
+          "desc": "Product catalogue, payments, shipping rules and abandoned-cart automation built for a growing retail brand.",
+          "img": "assets/1557821552.jpg",
+          "highlights": [
+            "Catalogue + payments",
+            "Cart recovery flows",
+            "+140% online revenue"
+          ],
+          "tags": [
+            "Shopify",
+            "WooCommerce",
+            "CRO"
+          ]
+        }
+      ],
+      "num": 10
+    },
+    {
+      "id": "ai-automation",
+      "title": "AI & Marketing Automation",
+      "icon": "sparkles",
+      "category": "ads",
+      "group": "Paid Ads & SMM",
+      "img": "assets/1677442136019.jpg",
+      "desc": "AI-powered systems that answer, qualify and follow up 24×7 — chatbots, content engines, competitor intelligence and automated lead pipelines.",
+      "bullets": [
+        "AI Chatbots & Lead Qualification",
+        "AI Content Generation & Repurposing",
+        "AI SEO & Competitor Analysis",
+        "Marketing Automation & Follow-Up Flows",
+        "CRM, WhatsApp & Email Integrations",
+        "AI Creative & Ad Production"
+      ],
+      "detailLead": "Let AI handle the repetitive work — you handle the growth.",
+      "projects": [
+        {
+          "badge": "Project Card",
+          "metric": "24×7 Lead Capture",
+          "client": "Edubuk",
+          "title": "AI Assistant & Lead Qualification Bot",
+          "desc": "A website AI assistant that answers student questions, qualifies enquiries and pushes warm leads straight into the CRM.",
+          "img": "assets/1677442136019.jpg",
+          "highlights": [
+            "Instant answers",
+            "Auto-qualification",
+            "CRM handoff"
+          ],
+          "tags": [
+            "AI",
+            "Chatbot",
+            "Automation"
+          ]
+        },
+        {
+          "badge": "Project Card",
+          "metric": "70% Less Manual Work",
+          "client": "Elionyx",
+          "title": "Marketing Automation & Reporting Flows",
+          "desc": "Automated campaign reporting, lead routing and follow-up sequences connected across forms, CRM and email.",
+          "img": "assets/1519389950473.jpg",
+          "highlights": [
+            "Automated reporting",
+            "Lead routing",
+            "70% less manual work"
+          ],
+          "tags": [
+            "Automation",
+            "CRM",
+            "Analytics"
+          ]
+        }
+      ],
+      "num": 11
+    },
+    {
+      "id": "advanced-seo",
+      "title": "Advanced SEO & GEO",
+      "icon": "bar-chart",
+      "category": "ads",
+      "group": "Paid Ads & SMM",
+      "img": "assets/1439337171600.jpg",
+      "desc": "Technical, programmatic and AI-search SEO — built so you rank on Google and get cited by AI assistants like ChatGPT, Gemini and Perplexity.",
+      "bullets": [
+        "Technical & On-Page SEO",
+        "Programmatic & Local SEO",
+        "E-commerce SEO & Schema Markup",
+        "AI Search / GEO Optimization",
+        "Core Web Vitals & Speed Optimization",
+        "SEO Audits & Competitor Intelligence"
+      ],
+      "detailLead": "Rank on Google — and get found inside AI answers.",
+      "projects": [
+        {
+          "badge": "Project Card",
+          "metric": "+212% Organic Traffic",
+          "client": "Edubuk",
+          "title": "Technical SEO & Content System",
+          "desc": "Full technical audit, schema rollout, Core Web Vitals fixes and a keyword-mapped content engine that compounded traffic.",
+          "img": "assets/1439337171600.jpg",
+          "highlights": [
+            "Schema & CWV fixed",
+            "Keyword-mapped content",
+            "+212% organic traffic"
+          ],
+          "tags": [
+            "Technical SEO",
+            "Schema",
+            "Content"
+          ]
+        },
+        {
+          "badge": "Project Card",
+          "metric": "Top 3 Local Pack",
+          "client": "Perfect Air Conditioners",
+          "title": "Local & GEO Search Domination",
+          "desc": "Location pages, Google Business optimisation and AI-search friendly answers for every service area.",
+          "img": "assets/1560472354.jpg",
+          "highlights": [
+            "Location pages",
+            "GBP optimisation",
+            "Top-3 local ranking"
+          ],
+          "tags": [
+            "Local SEO",
+            "GEO",
+            "GBP"
+          ]
+        }
+      ],
+      "num": 12
+    },
+    {
+      "id": "ecommerce-growth",
+      "title": "E-commerce Growth",
+      "icon": "shopping-bag",
+      "category": "ads",
+      "group": "Paid Ads & SMM",
+      "img": "assets/1556742049.jpg",
+      "desc": "Growth work for online stores — product pages that convert, feeds that reach shoppers and retention flows that bring buyers back.",
+      "bullets": [
+        "Shopify & WooCommerce Growth",
+        "Product Page & CRO Optimization",
+        "Product Feed & Marketplace Optimization",
+        "Abandoned Cart & Retention Flows",
+        "E-commerce SEO & Shopping Ads",
+        "Merchandising & Offer Strategy"
+      ],
+      "detailLead": "More revenue from the traffic you already have.",
+      "projects": [
+        {
+          "badge": "Project Card",
+          "metric": "+38% Conversion Rate",
+          "client": "Retail Client",
+          "title": "Store CRO & Retention Programme",
+          "desc": "Product page rebuilds, trust signals, upsell flows and cart-recovery automation that lifted conversion without extra ad spend.",
+          "img": "assets/1556742049.jpg",
+          "highlights": [
+            "Product page rebuilds",
+            "Upsell & bundles",
+            "+38% conversion rate"
+          ],
+          "tags": [
+            "Shopify",
+            "CRO",
+            "Retention"
+          ]
+        },
+        {
+          "badge": "Project Card",
+          "metric": "4.2x ROAS",
+          "client": "Online Store",
+          "title": "Shopping Feed & Ads Restructure",
+          "desc": "Feed clean-up, title optimisation and campaign restructure across Google Shopping and Meta catalogues.",
+          "img": "assets/1533750349088.jpg",
+          "highlights": [
+            "Feed optimisation",
+            "Campaign restructure",
+            "4.2x ROAS"
+          ],
+          "tags": [
+            "Google Shopping",
+            "Meta",
+            "Feeds"
+          ]
+        }
+      ],
+      "num": 13
     }
   ],
   "stats": [
@@ -1284,15 +1178,7 @@
     },
     {
       "id": "dev",
-      "label": "Web & Apps"
-    },
-    {
-      "id": "cms",
-      "label": "CMS & E-commerce"
-    },
-    {
-      "id": "ai",
-      "label": "AI & Automation"
+      "label": "Web & Mobile"
     },
     {
       "id": "ads",
@@ -1328,5 +1214,61 @@
       "id": "branding",
       "label": "Branding"
     }
-  ]
+  ],
+  "build": {
+    "title": "From Website to Complete Digital Growth System",
+    "text": "One team for design, development, content, ads, AI and analytics — everything connected instead of handed between agencies.",
+    "items": [
+      {
+        "emoji": "🌐",
+        "title": "Business Website",
+        "desc": "Fast, editable websites that convert visitors into enquiries."
+      },
+      {
+        "emoji": "🛒",
+        "title": "E-commerce Store",
+        "desc": "Shopify / WooCommerce stores built to sell and scale."
+      },
+      {
+        "emoji": "🤖",
+        "title": "AI Chatbot",
+        "desc": "Answers, qualifies and books leads 24×7 on your site."
+      },
+      {
+        "emoji": "🧩",
+        "title": "CRM / PMS / SaaS",
+        "desc": "Custom full-stack platforms, dashboards and internal tools."
+      },
+      {
+        "emoji": "📈",
+        "title": "SEO System",
+        "desc": "Technical, local and AI-search (GEO) visibility engine."
+      },
+      {
+        "emoji": "📱",
+        "title": "Social Media System",
+        "desc": "Content calendar, creatives and community growth."
+      },
+      {
+        "emoji": "🎯",
+        "title": "Lead Generation Funnel",
+        "desc": "Ads → landing page → follow-up, tracked end to end."
+      },
+      {
+        "emoji": "📊",
+        "title": "Analytics Dashboard",
+        "desc": "See leads, sales and spend in one live dashboard."
+      },
+      {
+        "emoji": "⚡",
+        "title": "Marketing Automation",
+        "desc": "WhatsApp, email and CRM flows that never miss a lead."
+      },
+      {
+        "emoji": "🏭",
+        "title": "Industry-Ready Builds",
+        "desc": "Healthcare, education, real estate, retail, manufacturing, SaaS and more."
+      }
+    ]
+  }
 }
